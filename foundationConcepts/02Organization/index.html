@@ -1,0 +1,435 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Organization · CloudChef Document</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../03Infrastructure/" />
+    
+    
+    <link rel="prev" href="../01UserInterface/" />
+    
+
+    
+    
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Basic Concept</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../01UserInterface/">
+            
+                <a href="../01UserInterface/">
+            
+                    
+                    UserInterface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Organization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../03Infrastructure/">
+            
+                <a href="../03Infrastructure/">
+            
+                    
+                    Infrastructure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../04ServiceCatalog/">
+            
+                <a href="../04ServiceCatalog/">
+            
+                    
+                    ServiceCatalog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../05CICD/">
+            
+                <a href="../05CICD/">
+            
+                    
+                    CICD
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Organization</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#tenant"><b>1. </b>Tenant</a></li><ul><li><span class="title-icon "></span><a href="#single-tenant-and-multiple-tenants"><b>1.1. </b>Single tenant and multiple tenants</a></li><ul><li><span class="title-icon "></span><a href="#single-tenant"><b>1.1.1. </b>Single tenant</a></li><li><span class="title-icon "></span><a href="#multiple-tenants"><b>1.1.2. </b>Multiple tenants</a></li></ul></ul><li><span class="title-icon "></span><a href="#business-group-and-projects"><b>2. </b>Business group and projects</a></li><ul><li><span class="title-icon "></span><a href="#business-group"><b>2.1. </b>Business group</a></li><li><span class="title-icon "></span><a href="#project"><b>2.2. </b>Project</a></li></ul><li><span class="title-icon "></span><a href="#role"><b>3. </b>Role</a></li><ul><li><span class="title-icon "></span><a href="#tenant-roles-overview"><b>3.1. </b>Tenant roles overview</a></li><ul><li><span class="title-icon "></span><a href="#tenant-admin"><b>3.1.1. </b>Tenant Admin</a></li><li><span class="title-icon "></span><a href="#software-architect"><b>3.1.2. </b>Software Architect</a></li><li><span class="title-icon "></span><a href="#infrastructure-administrator"><b>3.1.3. </b>Infrastructure administrator</a></li></ul><li><span class="title-icon "></span><a href="#business-group-roles-overview"><b>3.2. </b>Business group roles overview</a></li><ul><li><span class="title-icon "></span><a href="#bg-admin"><b>3.2.1. </b>BG admin</a></li><li><span class="title-icon "></span><a href="#bg-member"><b>3.2.2. </b>BG member</a></li></ul><li><span class="title-icon "></span><a href="#project-roles-overview"><b>3.3. </b>Project roles overview</a></li><ul><li><span class="title-icon "></span><a href="#project-admin"><b>3.3.1. </b>Project Admin</a></li><li><span class="title-icon "></span><a href="#project-member"><b>3.3.2. </b>Project member</a></li></ul></ul><li><span class="title-icon "></span><a href="#service-group"><b>4. </b>Service Group</a></li></ul></div><a href="#tenant" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p><strong>Organization</strong></p>
+<p>The Organization configures each tenant with a separate organizational structure, including business groups, projects, and more. Tenants are the architectural units in SmartCMP. In a SmartCMP deployment, multiple tenants can be configured. Tenants provide isolation boundaries for resource usage and management configurations. The dedicated configuration in each tenant is listed below:</p>
+<ul>
+<li>Logo and theme color: Different logo and theme color schemes can be customized for each tenant and configured in the management control interface.</li>
+<li>User: Each tenant has independent user management. You can create a local user while users of tenant A can only access tenant A and cannot access other tenants. You can also configure each tenant with a directory service for authentication, like Microsoft Active Directory or another LDAP server. Multiple tenants can use the same directory service, but the same user can belong to only one tenant, and users with the same ID cannot be configured in different tenants.</li>
+<li>Entitlement: Each tenant has an independent entitlement configuration. The permissions configured in tenant A are limited to the scope of tenant A and do not work for other tenants.</li>
+<li>Workflow: Each tenant administrator can configure workflows, such as approval processes, service processes, etc., to be applied within the scope of this tenant.</li>
+<li>Cloud platform management and resource bundle configuration: Each tenant admin or infrastructure admin can connect and manage the cloud platform portals required for the tenant, such as VMware vCenter, AWS/Azure/Alibaba cloud, etc. You can configure and manage different cloud platform portals in different tenants, or you can share the same cloud platform portals by configuring different resource bundles to access different computing resources (for example, different clusters in vCenter) for users in different tenants.</li>
+<li>Service Catalog: Each tenant&apos;s architect can design a service blueprint for the tenant. The administrator publishes the service catalog that the user can self-request according to different departments and environments. Categories and service items in the service catalog remain independent among different tenants.</li>
+</ul>
+<h1 id="tenant"><a name="tenant" class="anchor-navigation-ex-anchor" href="#tenant"><i class="fa fa-link" aria-hidden="true"></i></a>1. Tenant</h1>
+<h2 id="single-tenant-and-multiple-tenants"><a name="single-tenant-and-multiple-tenants" class="anchor-navigation-ex-anchor" href="#single-tenant-and-multiple-tenants"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Single tenant and multiple tenants</h2>
+<h3 id="single-tenant"><a name="single-tenant" class="anchor-navigation-ex-anchor" href="#single-tenant"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. Single tenant</h3>
+<p>In single tenant deployment, all configurations appear in the default tenant. Administrators can manage cloud resources and organizational structures and configure specific service catalogs within tenants.</p>
+<p><img src="../../picture/foundationConcepts/Pic01-SingleTenant.png" alt="&#x5355;&#x79DF;&#x6237;&#x793A;&#x4F8B;"></p>
+<h3 id="multiple-tenants"><a name="multiple-tenants" class="anchor-navigation-ex-anchor" href="#multiple-tenants"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. Multiple tenants</h3>
+<p>In multi-tenant environment, each tenant has a separate configuration that is managed by the administrator. System administrators can configure, view and manage configurations in multiple tenants.</p>
+<p><img src="../../picture/foundationConcepts/Pic02-MultiTenant.png" alt="&#x591A;&#x79DF;&#x6237;&#x793A;&#x4F8B;"></p>
+<h1 id="business-group-and-projects"><a name="business-group-and-projects" class="anchor-navigation-ex-anchor" href="#business-group-and-projects"><i class="fa fa-link" aria-hidden="true"></i></a>2. Business group and projects</h1>
+<p>Within each tenant, different organizational structures may be created including business groups and projects.</p>
+<h2 id="business-group"><a name="business-group" class="anchor-navigation-ex-anchor" href="#business-group"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. Business group</h2>
+<p>A business group is a logical organizational structure within a tenant. User can creates a corresponding business group for a company&apos;s department, organization, or business unit. Tenant administrators can create multi-level business groups, and users associated with business groups can use resources and services in the business group.</p>
+<p>Independent rules, processes, and resources can be configured for each business group:</p>
+<ul>
+<li>Associate one or more resource bundles with each business group</li>
+<li>Associate users with each business group. A user can belong to multiple business groups</li>
+<li>Configure different approval processes, operation permissions, cloud resource usage leases, cloud resource naming specifications, etc.</li>
+</ul>
+<h2 id="project"><a name="project" class="anchor-navigation-ex-anchor" href="#project"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. Project</h2>
+<p>In SmartCMP, cloud resources within a project are visible to all members of the project and are invisible to all members of other projects.</p>
+<p>A project is subordinate to a business group and can contain multiple users. A user can join multiple projects.</p>
+<p><img src="../../picture/foundationConcepts/Pic03-Organization.png" alt="&#x7EC4;&#x7EC7;&#x67B6;&#x6784;&#x793A;&#x4F8B;"></p>
+<h1 id="role"><a name="role" class="anchor-navigation-ex-anchor" href="#role"><i class="fa fa-link" aria-hidden="true"></i></a>3. Role</h1>
+<p>A role consists of a set of permissions that can be associated with a user to determine the functions that the user can manage, configure, and use in SmartCMP. Based on individual responsibilities, each user can be associated with one or more roles, and the permissions will be a superposition of those roles.</p>
+<p>After deployment of SmartCMP, following roles will be provided by default:</p>
+<h2 id="tenant-roles-overview"><a name="tenant-roles-overview" class="anchor-navigation-ex-anchor" href="#tenant-roles-overview"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. Tenant roles overview</h2>
+<p>A tenant-wide role has the corresponding responsibilities of that particular tenant and does not affect other tenants in the system. You can create custom roles as needed to be associated with users.</p>
+<h3 id="tenant-admin"><a name="tenant-admin" class="anchor-navigation-ex-anchor" href="#tenant-admin"><i class="fa fa-link" aria-hidden="true"></i></a>3.1.1. Tenant Admin</h3>
+<p>Usually responsible for the overall tenant structure. Tenant administrators configure SmartCMP based on their tenants&apos; internal organizational needs, responsible for tenant internal process and policy configuration, organizational structure configuration, user and permission configuration, and more.</p>
+<p>Main duty:</p>
+<ul>
+<li>Create and manage users and tenant roles, assign roles and permissions to users and create service teams</li>
+<li>Create and manage business groups and assign business group administrators to each business group</li>
+<li>Create and manage service processes and approval processes</li>
+<li>Perform tenant system configuration, including catalog service information, mail system information, access to dashboards and reports, etc.</li>
+</ul>
+<h3 id="software-architect"><a name="software-architect" class="anchor-navigation-ex-anchor" href="#software-architect"><i class="fa fa-link" aria-hidden="true"></i></a>3.1.2. Software Architect</h3>
+<p>Usually responsible for designing services that companies and organizations need to apply for and use. Services come in a variety of styles, from a single virtual machine to complex applications including network load balancing, web applications, and databases.</p>
+<p>Main duty:</p>
+<ul>
+<li>Create and manage software components</li>
+<li>Create and modify blueprints, model them according to business needs, and define the components included in the blueprint, including infrastructure components and software components </li>
+<li>Publish a blueprint</li>
+<li>Unpublish and delete blueprints that need to be removed</li>
+</ul>
+<h3 id="infrastructure-administrator"><a name="infrastructure-administrator" class="anchor-navigation-ex-anchor" href="#infrastructure-administrator"><i class="fa fa-link" aria-hidden="true"></i></a>3.1.3. Infrastructure administrator</h3>
+<p>The infrastructure administrator connects one or more cloud platforms to each tenant, manages virtual machine templates (that is, operating system images) in the cloud platform, and calculates specifications (that is, instance types). Create a resource pool, specify the infrastructure resources of each cloud platform, and assign them to the business group for use. At the same time, according to the blueprint designed by the software architect, infra admin can make configurations for different business groups or environment requirements and publish to service catalog.</p>
+<p>Main duty:</p>
+<ul>
+<li>Connect cloud platform</li>
+<li>Create and distribute resource bundles and manage cloud platform and inventory cloud resources</li>
+<li>Configure and manage VM templates (that is, operating system images) of the cloud platform and computing specifications (that is, instance types).</li>
+<li>Manage IP address pool</li>
+<li>Configure and publish services based on blueprints released by software architects</li>
+<li>Manage service catalog</li>
+<li>Analyze resource utilization and recycle expired resources</li>
+</ul>
+<h2 id="business-group-roles-overview"><a name="business-group-roles-overview" class="anchor-navigation-ex-anchor" href="#business-group-roles-overview"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. Business group roles overview</h2>
+<p>A role on a business group scope has the corresponding responsibilities of that particular business group and does not affect other business groups.</p>
+<h3 id="bg-admin"><a name="bg-admin" class="anchor-navigation-ex-anchor" href="#bg-admin"><i class="fa fa-link" aria-hidden="true"></i></a>3.2.1. BG admin</h3>
+<p>Manage one or more business groups, usually department managers.</p>
+<p>Main duty:</p>
+<ul>
+<li>Add users to business group and associate roles</li>
+<li>Configure policies such as lease duration and naming specification for cloud resources</li>
+<li>Configure business group cloud resource operation entitlement and service deployment operation entitlement, specify the operations that the user can perform (such as powering on and off, adding disks, adjusting configuration, etc.) and the required approval process</li>
+<li>Create a project and assign a project administrator</li>
+<li>Monitor resource utilization in the business group. If resources are scarce, you can apply for resource expansion</li>
+</ul>
+<h3 id="bg-member"><a name="bg-member" class="anchor-navigation-ex-anchor" href="#bg-member"><i class="fa fa-link" aria-hidden="true"></i></a>3.2.2. BG member</h3>
+<p>All users in a business group can request services published to the business group (including services shared to all business groups). Users can request services from the service catalog and manage the resources they own.</p>
+<p>Main duty:</p>
+<ul>
+<li>Self-service request</li>
+<li>Check configuration and monitoring information of owned cloud resources to perform self-service operation (the operation entitlement is configured by business group).</li>
+<li>Self-service alert setting for the cloud resources it owns.</li>
+</ul>
+<h2 id="project-roles-overview"><a name="project-roles-overview" class="anchor-navigation-ex-anchor" href="#project-roles-overview"><i class="fa fa-link" aria-hidden="true"></i></a>3.3. Project roles overview</h2>
+<p>A role on a project scope has the corresponding responsibility for that particular project and does not affect other projects.</p>
+<h3 id="project-admin"><a name="project-admin" class="anchor-navigation-ex-anchor" href="#project-admin"><i class="fa fa-link" aria-hidden="true"></i></a>3.3.1. Project Admin</h3>
+<p>Manage one or more projects, usually project managers.</p>
+<p>Main duty:</p>
+<ul>
+<li>Add users to the project and associate roles</li>
+<li>View cloud resources owned by the project</li>
+</ul>
+<h3 id="project-member"><a name="project-member" class="anchor-navigation-ex-anchor" href="#project-member"><i class="fa fa-link" aria-hidden="true"></i></a>3.3.2. Project member</h3>
+<p>Project member is also a member of the business group to which the project belongs, so it can request publishing services to the business group and can view resources and perform operations. At the same time,all members of the same project can view the resources in this project.</p>
+<h1 id="service-group"><a name="service-group" class="anchor-navigation-ex-anchor" href="#service-group"><i class="fa fa-link" aria-hidden="true"></i></a>4. Service Group</h1>
+<p>Service group is a collection of service personnel who process request services during the request service management process. Tenant administrators can create one or more service groups and assign members to each service group.</p>
+<p>Main duty:</p>
+<ul>
+<li>After the user applies for the manual work order service that needs manual intervention through the service catalog, according to the pre-configured service process, the corresponding service group will receive the work order for processing.</li>
+<li>After receiving the work order, the personnel in the service group can transfer, or perform offline processing, update the work order status after completing the task, and return the work order to the request user for confirmation and closure.</li>
+</ul>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; 2013-2019 CloudChef. All Rights Reserved. <a href="http://www.cloudchef.io/en/" target="_blank">Shanghai CloudChef Information Technology Co., Ltd.</a>  </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> update time&#xFF1A; 2019-11-01 16:10:03 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../01UserInterface/" class="navigation navigation-prev " aria-label="Previous page: UserInterface">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../03Infrastructure/" class="navigation navigation-next " aria-label="Next page: Infrastructure">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Organization","level":"1.3","depth":1,"next":{"title":"Infrastructure","level":"1.4","depth":1,"path":"foundationConcepts/03Infrastructure/README.md","ref":"foundationConcepts/03Infrastructure/README.md","articles":[]},"previous":{"title":"UserInterface","level":"1.2","depth":1,"path":"foundationConcepts/01UserInterface/README.md","ref":"foundationConcepts/01UserInterface/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","-lunr","-search","search-plus","expandable-chapters-small","insert-logo","simple-page-toc","favicon","anchor-navigation-ex","page-footer-ex","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"mode":"float","livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"page-footer-ex":{"copyright":"Copyright © 2013-2019 CloudChef. All Rights Reserved. [Shanghai CloudChef Information Technology Co., Ltd.](http://www.cloudchef.io/en/) ","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"update time："},"showLevel":true,"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"sepia","family":"serif","size":1},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{},"printLog":false,"expandable-chapters-small":{},"multipleH1":true,"associatedWithSummary":true,"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none;","url":"https://cloudchef.github.io/doc-en/picture/logo.png"},"search-plus":{}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CloudChef Document","gitbook":"*","description":"Provide you with a rich and detailed guide and product documentation for the SmartCMP Cloud Management Platform.","theme-default":{"showLevel":false},"extension":null},"file":{"path":"foundationConcepts/02Organization/README.md","mtime":"2019-11-01T08:10:03.320Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-04T08:38:14.085Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,468 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Infrastructure · CloudChef Document</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../04ServiceCatalog/" />
+    
+    
+    <link rel="prev" href="../02Organization/" />
+    
+
+    
+    
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Basic Concept</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../01UserInterface/">
+            
+                <a href="../01UserInterface/">
+            
+                    
+                    UserInterface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../02Organization/">
+            
+                <a href="../02Organization/">
+            
+                    
+                    Organization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Infrastructure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../04ServiceCatalog/">
+            
+                <a href="../04ServiceCatalog/">
+            
+                    
+                    ServiceCatalog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../05CICD/">
+            
+                <a href="../05CICD/">
+            
+                    
+                    CICD
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Infrastructure</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#cloud-platform"><b>1. </b>Cloud platform</a></li><li><span class="title-icon "></span><a href="#resource-bundle"><b>2. </b>Resource Bundle</a></li><li><span class="title-icon "></span><a href="#virtual-machine-template"><b>3. </b>Virtual Machine Template</a></li><li><span class="title-icon "></span><a href="#computing-specification"><b>4. </b>Computing Specification</a></li><li><span class="title-icon "></span><a href="#ip-address-management"><b>5. </b>IP Address Management</a></li><li><span class="title-icon "></span><a href="#key-pair"><b>6. </b>Key Pair</a></li></ul></div><a href="#cloud-platform" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p><strong>Infrastructure</strong></p>
+<p>With infrastructure, you can manage all the resources of a multi-cloud heterogeneous environment, including private clouds, public clouds, x86 bare metal servers, network virtualization (SDN), and storage virtualization (SDS). After connecting the cloud platform, you can distribute resources such as calculation, storage, and network through resource bundles to be assigned to different service groups. At the same time, you can create virtual machine templates and computing specifications (that is, instance types) in SmartCMP, and encapsulate and abstract virtual machine templates (or operating system images) and computing specifications (that is, instance types) of each cloud platform for unified management and automated calls.</p>
+<p><img src="../../picture/foundationConcepts/Pic04-Infrastructure.png" alt="&#x57FA;&#x7840;&#x67B6;&#x6784;&#x914D;&#x7F6E;&#x793A;&#x4F8B;"></p>
+<h1 id="cloud-platform"><a name="cloud-platform" class="anchor-navigation-ex-anchor" href="#cloud-platform"><i class="fa fa-link" aria-hidden="true"></i></a>1. Cloud platform</h1>
+<p>You can enter access information for each cloud platform in SmartCMP to connect and manage. For example, virtualization management controller address, username and password, or public cloud access key. The following table lists the information that needs to be entered for each cloud platform portal:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Cloud Platform Type</th>
+<th style="text-align:center">Connect Method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">vSphere</td>
+<td style="text-align:center">vCenter Server</td>
+</tr>
+<tr>
+<td style="text-align:center">OpenStack</td>
+<td style="text-align:center">OpenStack Management Controller</td>
+</tr>
+<tr>
+<td style="text-align:center">PowerVC</td>
+<td style="text-align:center">PowerVC Management Controller</td>
+</tr>
+<tr>
+<td style="text-align:center">Hyper-V</td>
+<td style="text-align:center">Microsoft System Center Virtual Machine Manager(SCVMM) Server</td>
+</tr>
+<tr>
+<td style="text-align:center">Physical Machine</td>
+<td style="text-align:center">SmartCMP physical server management node information</td>
+</tr>
+<tr>
+<td style="text-align:center">Aliyun</td>
+<td style="text-align:center">Aliyun Service Account AccessKey</td>
+</tr>
+<tr>
+<td style="text-align:center">AWS</td>
+<td style="text-align:center">AWS Service Account AccessKey</td>
+</tr>
+<tr>
+<td style="text-align:center">Microsoft Azure</td>
+<td style="text-align:center">Azure API Access Credentials</td>
+</tr>
+<tr>
+<td style="text-align:center">Tencent Cloud</td>
+<td style="text-align:center">Tencent Cloud Service Account AccessKey</td>
+</tr>
+<tr>
+<td style="text-align:center">QingCloud</td>
+<td style="text-align:center">QingCloud Service Account AccessKey</td>
+</tr>
+<tr>
+<td style="text-align:center">VMware NSX</td>
+<td style="text-align:center">NSX Management Controller </td>
+</tr>
+<tr>
+<td style="text-align:center">Cisco ACI</td>
+<td style="text-align:center">ACI Management Controller </td>
+</tr>
+<tr>
+<td style="text-align:center">F5</td>
+<td style="text-align:center">F5 Management Controller    </td>
+</tr>
+</tbody>
+</table>
+<h1 id="resource-bundle"><a name="resource-bundle" class="anchor-navigation-ex-anchor" href="#resource-bundle"><i class="fa fa-link" aria-hidden="true"></i></a>2. Resource Bundle</h1>
+<p>In a resource bundle, you can specify a set of resource objects in the cloud platform as resource portals for deploying virtual machines or other cloud resources. The resource object can be a cluster of computers in a virtualization platform or an area of a public cloud.</p>
+<p>Resources, such as computing, storage, and network, are classified and specified through resource bundles,and are distributed to different business groups for consumption and use by members in the business group. For example, you can assign different datastores and virtual switches in a vSphere cluster to different resource bundles, allowing different departments to deploy resources using different storage and networks. Or specify public-cloud-specific zones, availability zones, and VPC to enable the public cloud services deployed through the resource bundle to uniformly use the resources of the available area and isolate network from other services through VPC.</p>
+<p>The following table lists the resource entrance configurations for each cloud platform resource bundle:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Cloud Platform Type</th>
+<th style="text-align:center">Resource Bundle Entrance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">vSphere</td>
+<td style="text-align:center">vSphere Cluster</td>
+</tr>
+<tr>
+<td style="text-align:center">OpenStack</td>
+<td style="text-align:center">OpenStack Availability Zone</td>
+</tr>
+<tr>
+<td style="text-align:center">PowerVC</td>
+<td style="text-align:center">PowerVC Availability Zone</td>
+</tr>
+<tr>
+<td style="text-align:center">Hyper-V</td>
+<td style="text-align:center">Hyper-V Cluster</td>
+</tr>
+<tr>
+<td style="text-align:center">Aliyun</td>
+<td style="text-align:center">Aliyun Zone, Availability Zone, and VPC</td>
+</tr>
+<tr>
+<td style="text-align:center">AWS</td>
+<td style="text-align:center">AWS Zone, Availability Zone, and VPC</td>
+</tr>
+<tr>
+<td style="text-align:center">Microsoft Azure</td>
+<td style="text-align:center">Azure Subscription ID, zone, and resource group</td>
+</tr>
+<tr>
+<td style="text-align:center">QingCloud</td>
+<td style="text-align:center">QingCloud Zone, Availability Zone, and VPC</td>
+</tr>
+</tbody>
+</table>
+<p>One or more resource bundles (including multiple resource bundles from the same cloud platform) can be associated with each business group. At the same time, each resource bundle can be assigned to one business group or shared to multiple or all service groups.</p>
+<p>You can:</p>
+<ul>
+<li>Specify the computing resources of the virtualization platform, or the area of the public cloud, the availability zone, etc.</li>
+<li>Set the available resource quota, including the number of CPUs, the amount of memory, the number of virtual machines that can be deployed, etc.</li>
+<li>Specify specific storage resources and network resources</li>
+<li>Manually import the inventory resources in the cloud platform or set a timing policy to automatically synchronize the inventory resources in the cloud platform.</li>
+</ul>
+<p>For example, you can create a vSphere resource bundle:</p>
+<ul>
+<li>Specify a vSphere cluster in the managed vCenter to provide computing resources;</li>
+<li>Set the resource quota of the resource bundle: the number of CPUs, the amount of memory, the number of virtual machines that can be deployed, the number of snapshots allowed, and so on;</li>
+<li>Specify the data stores that can be used and set the storage space available for each data store;</li>
+<li>Specify the virtual switch that can be used and set the IP address allocation method.</li>
+</ul>
+<h1 id="virtual-machine-template"><a name="virtual-machine-template" class="anchor-navigation-ex-anchor" href="#virtual-machine-template"><i class="fa fa-link" aria-hidden="true"></i></a>3. Virtual Machine Template</h1>
+<p>You can define one or more operating systems (such as CentOS) in SmartCMP. Operating system is a logical concept. Each operating system can be associated with templates or images from different cloud platforms (for example, a CentOS virtual machine template in vCenter, or a CentOS image in Aliyun). Operating system and virtual machine templates will be used when the service is configured.</p>
+<h1 id="computing-specification"><a name="computing-specification" class="anchor-navigation-ex-anchor" href="#computing-specification"><i class="fa fa-link" aria-hidden="true"></i></a>4. Computing Specification</h1>
+<p>Computing specification defines the configuration specifications of the computer CPU and memory. On SmartCMP, like the operating system, computing specification is a logical concept, and you can associate specifications or instance types in different cloud platforms for each computing specification (such as specifications in the OpenStack platform, or instance types in the AWS public cloud). Wait). Computing specifications and cloud platform specifications will be used during service configuration.</p>
+<p>Through the abstraction of the operating system and computing specifications, you can create different operating systems as needed to associate virtual machine templates that conform to enterprise security specifications. At the same time, create different computing specifications and specify specific instance types (such as reserved instance types that have been purchased). You can specify the operating system and virtual machine templates when the service is being configured and publish standardized services for users to apply.</p>
+<h1 id="ip-address-management"><a name="ip-address-management" class="anchor-navigation-ex-anchor" href="#ip-address-management"><i class="fa fa-link" aria-hidden="true"></i></a>5. IP Address Management</h1>
+<p>You can create and manage IP pools to automate the allocation of IP addresses when deploying cloud resources. IP pools can support multi-cloud heterogeneous environments, for example creating an IP pool and assigning it to vSphere and OpenStack platforms at the same time.</p>
+<p>With IP address management, you can view the utilization of IP addresses, history logs, and manually occupy and release IP addresses.</p>
+<h1 id="key-pair"><a name="key-pair" class="anchor-navigation-ex-anchor" href="#key-pair"><i class="fa fa-link" aria-hidden="true"></i></a>6. Key Pair</h1>
+<p>Key pairs are login credentials required by users to access virtual machines of different cloud platforms. Infrastructure administrators and tenant administrators can manage key pairs, including creating, importing, downloading, and deleting.</p>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; 2013-2019 CloudChef. All Rights Reserved. <a href="http://www.cloudchef.io/en/" target="_blank">Shanghai CloudChef Information Technology Co., Ltd.</a>  </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> update time&#xFF1A; 2019-11-01 16:10:04 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../02Organization/" class="navigation navigation-prev " aria-label="Previous page: Organization">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../04ServiceCatalog/" class="navigation navigation-next " aria-label="Next page: ServiceCatalog">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Infrastructure","level":"1.4","depth":1,"next":{"title":"ServiceCatalog","level":"1.5","depth":1,"path":"foundationConcepts/04ServiceCatalog/README.md","ref":"foundationConcepts/04ServiceCatalog/README.md","articles":[]},"previous":{"title":"Organization","level":"1.3","depth":1,"path":"foundationConcepts/02Organization/README.md","ref":"foundationConcepts/02Organization/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","-lunr","-search","search-plus","expandable-chapters-small","insert-logo","simple-page-toc","favicon","anchor-navigation-ex","page-footer-ex","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"mode":"float","livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"page-footer-ex":{"copyright":"Copyright © 2013-2019 CloudChef. All Rights Reserved. [Shanghai CloudChef Information Technology Co., Ltd.](http://www.cloudchef.io/en/) ","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"update time："},"showLevel":true,"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"sepia","family":"serif","size":1},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{},"printLog":false,"expandable-chapters-small":{},"multipleH1":true,"associatedWithSummary":true,"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none;","url":"https://cloudchef.github.io/doc-en/picture/logo.png"},"search-plus":{}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CloudChef Document","gitbook":"*","description":"Provide you with a rich and detailed guide and product documentation for the SmartCMP Cloud Management Platform.","theme-default":{"showLevel":false},"extension":null},"file":{"path":"foundationConcepts/03Infrastructure/README.md","mtime":"2019-11-01T08:10:04.207Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-04T08:38:14.085Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

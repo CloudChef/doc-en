@@ -1,0 +1,403 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ServiceCatalog · CloudChef Document</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../05CICD/" />
+    
+    
+    <link rel="prev" href="../03Infrastructure/" />
+    
+
+    
+    
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Basic Concept</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../01UserInterface/">
+            
+                <a href="../01UserInterface/">
+            
+                    
+                    UserInterface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../02Organization/">
+            
+                <a href="../02Organization/">
+            
+                    
+                    Organization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../03Infrastructure/">
+            
+                <a href="../03Infrastructure/">
+            
+                    
+                    Infrastructure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    ServiceCatalog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../05CICD/">
+            
+                <a href="../05CICD/">
+            
+                    
+                    CICD
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >ServiceCatalog</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#component"><b>1. </b>Component</a></li><li><span class="title-icon "></span><a href="#blueprint"><b>2. </b>Blueprint</a></li><li><span class="title-icon "></span><a href="#workflow"><b>3. </b>Workflow</a></li><li><span class="title-icon "></span><a href="#form"><b>4. </b>Form</a></li><li><span class="title-icon "></span><a href="#catalog-group"><b>5. </b>Catalog Group</a></li><li><span class="title-icon "></span><a href="#service-publishing"><b>6. </b>Service Publishing</a></li><ul><li><span class="title-icon "></span><a href="#lease-period"><b>6.1. </b>Lease Period</a></li><li><span class="title-icon "></span><a href="#approval-process"><b>6.2. </b>Approval Process</a></li></ul><li><span class="title-icon "></span><a href="#service-deployment"><b>7. </b>Service Deployment</a></li><ul><li><span class="title-icon "></span><a href="#service-deployment-and-naming-specification-for-cloud-resources"><b>7.1. </b>Service Deployment and Naming Specification for Cloud Resources</a></li><li><span class="title-icon "></span><a href="#service-deployment-and-operation-entitlement-for-cloud-resources"><b>7.2. </b>Service Deployment and Operation Entitlement for Cloud Resources</a></li></ul></ul></div><a href="#component" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p><strong>Service Model</strong></p>
+<p>In SmartCMP, there are two types of services:</p>
+<ul>
+<li>Cloud Resource Blueprint Service: Refers to the request and automatic deployment of each cloud platform resource. These services can be infrastructure services (such as virtual machines, firewalls, DNS, etc.), application services (such as databases, or integrated applications including network load balancing, Web components, and databases), etc.</li>
+<li>Manual Request Service: Services that are not standardized and require manual intervention and support, including service requests, event handling, and so on. For example, if the user forgets the password which needs to be reset or submits a request to open an email or account or encounters an IT service problem which needs to be resolved (the server, printer or network cannot be accessed, etc.). The user can initiate a work order request service through the service catalog, and the service team will receive the request and process.</li>
+</ul>
+<p>The following diagram depicts the logical connections between components, blueprints, services, and deployments. Components include software components and infrastructure components. Software architect builds the topology map of the application and configures resources and parameters for the service, publishing the service card to the service catalog. Members of the business group apply for self-service in the service catalog according to actual needs, and the services are automatically combined according to policies and specifications to complete automated deployment and delivery.</p>
+<p><img src="../../picture/foundationConcepts/Pic05-CloudResourceModel.png" alt="&#x4E91;&#x670D;&#x52A1;&#x6A21;&#x578B;&#x793A;&#x4F8B;"></p>
+<h1 id="component"><a name="component" class="anchor-navigation-ex-anchor" href="#component"><i class="fa fa-link" aria-hidden="true"></i></a>1. Component</h1>
+<p>A component is the basic unit that makes up a blueprint. The components in SmartCMP consist of two types:</p>
+<ul>
+<li>Infrastructure components: including computing components (e.g., virtual machines, containers, etc.), network components (e.g., load balancing, security groups, firewalls, etc.), storage components (e.g., disks, object storage, etc.). These components are built into SmartCMP and can be selected during blueprint design.</li>
+<li>Software components: for the installation of application software, including middleware, relational databases, non-relational databases, and so on. You can standardize configuration properties and use scripts to specify how to install, configure, uninstall, or update components during software deployment (you can also customize the other operations you need). Software architects can create custom components, update existing components, or delete components that have been removed through the software component management interface. Software components can be used with infrastructure components when designing blueprints.</li>
+</ul>
+<h1 id="blueprint"><a name="blueprint" class="anchor-navigation-ex-anchor" href="#blueprint"><i class="fa fa-link" aria-hidden="true"></i></a>2. Blueprint</h1>
+<p>A blueprint is a complete specification of the overall application, including computing, storage, networking, software, etc., used to determine attributes and dependencies, workflows, and execution strategies for various resources. You can create a standardized service framework by designing blueprint on visualized canvas and combining one or more components. Once the blueprint is published, it can be used to create a service.</p>
+<p>Blueprints can take many forms, for example, a blueprint may contain:</p>
+<ul>
+<li>A network component and a virtual machine component</li>
+<li>A firewall component or a public cloud relational database component</li>
+<li>Multi-level application architecture, such as: network load balancing, web applications and databases</li>
+<li>A hybrid orchestration of multiple cloud platform components, such as a web application deployed in Aliyun while a database in a vSphere private cloud, or a web application in a Kubernetes container while a database in an OpenStack private cloud.</li>
+</ul>
+<h1 id="workflow"><a name="workflow" class="anchor-navigation-ex-anchor" href="#workflow"><i class="fa fa-link" aria-hidden="true"></i></a>3. Workflow</h1>
+<p>Workflow defines the sequence and strategy of activities or tasks performed at each step in the automated process.</p>
+<p>Workflows in SmartCMP are divided into the following three types. Each type includes a built-in process that can be used directly. These built-in processes cannot be modified or deleted. You can also customize the workflows you need through a visual process designer.</p>
+<ul>
+<li>Cloud Resource Blueprint Service: Defines the process of automated deployment of cloud resources, including built-in workflows for standard cloud service deployment.</li>
+<li>Manual Request Service: Defines the task and flow mode of each step of the request service, including built-in workflows such as standard manual requests and standard event management.</li>
+<li>Approval process: It is used to control whether a user should obtain approval of someone in the organization when applying for service or performing operations on a cloud resource.</li>
+</ul>
+<p>Please remind that in those versions before 5.1 or those upgraded from the old version, the approval process configuration menu is provided for compatibility with the approval process in the old version. However, this feature will be turned off in the future, and it is recommended that you use workflow to create and manage the approval process.</p>
+<h1 id="form"><a name="form" class="anchor-navigation-ex-anchor" href="#form"><i class="fa fa-link" aria-hidden="true"></i></a>4. Form</h1>
+<p>When a user requests a service in the service catalog, each service you create and publish displays a form. When creating or configuring each service, you can use the default form. If you need to modify or add additional field information for users to fill in at the time of request, you can customize the form through the form designer.</p>
+<h1 id="catalog-group"><a name="catalog-group" class="anchor-navigation-ex-anchor" href="#catalog-group"><i class="fa fa-link" aria-hidden="true"></i></a>5. Catalog Group</h1>
+<p>Catalog groups are used to organize different services into related types, making it easier for users to browse the services they need. For example: infrastructure services, database services, manual request services, and more. You can create new groups as needed to categorize the services you need to publish.</p>
+<h1 id="service-publishing"><a name="service-publishing" class="anchor-navigation-ex-anchor" href="#service-publishing"><i class="fa fa-link" aria-hidden="true"></i></a>6. Service Publishing</h1>
+<p>Tenant administrators or infrastructure administrators can deploy blueprints and workflows that have been released, according to different organizational or departmental requirements, and publish them as services in the service catalog. A service can be published to a business group so that only members of the business group can apply while it can also be posted to all business groups and shared with all members for request.</p>
+<p>In the process of service configuration:</p>
+<ul>
+<li>For cloud resource deployment services, you can specify a complete specification of the deployment, such as virtual machine configuration (required virtual machine template, computing size, disk configuration, etc.), lease, operation entitlement, approval process, service workflow, customization forms, etc.</li>
+<li>For request services, you can specify the service team, approval process, service workflow, custom form, and more for each step of the task.</li>
+</ul>
+<h2 id="lease-period"><a name="lease-period" class="anchor-navigation-ex-anchor" href="#lease-period"><i class="fa fa-link" aria-hidden="true"></i></a>6.1. Lease Period</h2>
+<p>Lease period includes the lease time, retention time and recycle bin recovery time:</p>
+<ul>
+<li>When the lease time expires, all computing resources in the service deployment will be shut down;</li>
+<li>When the retention time expires, the service deployment will be placed in the recycle bin;</li>
+<li>In the Recycle Bin, you can restore or manually delete them (the resources will be completely released from the cloud platform). If you do nothing, the resources will be automatically deleted after the reclaim time expires (these resources will be completely released from the cloud platform).</li>
+</ul>
+<h2 id="approval-process"><a name="approval-process" class="anchor-navigation-ex-anchor" href="#approval-process"><i class="fa fa-link" aria-hidden="true"></i></a>6.2. Approval Process</h2>
+<p>Approval process can be set up separately in business group and service configuration:</p>
+<ul>
+<li>Approval process configured by the business group will take effect for all services in the business group;</li>
+<li>If a service is configured with an approval process separately, the process will override those in the business group. If no process is configured, the approval process for the business group configuration will be used.</li>
+</ul>
+<h1 id="service-deployment"><a name="service-deployment" class="anchor-navigation-ex-anchor" href="#service-deployment"><i class="fa fa-link" aria-hidden="true"></i></a>7. Service Deployment</h1>
+<p>When user request the cloud resource service, after approval (if the approval process is configured), SmartCMP will be deployed according to the policy and specification of the service configuration, and then delivered to the user for use.</p>
+<p>Service deployment refers to all cloud resources included in the service requested by the user, such as a virtual machine, a database, or a multi-tiered application environment. Users can use all the resources deployed by the service during the configured service lease period and can self-service operations or changes according to the operation entitlement configured by the administrator.</p>
+<h2 id="service-deployment-and-naming-specification-for-cloud-resources"><a name="service-deployment-and-naming-specification-for-cloud-resources" class="anchor-navigation-ex-anchor" href="#service-deployment-and-naming-specification-for-cloud-resources"><i class="fa fa-link" aria-hidden="true"></i></a>7.1. Service Deployment and Naming Specification for Cloud Resources</h2>
+<p>You can configure naming specifications for each business group to standardize the service deployment and the names of the cloud resources it contains, including the service deployment name, virtual machine display name, and the Windows or Linux operating system hostname. To ensure the uniqueness of the naming, you can add a naming suffix to it.</p>
+<p>The naming suffix can be a sequence of numbers or a random string of custom length. You can specify an initialization sequence number for the sequence of numbers. For example, you can create a naming suffix with a length of 3 and an initialization sequence number of 1. If the specified business group name plus the suffix is the naming specification for the virtual machine name, then names of virtual machines deployed in the Dev business group will be Dev001, Dev002, and so on.</p>
+<h2 id="service-deployment-and-operation-entitlement-for-cloud-resources"><a name="service-deployment-and-operation-entitlement-for-cloud-resources" class="anchor-navigation-ex-anchor" href="#service-deployment-and-operation-entitlement-for-cloud-resources"><i class="fa fa-link" aria-hidden="true"></i></a>7.2. Service Deployment and Operation Entitlement for Cloud Resources</h2>
+<p>Operation entitlement refers to a change or operation that is authorized to be performed by a user for service deployment or cloud resources. You can disable or enable certain actions and set up an approval process for enabled actions. There are two types of operation entitlements:</p>
+<ul>
+<li>Service deployment operations are for service deployment level operations, including extending lease, changing business group, project, owner, etc. to which the service deployment belongs;</li>
+<li>Cloud resource operations are for virtual machines or other cloud resources, including powering on/off, remote connections, disk additions, migrations, and more.</li>
+</ul>
+<p>The operation entitlement can be set separately in the business group and service configuration:</p>
+<ul>
+<li>The operation entitlement configured for each business group will be valid for all service deployments and cloud resources of the business group;</li>
+<li>Each service inherits the operation entitlement of the business group by default. You can also configure an operation entitlement for the service separately, overriding those in the business group.</li>
+</ul>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; 2013-2019 CloudChef. All Rights Reserved. <a href="http://www.cloudchef.io/en/" target="_blank">Shanghai CloudChef Information Technology Co., Ltd.</a>  </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> update time&#xFF1A; 2019-11-01 16:10:09 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../03Infrastructure/" class="navigation navigation-prev " aria-label="Previous page: Infrastructure">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../05CICD/" class="navigation navigation-next " aria-label="Next page: CICD">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ServiceCatalog","level":"1.5","depth":1,"next":{"title":"CICD","level":"1.6","depth":1,"path":"foundationConcepts/05CICD/README.md","ref":"foundationConcepts/05CICD/README.md","articles":[]},"previous":{"title":"Infrastructure","level":"1.4","depth":1,"path":"foundationConcepts/03Infrastructure/README.md","ref":"foundationConcepts/03Infrastructure/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","-lunr","-search","search-plus","expandable-chapters-small","insert-logo","simple-page-toc","favicon","anchor-navigation-ex","page-footer-ex","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"mode":"float","livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"page-footer-ex":{"copyright":"Copyright © 2013-2019 CloudChef. All Rights Reserved. [Shanghai CloudChef Information Technology Co., Ltd.](http://www.cloudchef.io/en/) ","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"update time："},"showLevel":true,"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"sepia","family":"serif","size":1},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{},"printLog":false,"expandable-chapters-small":{},"multipleH1":true,"associatedWithSummary":true,"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none;","url":"https://cloudchef.github.io/doc-en/picture/logo.png"},"search-plus":{}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CloudChef Document","gitbook":"*","description":"Provide you with a rich and detailed guide and product documentation for the SmartCMP Cloud Management Platform.","theme-default":{"showLevel":false},"extension":null},"file":{"path":"foundationConcepts/04ServiceCatalog/README.md","mtime":"2019-11-01T08:10:09.460Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-04T08:38:14.085Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
