@@ -1,0 +1,1605 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>CloudResourceGuidelines · CloudChef Document</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../05CICD/" />
+    
+    
+    <link rel="prev" href="../02Homepage/" />
+    
+
+    
+    
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Documents</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Basic Concept</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../foundationConcepts/01UserInterface/">
+            
+                <a href="../../foundationConcepts/01UserInterface/">
+            
+                    
+                    UserInterface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../foundationConcepts/02Organization/">
+            
+                <a href="../../foundationConcepts/02Organization/">
+            
+                    
+                    Organization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../foundationConcepts/03Infrastructure/">
+            
+                <a href="../../foundationConcepts/03Infrastructure/">
+            
+                    
+                    Infrastructure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../../foundationConcepts/04ServiceCatalog/">
+            
+                <a href="../../foundationConcepts/04ServiceCatalog/">
+            
+                    
+                    ServiceCatalog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../../foundationConcepts/05CICD/">
+            
+                <a href="../../foundationConcepts/05CICD/">
+            
+                    
+                    CICD
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Administrator Guidelines</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../AdminDoc/01QuickStartGuide/">
+            
+                <a href="../../AdminDoc/01QuickStartGuide/">
+            
+                    
+                    QuickStartGuide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../AdminDoc/02Homepage/">
+            
+                <a href="../../AdminDoc/02Homepage/">
+            
+                    
+                    Homepage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../AdminDoc/03Infrastructure/">
+            
+                <a href="../../AdminDoc/03Infrastructure/">
+            
+                    
+                    Infrastructure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="../../AdminDoc/03Infrastructure/CloudPlatformManagement.html">
+            
+                <a href="../../AdminDoc/03Infrastructure/CloudPlatformManagement.html">
+            
+                    
+                    CloudPlatformManagement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2" data-path="../../AdminDoc/03Infrastructure/ResourceBundleManagement.html">
+            
+                <a href="../../AdminDoc/03Infrastructure/ResourceBundleManagement.html">
+            
+                    
+                    ResourceBundleManagement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3" data-path="../../AdminDoc/03Infrastructure/VMTemplates.html">
+            
+                <a href="../../AdminDoc/03Infrastructure/VMTemplates.html">
+            
+                    
+                    VMTemplates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.4" data-path="../../AdminDoc/03Infrastructure/ComputingSpecifications.html">
+            
+                <a href="../../AdminDoc/03Infrastructure/ComputingSpecifications.html">
+            
+                    
+                    ComputingSpecifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.5" data-path="../../AdminDoc/03Infrastructure/IPAM.html">
+            
+                <a href="../../AdminDoc/03Infrastructure/IPAM.html">
+            
+                    
+                    IPAM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.6" data-path="../../AdminDoc/03Infrastructure/KeyPair.html">
+            
+                <a href="../../AdminDoc/03Infrastructure/KeyPair.html">
+            
+                    
+                    KeyPair
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.7" data-path="../../AdminDoc/03Infrastructure/NamingSuffix.html">
+            
+                <a href="../../AdminDoc/03Infrastructure/NamingSuffix.html">
+            
+                    
+                    NamingSuffix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.8" data-path="../../AdminDoc/03Infrastructure/PhysicalHostManagement.html">
+            
+                <a href="../../AdminDoc/03Infrastructure/PhysicalHostManagement.html">
+            
+                    
+                    PhysicalHostManagement
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../../AdminDoc/04Organization/">
+            
+                <a href="../../AdminDoc/04Organization/">
+            
+                    
+                    Organization
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="../../AdminDoc/04Organization/BusinessGroup.html">
+            
+                <a href="../../AdminDoc/04Organization/BusinessGroup.html">
+            
+                    
+                    BusinessGroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.2" data-path="../../AdminDoc/04Organization/Project.html">
+            
+                <a href="../../AdminDoc/04Organization/Project.html">
+            
+                    
+                    Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.3" data-path="../../AdminDoc/04Organization/Users.html">
+            
+                <a href="../../AdminDoc/04Organization/Users.html">
+            
+                    
+                    Users
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.4" data-path="../../AdminDoc/04Organization/Roles.html">
+            
+                <a href="../../AdminDoc/04Organization/Roles.html">
+            
+                    
+                    Roles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.5" data-path="../../AdminDoc/04Organization/ServiceGroup.html">
+            
+                <a href="../../AdminDoc/04Organization/ServiceGroup.html">
+            
+                    
+                    ServiceGroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../../AdminDoc/05ServiceDesign/">
+            
+                <a href="../../AdminDoc/05ServiceDesign/">
+            
+                    
+                    ServiceDesign
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.1" data-path="../../AdminDoc/05ServiceDesign/SoftwareComponents.html">
+            
+                <a href="../../AdminDoc/05ServiceDesign/SoftwareComponents.html">
+            
+                    
+                    SoftwareComponents
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.2" data-path="../../AdminDoc/05ServiceDesign/BlueprintDesign.html">
+            
+                <a href="../../AdminDoc/05ServiceDesign/BlueprintDesign.html">
+            
+                    
+                    BlueprintDesign
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.3" data-path="../../AdminDoc/05ServiceDesign/Workflow.html">
+            
+                <a href="../../AdminDoc/05ServiceDesign/Workflow.html">
+            
+                    
+                    Workflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.4" data-path="../../AdminDoc/05ServiceDesign/Form.html">
+            
+                <a href="../../AdminDoc/05ServiceDesign/Form.html">
+            
+                    
+                    Form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.5" data-path="../../AdminDoc/05ServiceDesign/ServiceGrouping.html">
+            
+                <a href="../../AdminDoc/05ServiceDesign/ServiceGrouping.html">
+            
+                    
+                    ServiceGrouping
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.6" data-path="../../AdminDoc/05ServiceDesign/ServiceConfiguration.html">
+            
+                <a href="../../AdminDoc/05ServiceDesign/ServiceConfiguration.html">
+            
+                    
+                    ServiceConfiguration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.7" data-path="../../AdminDoc/05ServiceDesign/ScriptLibrary.html">
+            
+                <a href="../../AdminDoc/05ServiceDesign/ScriptLibrary.html">
+            
+                    
+                    ScriptLibrary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../../AdminDoc/06CloudServiceMgmt/">
+            
+                <a href="../../AdminDoc/06CloudServiceMgmt/">
+            
+                    
+                    CloudServiceMgmt
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.6.1" data-path="../../AdminDoc/06CloudServiceMgmt/ServiceCatalog.html">
+            
+                <a href="../../AdminDoc/06CloudServiceMgmt/ServiceCatalog.html">
+            
+                    
+                    ServiceCatalog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.2" data-path="../../AdminDoc/06CloudServiceMgmt/ServiceRequest.html">
+            
+                <a href="../../AdminDoc/06CloudServiceMgmt/ServiceRequest.html">
+            
+                    
+                    ServiceRequest
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.3" data-path="../../AdminDoc/06CloudServiceMgmt/Deployments.html">
+            
+                <a href="../../AdminDoc/06CloudServiceMgmt/Deployments.html">
+            
+                    
+                    Deployments
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.4" data-path="../../AdminDoc/06CloudServiceMgmt/Monitoring&Alert.html">
+            
+                <a href="../../AdminDoc/06CloudServiceMgmt/Monitoring&Alert.html">
+            
+                    
+                    Monitoring&Alert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.5" data-path="../../AdminDoc/06CloudServiceMgmt/ResourceRecycle.html">
+            
+                <a href="../../AdminDoc/06CloudServiceMgmt/ResourceRecycle.html">
+            
+                    
+                    ResourceRecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../../AdminDoc/07CloudResourceAnalysis/">
+            
+                <a href="../../AdminDoc/07CloudResourceAnalysis/">
+            
+                    
+                    CloudResourceAnalysis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.7.1" data-path="../../AdminDoc/07CloudResourceAnalysis/CapacityManagement.html">
+            
+                <a href="../../AdminDoc/07CloudResourceAnalysis/CapacityManagement.html">
+            
+                    
+                    CapacityManagement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.2" data-path="../../AdminDoc/07CloudResourceAnalysis/Billing&Usage.html">
+            
+                <a href="../../AdminDoc/07CloudResourceAnalysis/Billing&Usage.html">
+            
+                    
+                    Billing&Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.3" data-path="../../AdminDoc/07CloudResourceAnalysis/Governance.html">
+            
+                <a href="../../AdminDoc/07CloudResourceAnalysis/Governance.html">
+            
+                    
+                    Governance
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="../../AdminDoc/11Integration&Release/">
+            
+                <a href="../../AdminDoc/11Integration&Release/">
+            
+                    
+                    Integration&Release
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="../../AdminDoc/08RequestServiceMgmt/">
+            
+                <a href="../../AdminDoc/08RequestServiceMgmt/">
+            
+                    
+                    RequestServiceMgmt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="../../AdminDoc/09Settings/">
+            
+                <a href="../../AdminDoc/09Settings/">
+            
+                    
+                    Settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="../../AdminDoc/10TenantManagement/">
+            
+                <a href="../../AdminDoc/10TenantManagement/">
+            
+                    
+                    TenantManagement
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">User Guidelines</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../01QuickStart/">
+            
+                <a href="../01QuickStart/">
+            
+                    
+                    QuickStart
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../02Homepage/">
+            
+                <a href="../02Homepage/">
+            
+                    
+                    Homepage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    CloudResourceGuidelines
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../05CICD/">
+            
+                <a href="../05CICD/">
+            
+                    
+                    CICD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../04RequestService/">
+            
+                <a href="../04RequestService/">
+            
+                    
+                    RequestService
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >CloudResourceGuidelines</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#service-request"><b>1. </b>Service Request</a></li><ul><li><span class="title-icon "></span><a href="#fast-service-request"><b>1.1. </b>Fast Service Request</a></li><li><span class="title-icon "></span><a href="#service-catalog-request"><b>1.2. </b>Service Catalog Request</a></li><ul><li><span class="title-icon "></span><a href="#auto-fill"><b>1.2.1. </b>Auto-fill</a></li><li><span class="title-icon "></span><a href="#estimate-cost"><b>1.2.2. </b>Estimate Cost</a></li></ul></ul><li><span class="title-icon "></span><a href="#service-request_1"><b>2. </b>Service Request</a></li><ul><li><span class="title-icon "></span><a href="#my-request"><b>2.1. </b>My request</a></li><li><span class="title-icon "></span><a href="#pending-approval"><b>2.2. </b>Pending approval</a></li><li><span class="title-icon "></span><a href="#approved-request"><b>2.3. </b>Approved Request</a></li></ul><li><span class="title-icon "></span><a href="#deployments"><b>3. </b>Deployments</a></li><ul><li><span class="title-icon "></span><a href="#overview"><b>3.1. </b>Overview</a></li><ul><li><span class="title-icon "></span><a href="#service-deployment-and-operation"><b>3.1.1. </b>Service Deployment and Operation</a></li></ul></ul><li><span class="title-icon "></span><a href="#instance"><b>4. </b>Instance</a></li><ul><li><span class="title-icon "></span><a href="#overview_1"><b>4.1. </b>Overview</a></li><ul><li><span class="title-icon "></span><a href="#instance-operation"><b>4.1.1. </b>Instance Operation</a></li></ul><li><span class="title-icon "></span><a href="#cloud-resources"><b>4.2. </b>Cloud Resources</a></li><ul><li><span class="title-icon "></span><a href="#storage"><b>4.2.1. </b>Storage</a></li><li><span class="title-icon "></span><a href="#paas-resources"><b>4.2.2. </b>PaaS resources</a></li><li><span class="title-icon "></span><a href="#software-resources"><b>4.2.3. </b>Software Resources</a></li></ul><li><span class="title-icon "></span><a href="#host-map"><b>4.3. </b>Host Map</a></li><li><span class="title-icon "></span><a href="#monitoring--alert"><b>4.4. </b>Monitoring &amp; Alert</a></li><ul><li><span class="title-icon "></span><a href="#alert-policy"><b>4.4.1. </b>Alert Policy</a></li><li><span class="title-icon "></span><a href="#alert-rules"><b>4.4.2. </b>Alert Rules</a></li><li><span class="title-icon "></span><a href="#triggered-alert"><b>4.4.3. </b>Triggered Alert</a></li></ul><li><span class="title-icon "></span><a href="#resource-analysis"><b>4.5. </b>Resource Analysis</a></li><ul><li><span class="title-icon "></span><a href="#report"><b>4.5.1. </b>Report</a></li></ul><li><span class="title-icon "></span><a href="#&#x56DE;&#x6536;&#x7AD9;"><b>4.6. </b>&#x56DE;&#x6536;&#x7AD9;</a></li></ul></ul></div><a href="#service-request" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p><strong>Cloud Resource Guidelines</strong></p>
+<p>The Cloud Resource Blueprint Service is based on blueprint modeling to define standard service frameworks and components, providing a rich set of out-of-the-box software components to visualize blueprints for automated deployment. After the service configuration is completed, the service is released as a service card, and the user applies for the cloud resource blueprint service through the service catalog.
+For example, configuring a vSphere single-node virtual machine service is a typical scenario for a cloud resource blueprint service.
+The following describes the specific operations of service request and service deployment.</p>
+<h1 id="service-request"><a name="service-request" class="anchor-navigation-ex-anchor" href="#service-request"><i class="fa fa-link" aria-hidden="true"></i></a>1. Service Request</h1>
+<h2 id="fast-service-request"><a name="fast-service-request" class="anchor-navigation-ex-anchor" href="#fast-service-request"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Fast Service Request</h2>
+<p>Users can select quick request in the service catalog. No need for service configuration, just select the required blueprint, and directly apply for service for automated deployment.
+E.g:</p>
+<ul>
+<li><p>Enter the service catalog. You can view the service card for the request database. The database service is bundled with multiple blueprints including: all pure database blueprints, Oracle (including clustered), MySQL (including clustered), MongoDB, DB2, SQL Server. .</p>
+</li>
+<li><p>Click on &#x201C;Apply Database&#x201D; to select the required blueprint to quickly apply for automated deployment.</p>
+</li>
+</ul>
+<h2 id="service-catalog-request"><a name="service-catalog-request" class="anchor-navigation-ex-anchor" href="#service-catalog-request"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Service Catalog Request</h2>
+<p>Users can apply for configured services or shared services published by the business group in the service catalog.</p>
+<p> Click &#x201C;Service Catalog&#x201D; in the left navigation bar, select a service, and click to enter the service application page.</p>
+<p> The details of the service are displayed at the top of the service request page:</p>
+<p>Service Request - Service Details </p>
+<ul>
+<li>Description:              Description of the service</li>
+<li>Basic information:        Service lease time and retention time configured by service configuration/business group configuration</li>
+<li>Topology:                 Topology diagram used by the service</li>
+<li>Component Configuration:  All components in the service topology diagram can be expanded to view the configuration information of each component</li>
+<li><p>Process Control:          Deployment/ Pre-dismounting/post-operation set on service configuration/business groups, and whether approval and email notification are required</p>
+<p>Fill in the relevant request parameters below the service request page:</p>
+</li>
+</ul>
+<ul>
+<li>Organization information
+Business group:    If the service is a full business group, that is, a shared service, you need to select a business group (this business group needs to have a related resource bundle, otherwise it will not be allowed to apply); if the service has been assigned a business group, the business group does not need to be filled out.
+Project:    If the project is divided under the business group, you can select the project.
+Owner:    Select the owner of the service, the owner must be a member of the business group</li>
+</ul>
+<ul>
+<li>Deployment information
+Name:    If the service deployment name naming rule is configured for the business group, the service deployment name does not need to be filled in. The service deployment name is automatically generated according to the business group rules.If the business group name is not configured in the business group, you need to manually fill in the service.
+Quantity:    Fill in the number of deployments, the default is 1
+Execution time:    Can start service deployment at a specified time, accurate to the minute</li>
+</ul>
+<ul>
+<li>Other information
+Key-value label:    Checked by default, all server nodes use the same key-value label. If not checked, all server nodes under the service deployment will be listed, and key value labels can be set separately for each server node.
+All Server nodes:    If you check the key-value label, you can set the key-value label for all server nodes.
+Remarks:    Optional
+Attachments:    Select a file as an attachment
+Field information:    Fill in additional custom fields in the Service Design - Form interface</li>
+</ul>
+<ul>
+<li>Request Parameters
+Request Parameters:    If during service configuration, only &quot;Allow modification&quot; is selected (&#x201C;Modify only when approved&#x201D; is not checked), the application parameter field will appear. You can configure the relevant Server and Network parameters as required. 
+Software Configuration:    If the &#x201C;Add Software during request&#x201D; is selected during service configuration, the software configuration bar will appear. You can add software to the computing node/software component of the service and click &#x201C;Add Software&#x201D;.
+  Select the software to be installed and all software components will be listed
+  Select relationship: &#x201C;Install to&#x201D; or &#x201C;Depend on&#x201D;
+  Select the node to install to or depend on</li>
+</ul>
+<p> After completing the request, click &#x201C;Apply&#x201D; to directly deploy or wait for approval according to the business group process control. You can view the deployment status in &#x201C;Deployments&#x201D; - &#x201C;My Deployments&#x201D; (you can also view the deployment in the operation history in the upper right corner) or go to &quot;Requests&quot; - &quot;My Requests&quot; to view the approval process.</p>
+<h3 id="auto-fill"><a name="auto-fill" class="anchor-navigation-ex-anchor" href="#auto-fill"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. Auto-fill</h3>
+<p> When you apply for the service, if you cannot fill in the relevant parameters at one time, click &#x201C;Save&#x201D; to save the filled parameters, and at the next application, click &#x201C;Load&#x201D; to reload which will automatically fill the last filled in parameters. </p>
+<h3 id="estimate-cost"><a name="estimate-cost" class="anchor-navigation-ex-anchor" href="#estimate-cost"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. Estimate Cost</h3>
+<p> When you apply for a service, the platform can display the cost of this application (on a monthly basis).
+    For the private cloud, after the administrator configures the accounting rules of the private cloud in the &#x201C;Billing &amp; Usage&#x201D;-&#x201C;Billing Rules&#x201D;, the user directly uses the charging API to perform charging when applying for the service.&#x3002;
+    The public cloud needs to cache the public cloud&apos;s unit price API structure and then calculate the cost.</p>
+<h1 id="service-request_1"><a name="service-request_1" class="anchor-navigation-ex-anchor" href="#service-request_1"><i class="fa fa-link" aria-hidden="true"></i></a>2. Service Request</h1>
+<ul>
+<li>After the user applies for the service, if the service is configured with an approval process in advance, the service enters the pending approval state and waits for the approver to perform the approval operation.</li>
+</ul>
+<ul>
+<li>If there is no approval process, the service request information enters the &#x201C;My Request&#x201D; message list, and the cloud resource service directly enters deployment state. Go to &#x201C;My Deployment&#x201D; to view the deployment information.</li>
+</ul>
+<h2 id="my-request"><a name="my-request" class="anchor-navigation-ex-anchor" href="#my-request"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. My request</h2>
+<p>The service request initiated by the current user is displayed here. The steps to view the service details are as follows:</p>
+<ol>
+<li><p>Click &#x201C;Requests&#x201D; - &#x201C;My Requests&#x201D; on the left menu bar to view a list of users requesting services.</p>
+</li>
+<li><p>This page displays the request number, service name, request type, title, business group, project, request status, request time, and completion time. Click on RequestNo. to view the details of the request.</p>
+</li>
+</ol>
+<h2 id="pending-approval"><a name="pending-approval" class="anchor-navigation-ex-anchor" href="#pending-approval"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. Pending approval</h2>
+<p>After the service application is completed, when the service is configured with the approval process in advance, the service enters the pending approval state, and the &#x201C;Pending Approval&#x201D; module displays the details of the service.</p>
+<p>Approver can follow the steps below to view the details of the pending service:</p>
+<ol>
+<li>Click &quot;Requests&quot; - &quot;Pending Approval&quot; in the left navigation bar. The pending approval page displays the service details of the request to be approved.</li>
+</ol>
+<ol>
+<li>Display basic information of the approval request: request number, request type, service deployment name, applicant, business group, project, request status, request time.</li>
+</ol>
+<h2 id="approved-request"><a name="approved-request" class="anchor-navigation-ex-anchor" href="#approved-request"><i class="fa fa-link" aria-hidden="true"></i></a>2.3. Approved Request</h2>
+<p>All requests that have been approved are displayed here.</p>
+<p>Specific steps of viewing approved requests:</p>
+<ol>
+<li>In the left navigation bar, click &quot;Requests&quot; - &quot;Approved&quot;. The approved page displays the parts of all the approval requests that you have approved.</li>
+</ol>
+<ol>
+<li>Page shows the basic information of the approval request: request number, request type, service deployment name. applicant, business group, project, request status, request time.</li>
+</ol>
+<h1 id="deployments"><a name="deployments" class="anchor-navigation-ex-anchor" href="#deployments"><i class="fa fa-link" aria-hidden="true"></i></a>3. Deployments</h1>
+<h2 id="overview"><a name="overview" class="anchor-navigation-ex-anchor" href="#overview"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. Overview</h2>
+<p>My Deployment page allows you to view the status, details, monitoring, and more of the service deployment. After selecting the wizard request or service catalog request in the Service Catalog, the user can view the deployed service status on the service deployment interface. If the deployment has an approval process, the service deployment page can be redirected to the approval page to view the current approval process. If there is no approval, you can view the deployment details.</p>
+<ol>
+<li>After selecting &quot;Deployment&quot; - &quot;My Deployment&quot; in the left navigation bar, the user will see the service deployment list, click Advanced Search, according to the business group, stage (run, in progress, shutdown, failed, cancelled, deployed in the approval), status (normal, abnormal), owner, project to filter, or directly search operation</li>
+</ol>
+<ol>
+<li>In the service deployment list, users can select one or more service deployments to perform some operations quickly, including &#x201C;stop&#x201D;, &#x201C;installation software&#x201D;, &#x201C;copy&#x201D;, &#x201C;extend expiration time&#x201D;, &#x201C;dismount&#x201D;, &#x201C;delete management information&#x201D;, &quot;Change Owner&quot;, more operations such as: &quot;Change Project&quot; &quot;Change Business Group&quot; and &quot;Scale in/out&quot;</li>
+</ol>
+<ol>
+<li>Click the service deployment name to view the details of the service deployment. The service deployment details information interface includes &quot;Basic Information&quot;, &quot; Topology&quot;, &quot;Operation History&quot;, &quot;Monitoring&quot; (Monitoring of Instances and Application Components), and Operations at the Top</li>
+</ol>
+<ol>
+<li>Basic Information includes the name of the service deployment, business group, project, blueprint, resource bundle, cloud platform, and related information such as cost, status, and time. It also includes a list of input parameters for the service deployment and output result information. After the service deployment fails, some scenarios can be repaired offline. After the repair is successful, the service deployment status is changed, and the operation failure is changed to running.</li>
+</ol>
+<ol>
+<li>Topology includes blueprints, details, and process information for service deployment. Hovering over the service topology map will display the key information of the node. For example, the server node will display the instance name, guest operating system, IP address, memory, total disk space, number of vCPUs, CPU usage, memory usage, etc.</li>
+</ol>
+<ol>
+<li>Operation History shows the operation history of the service deployment</li>
+</ol>
+<ol>
+<li>Monitoring displays monitoring information applied to components in the deployment</li>
+</ol>
+<h3 id="service-deployment-and-operation"><a name="service-deployment-and-operation" class="anchor-navigation-ex-anchor" href="#service-deployment-and-operation"><i class="fa fa-link" aria-hidden="true"></i></a>3.1.1. Service Deployment and Operation</h3>
+<p>You can perform operations on the service deployment in the service deployment list interface or by clicking the service deployment name to enter the service deployment details interface.</p>
+<blockquote>
+<p>&#x300C;Note&#x300D;The operation permissions of the service deployment are controlled by the business group and service configuration. Here we assume the user has the authority to operate. For your convenience, platform groups operations into several groups.</p>
+</blockquote>
+<h4 id="change-organization-information"><a name="change-organization-information" class="anchor-navigation-ex-anchor" href="#change-organization-information"><i class="fa fa-link" aria-hidden="true"></i></a>Change Organization Information</h4>
+<p>Change owner</p>
+<p>Changing the owner of a service deployment will also change the owner of all virtual machines under the service deployment. Choose the target owner, who is a member of the business group.</p>
+<p>Change project </p>
+<p>Changing the project to which the service is deployed will also change the project of all virtual machines under the service deployment. Select the target project and select the user under the project.</p>
+<p>Change business group </p>
+<p>All virtual machines under the service deployment will be changed to the new business group at the same time, and the relevant information such as the owner will be modified. Select the target business group, the project (optional), the owner (the member under the business group), and the resource bundle (the resource bundle under the business group). If the resource pool list is empty, it means that no resources are available on the business group.</p>
+<h4 id="Start Service Deployment .afff6"><a name="Start Service Deployment .afff6" class="anchor-navigation-ex-anchor" href="#Start%20Service%20Deployment%20.afff6"><i class="fa fa-link" aria-hidden="true"></i></a>Start Service Deployment </h4>
+<p>The Start Service Deployment action is available if the service deployment is down. This task can be triggered by timing (sometime in the future) by setting &quot;Enable Timing&quot;.</p>
+<h4 id="Stop Service Deployment .afff6"><a name="Stop Service Deployment .afff6" class="anchor-navigation-ex-anchor" href="#Stop%20Service%20Deployment%20.afff6"><i class="fa fa-link" aria-hidden="true"></i></a>Stop Service Deployment </h4>
+<p>If the service deployment is in a running state, you can &quot;stop service deployment&quot;, which will shut down all virtual machines under the service deployment. This task can be triggered by timing (sometime in the future) by setting &quot;Enable Timing&quot;.</p>
+<h4 id="Dismount Service Deployment .afff6"><a name="Dismount Service Deployment .afff6" class="anchor-navigation-ex-anchor" href="#Dismount%20Service%20Deployment%20.afff6"><i class="fa fa-link" aria-hidden="true"></i></a>Dismount Service Deployment </h4>
+<p>After the service is deployed, the cloud resources under the service deployment can be removed. Dismounting a service deployment will remove all new resources created in SmartCMP. If the service deployment includes shared resources, the shared resources will not be deleted; if the service deployment contains existing resources, such as LoadBalance &quot;Use existing resources&quot;, the existing resources will not be deleted; if you are the resources owner after you import the resources, you can delete imported resources.</p>
+<h4 id="Re-execute deployment .afff6"><a name="Re-execute deployment .afff6" class="anchor-navigation-ex-anchor" href="#Re-execute%20deployment%20.afff6"><i class="fa fa-link" aria-hidden="true"></i></a>Re-execute deployment </h4>
+<p>The deployment node can be re-executed after the service is deployed.</p>
+<p>Steps:</p>
+<ol>
+<li>Click Re-execute Deployment to display the service deployment name, all compute nodes/storage node/software component nodes under the deployment, and deployment status</li>
+</ol>
+<ol>
+<li>Can be re-executed by selecting single or multiple nodes; enable timing, specify time for operation </li>
+</ol>
+<ol>
+<li>Click &quot;Submit&quot; and wait for execution</li>
+</ol>
+<h4 id="delete"><a name="delete" class="anchor-navigation-ex-anchor" href="#delete"><i class="fa fa-link" aria-hidden="true"></i></a>Delete</h4>
+<p>Delete Management Information</p>
+<p>Delete the information about the service deployment and related VMs on SmartCMP and keep them in the related cloud platform without deleting them.</p>
+<p>Delete a node</p>
+<p>The compute nodes, storage, and software components can be removed after the service is deployed. Click Delete Node to display the service deployment name, all compute nodes, storage and software component nodes under the deployment, and deployment status. You can delete the single or multiple nodes or enable scheduled time to operate.</p>
+<h4 id="scale-inout"><a name="scale-inout" class="anchor-navigation-ex-anchor" href="#scale-inout"><i class="fa fa-link" aria-hidden="true"></i></a>Scale in/out</h4>
+<p>Expansion </p>
+<p>Expand the instance of the current deployment. The static IP deployment server does not support scaling. At least 1 instance can be scaled, up to 6. This task can be triggered by timing (sometime in the future) by setting &quot;Enable Timing&quot;.</p>
+<p> Extend the expiration time</p>
+<p>To extend the lease expiration time of the service deployment, click to display the maximum number of deferrable times set in the business group and the number of deferred times, and choose which time to extend to, which is accurate to the minute.</p>
+<p>Replication Service Deployment
+After the service deployment is successful, the service request deployment environment can be copied to other cloud platforms or cloned to the current cloud platform. For example, copying vSphere service deployment to Aliyun, vSphere to vSphere, Aliyun to Ali Proprietary Cloud</p>
+<p>Steps&#xFF1A;</p>
+<ol>
+<li>Select the target service: select the target business group, project (optional), owner, and service, and select the current instance node as a template to copy/create to the target node in the selected service topology map.</li>
+</ol>
+<ol>
+<li>Configure parameters: fill in the service deployment name (if the business group has rules, it will be automatically generated according to the business group rules), service deployment lease expiration time, and configure other node parameters in the service topology map (require third-party support if cross-cloud replication)</li>
+</ol>
+<ol>
+<li>Click Submit and wait for execution.</li>
+</ol>
+<h4 id="install-software"><a name="install-software" class="anchor-navigation-ex-anchor" href="#install-software"><i class="fa fa-link" aria-hidden="true"></i></a>Install software</h4>
+<p>Select the instance under Deployments and select the software you need to install. The software list is derived from the &quot;Software Components&quot; and allows you to change the property key values of the software.</p>
+<h1 id="instance"><a name="instance" class="anchor-navigation-ex-anchor" href="#instance"><i class="fa fa-link" aria-hidden="true"></i></a>4. Instance</h1>
+<h2 id="overview_1"><a name="overview_1" class="anchor-navigation-ex-anchor" href="#overview_1"><i class="fa fa-link" aria-hidden="true"></i></a>4.1. Overview</h2>
+<p>Users can view and manage the instance list according to the following steps. The activation and operation need to be set at the business group level or service configuration level:</p>
+<p>Specific operation steps:</p>
+<ol>
+<li>After selecting &#x201C;My Deployment&#x201D; - &#x201C;Instance&#x201D; in the left navigation bar, the user will see a list of instances. You can view the instance name, cloud platform, operating system, instance status (started, lost, stopped, etc.), health status, business group, project, service deployment, lease expiration time, retention expiration time, owner, IP address, label, installed software, resource label, etc. Other display columns can be selected by clicking &quot;Show column&quot;. Filter tags by business group, project, etc.</li>
+</ol>
+<ol>
+<li>In the instance list, the user can select one or more instances to perform some operations quickly, including &#x201C;start&#x201D;, &#x201C;reboot&#x201D;, &#x201C;suspend&#x201D;, &#x201C;stop&#x201D;, &#x201C;execute script&#x201D;, &#x201C;setup tag&#x201D;, &#x201C;enable/switch monitor&#x201D;, &quot;update monitoring agent&quot;, &quot;update automation agent&quot;. The specific operation introduction will be expanded below</li>
+</ol>
+<ol>
+<li>You can also click on a instance to enter its details interface for management and operation. The virtual machine details interface includes &#x201C;Basic Information&#x201D;, &#x201C;Operation History&#x201D;, &#x201C;Snapshot&#x201D;, &#x201C;Monitoring&#x201D;, &#x201C;Application List&#x201D; and the top operation list.</li>
+</ol>
+<ol>
+<li>&#x201C;Basic Information&#x201D; includes some information about the virtual machine and its related hosts, the organization information of the virtual machine in the platform, and the CPU, memory, storage running status, VNC connection information, etc. of the virtual machine.</li>
+</ol>
+<ol>
+<li>&#x201C;Operation History&#x201D; includes the history of operations performed by this virtual machine.</li>
+</ol>
+<ol>
+<li>&#x201C;Snapshot&#x201D; displays the current snapshot information (snapshot name, creation time, etc.), click &#x201C;Add&#x201D; to create a snapshot.</li>
+</ol>
+<ol>
+<li>&#x201C;Monitoring&#x201D; includes monitoring data of the virtual machine CPU, memory, disk, and network (you can adjust the time span or average time to view historical monitoring data as needed)</li>
+</ol>
+<blockquote>
+<p>&#x300C;Note&#x300D;Only the VMs that are installed and monitored in the VM template can be seen in the monitoring after the deployment is generated. For details on how to configure the installation monitoring, see the chapter &quot;VM Template&quot;.</p>
+</blockquote>
+<ol>
+<li>&#x201C;Application List&#x201D; displays the list of applications that are currently installed on the virtual machine.</li>
+</ol>
+<ol>
+<li>Day2 operation list includes a list of operations that can be performed by the virtual machine. The specific operation introduction will be expanded below.</li>
+</ol>
+<h3 id="instance-operation"><a name="instance-operation" class="anchor-navigation-ex-anchor" href="#instance-operation"><i class="fa fa-link" aria-hidden="true"></i></a>4.1.1. Instance Operation</h3>
+<p>On the instance list interface or click the instance name to enter the instance details page, you can perform the following operations on the instance. The operations are enabled or disabled by the business group/service deployment.</p>
+<p>The (shut down) virtual machine can be started in real time, or it can be triggered (at some point in the future) by setting &quot;Enable Timing&quot;.</p>
+<h4 id="SuspendvSphere .afff6"><a name="SuspendvSphere .afff6" class="anchor-navigation-ex-anchor" href="#SuspendvSphere%20.afff6"><i class="fa fa-link" aria-hidden="true"></i></a>Suspend (vSphere) </h4>
+<p>The virtual machine that is suspended (on) can be triggered by timing (at some point in the future) by setting &quot;Enable Timing&quot;.</p>
+<p>Suspending multiple (powered-on) virtual machines can be triggered by timing (at some point in the future) by setting &quot;Enable Timing&quot;.</p>
+<blockquote>
+<p>&#x300C;Note&#x300D;Only vSphere virtual machines has this option.</p>
+</blockquote>
+<h4 id="Stop .afff6"><a name="Stop .afff6" class="anchor-navigation-ex-anchor" href="#Stop%20.afff6"><i class="fa fa-link" aria-hidden="true"></i></a>Stop </h4>
+<p>To stop (i.e., power off) the virtual machine (on the power-on state), you can trigger the task by timing (at some point in the future) by setting &quot;Enable Timing&quot;.</p>
+<h4 id="Restart .afff6"><a name="Restart .afff6" class="anchor-navigation-ex-anchor" href="#Restart%20.afff6"><i class="fa fa-link" aria-hidden="true"></i></a>Restart </h4>
+<p>Restart the virtual machine (on the power-on state) by setting &quot;Enable Timing&quot; and timing (at some point in the future) to trigger this task.</p>
+<p>Restart multiple (powered-on) virtual machines, you can trigger this task by setting &quot;Enable Timing&quot; and timing (at some point in the future).</p>
+<h4 id="monitoring-and-agent"><a name="monitoring-and-agent" class="anchor-navigation-ex-anchor" href="#monitoring-and-agent"><i class="fa fa-link" aria-hidden="true"></i></a>Monitoring and Agent</h4>
+<p>Add an automated agent
+If the instance does not have an automated agent installed, you can install it by: entering the username and password/key pair with SSH and administrator privileges, and clicking &quot;Execute&quot; after the input is complete. If the port is not entered, you need to enter the port number in the instance details page, &quot;SSH port&quot;.</p>
+<p>Update an Automation Agent </p>
+<p>If the instance has an automated agent installed, it can be updated with this action.</p>
+<p>Enable/Switch Monitoring</p>
+<p>Currently, two monitoring methods are supported for the vSphere instance: built-in agent monitoring and cloud platform monitoring. Built-in agent monitoring includes pre-installed monitoring agent and WinRM/SSH monitoring agent (WinRM for Windows operating system, SHH for Linux operating system). Ccloud platform monitoring refers to reading monitoring data of virtual machine directly from vCenter and there is no need to install a monitoring agent.</p>
+<p>Only built-in monitoring agents are supported for the OpenStack cloud platform.</p>
+<p>Update Monitoring Agent</p>
+<p>If the instance has built-in agent monitoring installed, it can be updated through this operation.</p>
+<h4 id="create-a-snapshot"><a name="create-a-snapshot" class="anchor-navigation-ex-anchor" href="#create-a-snapshot"><i class="fa fa-link" aria-hidden="true"></i></a>Create a Snapshot</h4>
+<p> Create a Snapshot</p>
+<p>Create a snapshot of the virtual machine, which can be triggered (at some point in the future) by setting &quot;Enable Timing&quot;.</p>
+<p> Revert to Snapshot</p>
+<p>To restore a virtual machine to a previous snapshot, you can trigger this task by setting &quot;Enable Timing&quot; and timing (at some point in the future).</p>
+<p> Delete a Snapshot </p>
+<p>Delete created snapshot</p>
+<h4 id="adjust-the-configuration"><a name="adjust-the-configuration" class="anchor-navigation-ex-anchor" href="#adjust-the-configuration"><i class="fa fa-link" aria-hidden="true"></i></a>Adjust the configuration</h4>
+<p> Adjust the configuration</p>
+<p>Adjust the configuration (vCPU, memory) of the virtual machine or container node and click Submit.</p>
+<h4 id="add-a-new-disk"><a name="add-a-new-disk" class="anchor-navigation-ex-anchor" href="#add-a-new-disk"><i class="fa fa-link" aria-hidden="true"></i></a>Add a new disk</h4>
+<p> Add a new disk</p>
+<p>Add a new disk to the virtual machine, which can be triggered (at some point in the future) by setting &quot;Enable Timing&quot;.</p>
+<blockquote>
+<p>&#x300C;Note&#x300D;Cannot be performed in the suspended state</p>
+</blockquote>
+<p>Extend Disk </p>
+<p>To extend an existing disk to a virtual machine, you can trigger the task by timing (at some point in the future) by setting &quot;Enable Timing&quot;.</p>
+<blockquote>
+<p>&#x300C;Note&#x300D;Support expansion through the cloud management platform or the disk created in the previous section. This operation cannot be performed in the suspended state.</p>
+</blockquote>
+<p> Delete a disk</p>
+<p>Delete a disk other than the system disk on the virtual machine, including the disk added by the service configuration or the disk added by the operation.</p>
+<p> Add a New Logical Volume</p>
+<p>Add a new logical volume to the Linux virtual machine, which can be triggered (at some point in the future) by setting &quot;Enable Timing&quot;.</p>
+<blockquote>
+<p>&#x300C;Note&#x300D;Cannot be performed in the suspended state</p>
+</blockquote>
+<p>Expand Logical Volumes</p>
+<p>To extend an existing logical volume to a Linux virtual machine, you can trigger this task by timing (at some point in the future) by setting &quot;Enable Timing&quot;.</p>
+<blockquote>
+<p>&#x300C;Note&#x300D;Support extensions that are deployed through the cloud management platform or created in the previous section. This operation cannot be performed in the suspended state.</p>
+</blockquote>
+<h4 id="vMotion Migration vSphere .afff6"><a name="vMotion Migration vSphere .afff6" class="anchor-navigation-ex-anchor" href="#vMotion%20Migration%20vSphere%20.afff6"><i class="fa fa-link" aria-hidden="true"></i></a>vMotion Migration (vSphere) </h4>
+<p>Support for compute resource migration and storage migration in vSphere. Use vSphere&apos;s vMotion migration feature to migrate virtual machines between different hosts using different migration methods.</p>
+<ul>
+<li>Calculate resource migration, select the target host, you can trigger this task by setting &#x201C;Enable Timing&#x201D; and timing (at some point in the future).</li>
+</ul>
+<ul>
+<li>Storage migration:</li>
+</ul>
+<!-- -->
+<ul>
+<li>Linked clones: Select Require Storage to migrate the target instance to the selected storage.</li>
+</ul>
+<ul>
+<li>Full clone: Select the provisioning mode (same source format, thin provisioning, thick provisioning delay zeroing, post provisioning zero); select virtual machine storage policy (retain existing virtual machine storage policy, datastore defaults, and other Define the storage policy); storage (determine the compatibility of the storage according to the selected storage policy, and display the space and proportion of each storage)</li>
+</ul>
+<ul>
+<li>Enable Timing: Set the time to trigger this task at some point in the future</li>
+</ul>
+<blockquote>
+<p>&#x300C;Note&#x300D;Only available for vSphere virtual machines. When you migrate storage, you can retain the original provisioning mode and storage policy or modify it.</p>
+</blockquote>
+<h4 id="Remote terminal .afff6"><a name="Remote terminal .afff6" class="anchor-navigation-ex-anchor" href="#Remote%20terminal%20.afff6"><i class="fa fa-link" aria-hidden="true"></i></a>Remote terminal </h4>
+<blockquote>
+<p>&#x300C;Note&#x300D;OpenStack virtual machine remote terminal operation requires the use of VNC Web Client, your browser needs to support HTML5 Canvas and HTML5 WebSockets. If you need to know all the browsers supported by the VNC Web Client, you can visit <a href="https://github.com/kanaka/noVNC/wiki/Browser-support" target="_blank">https://github.com/kanaka/noVNC/wiki/Browser-support</a></p>
+</blockquote>
+<h4 id="WEB Remote Terminal vSphere .afff6"><a name="WEB Remote Terminal vSphere .afff6" class="anchor-navigation-ex-anchor" href="#WEB%20Remote%20Terminal%20vSphere%20.afff6"><i class="fa fa-link" aria-hidden="true"></i></a>WEB Remote Terminal (vSphere) </h4>
+<p>vSphere&apos;s Web console client does not require special browser support.</p>
+<blockquote>
+<p>&#x300C;Note&#x300D;Only available for vSphere virtual machines.</p>
+</blockquote>
+<h4 id="Set the Instance Label .afff6"><a name="Set the Instance Label .afff6" class="anchor-navigation-ex-anchor" href="#Set%20the%20Instance%20Label%20.afff6"><i class="fa fa-link" aria-hidden="true"></i></a>Set the Instance Label </h4>
+<blockquote>
+<p>&#x300C;Note&#x300D;Each user can set a label for the instance without requiring an administrator to configure an operating license.</p>
+</blockquote>
+<p>Key tags can be set for instances to classify and filter instances.</p>
+<p>The instance label is used as follows:</p>
+<h5 id="add-tags"><a name="add-tags" class="anchor-navigation-ex-anchor" href="#add-tags"><i class="fa fa-link" aria-hidden="true"></i></a>Add tags</h5>
+<ul>
+<li>Add tags to the newly created instance:</li>
+</ul>
+<ol>
+<li>Select Deployments - Instance in the left navigation bar. On the instance list interface, select a instance.</li>
+</ol>
+<ol>
+<li>Click &#x201C;More Actions&#x201D; above, &#x201C;Set Label&#x201D;, the setting interface of the key value label appears.</li>
+</ol>
+<ol>
+<li>Fill in the key, value, click &quot;Create&quot; &quot;Execute&quot;, the label is created successfully; you can also select the existing label, click &quot;Execute&quot;. In the right column of the instance list, you can view the added instance label.</li>
+</ol>
+<ul>
+<li>Add tags to imported instances:</li>
+</ul>
+<ol>
+<li>In the left menu, select &#x201C;Infrastructure&#x201D;, click &#x201C;Resource Bundles&#x201D;, select a resource bundle, and enter the Edit Resource Bundle interface.</li>
+</ol>
+<ol>
+<li>Go to the &#x201C;Instance&#x201D; page and click &#x201C;Import&#x201D; .</li>
+</ol>
+<ol>
+<li>Click the input box after &#x201C;Label&#x201D; to pop up the key value label creation page, enter the key value, create a new label, or select the existing label.</li>
+</ol>
+<h5 id="modifydelete-label"><a name="modifydelete-label" class="anchor-navigation-ex-anchor" href="#modifydelete-label"><i class="fa fa-link" aria-hidden="true"></i></a>Modify/Delete Label:</h5>
+<p>On the instance list interface, select a instance; click &#x201C;Set Label&#x201D; to display the key label of the instance, which can be directly deleted and re-created.</p>
+<h5 id="add-a-network-card"><a name="add-a-network-card" class="anchor-navigation-ex-anchor" href="#add-a-network-card"><i class="fa fa-link" aria-hidden="true"></i></a>Add a Network Card</h5>
+<p>Add a new NIC, take effect for all instances of the compute node, select the network label and IP allocation mode. At present, vSphere only supports DHCP. OpenStack and PowerVC support two IP allocation modes: DHCP and IP pool. OpenStack instance also supports manual IP assignment. </p>
+<h5 id="delete-a-network-card"><a name="delete-a-network-card" class="anchor-navigation-ex-anchor" href="#delete-a-network-card"><i class="fa fa-link" aria-hidden="true"></i></a>Delete a network card</h5>
+<p>Delete the newly added NIC of the operation and maintenance, which will affect all instances of the node.</p>
+<h5 id="mount-nfs"><a name="mount-nfs" class="anchor-navigation-ex-anchor" href="#mount-nfs"><i class="fa fa-link" aria-hidden="true"></i></a>Mount NFS</h5>
+<p>Mount an NFS (Network File System) to the virtual machine, which can be triggered (at some point in the future) by setting &quot;Enable Timing&quot;.</p>
+<blockquote>
+<p>&#x300C;Note&#x300D;This operation is available only when the NFS cloud platform and resource bundle are configured.</p>
+</blockquote>
+<h5 id="execute-script"><a name="execute-script" class="anchor-navigation-ex-anchor" href="#execute-script"><i class="fa fa-link" aria-hidden="true"></i></a>Execute script</h5>
+<p>A script in a script library of virtual machine can be triggered by timing (at some point in the future) by setting &quot;Enable Timing&quot; or by selecting an IP address.</p>
+<blockquote>
+<p>&#x300C;Note&#x300D;If you do not have an agent installed, you must enter the username and password of the virtual machine when executing the script.</p>
+</blockquote>
+<h5 id="update-the-instance-display-name"><a name="update-the-instance-display-name" class="anchor-navigation-ex-anchor" href="#update-the-instance-display-name"><i class="fa fa-link" aria-hidden="true"></i></a>Update the instance display name</h5>
+<p>Click &quot;Update Instance Display Name&quot; to reset the display name of the instance.</p>
+<h5 id="reset-the-operating-system-host-name"><a name="reset-the-operating-system-host-name" class="anchor-navigation-ex-anchor" href="#reset-the-operating-system-host-name"><i class="fa fa-link" aria-hidden="true"></i></a>Reset the Operating System Host Name</h5>
+<p>Click &quot;Reset OS Hostname&quot; to reset the operating system hostname.</p>
+<blockquote>
+<p>&#x300C;Note&#x300D;Windows operating system can only perform this operation if the agent is installed.</p>
+</blockquote>
+<h5 id="elevate--linux-user-permissions"><a name="elevate--linux-user-permissions" class="anchor-navigation-ex-anchor" href="#elevate--linux-user-permissions"><i class="fa fa-link" aria-hidden="true"></i></a>Elevate  Linux User Permissions</h5>
+<p>Temporarily give a Linux user a Sudo privilege (free secret) for a while. If the instance has an automated agent installed, simply enter the username and permission usage time. If the instance does not have an automated agent installed, enter the administrator username and password (or select a key pair) and select an IP address.</p>
+<h5 id="reset-password"><a name="reset-password" class="anchor-navigation-ex-anchor" href="#reset-password"><i class="fa fa-link" aria-hidden="true"></i></a>Reset Password</h5>
+<p>Click &quot;Reset Password&quot; to reset the new password for the virtual machine.</p>
+<h5 id="application-level-lifecycle-operations"><a name="application-level-lifecycle-operations" class="anchor-navigation-ex-anchor" href="#application-level-lifecycle-operations"><i class="fa fa-link" aria-hidden="true"></i></a>Application level lifecycle operations</h5>
+<p>In the detailed interface of the instance, there is an application tab with a list of applications belonging to the instance. When an application is selected, the life cycle operation of the application appears, and the operations include &quot;start&quot;, &quot;stop&quot; and &quot;custom&quot; operations.</p>
+<h2 id="cloud-resources"><a name="cloud-resources" class="anchor-navigation-ex-anchor" href="#cloud-resources"><i class="fa fa-link" aria-hidden="true"></i></a>4.2. Cloud Resources</h2>
+<p>Under the cloud resource menu, all the cloud resources are uniformly managed, the related information is displayed and the corresponding D2 operations to each cloud resource are provided.</p>
+<p>Click on &quot;Deployments&quot; - &quot;Cloud Resources&quot; in the left navigation bar. On the left, you will see five menus: &quot;Storage&quot;, &quot;Container&quot;, &quot;Network Resources&quot;, &quot;PaaS&quot; and &quot;Software&quot;.</p>
+<h3 id="storage"><a name="storage" class="anchor-navigation-ex-anchor" href="#storage"><i class="fa fa-link" aria-hidden="true"></i></a>4.2.1. Storage</h3>
+<h4 id="Cloud hard disk .afff6"><a name="Cloud hard disk .afff6" class="anchor-navigation-ex-anchor" href="#Cloud%20hard%20disk%20.afff6"><i class="fa fa-link" aria-hidden="true"></i></a>Cloud hard disk </h4>
+<p>Support unified management of OpenStack/Azure/Alibaba Cloud/QingCloud cloud hard disk.</p>
+<ol>
+<li>Click &#x201C;Cloud Drive&#x201D; under &#x201C;Storage&#x201D; and you will see the list of cloud drives.</li>
+</ol>
+<ol>
+<li>On the list of the cloud disk, you can view related information about the cloud disk: name, cloud platform type, status, business group, service deployment, project, owner, size (GB), mount status, mounted cloud host, and creation time</li>
+</ol>
+<ol>
+<li>Click on the name to go to the cloud drive details page. The cloud hard drive details page includes &quot;Basic Information&quot; and &quot;Operation History&quot;</li>
+</ol>
+<ol>
+<li>Basic Information page of the cloud drive details includes:</li>
+</ol>
+<ul>
+<li>Basic information: name, cloud platform type, status, business group, service deployment, project, owner, cloud host to which the size is mounted, creation time, etc.</li>
+</ul>
+<ul>
+<li>Organization information: service deployment name, service name, business group, tenant, project, etc.</li>
+</ul>
+<ul>
+<li>Operations: Volume separation: remove the mount relationship between the cloud drive and the cloud host. Volume mounting: Establish mount relationship between cloud and cloud hosts. Resize: Supports resizing of hard drives (Azure/AWS)</li>
+</ul>
+<ul>
+<li>Operation History: include the operation history of the cloud drive.</li>
+</ul>
+<h4 id="Object storage .afff6"><a name="Object storage .afff6" class="anchor-navigation-ex-anchor" href="#Object%20storage%20.afff6"><i class="fa fa-link" aria-hidden="true"></i></a>Object storage </h4>
+<p>Supports unified management of object storage for AWS, Azure, and Alibaba Cloud, respectively S3, Blob, and OSS.</p>
+<ol>
+<li>Click &#x201C;Object Storage&#x201D; under &#x201C;Storage&#x201D; and you will see the object storage list.</li>
+</ol>
+<ol>
+<li>In the object storage list interface, you can view related information about object storage: name, cloud platform type, status, status, business group, service deployment, project, owner, creation time.</li>
+</ol>
+<ol>
+<li>Click on the name to enter the object storage details page. The object storage details page includes &quot;Basic Information&quot; and &quot;Operation History&quot;</li>
+</ol>
+<ol>
+<li>Basic Information page of the object storage details includes: Basic information: name, cloud platform type, status, owner, public access level, storage account, resource group, creation time, etc. Organization information: service deployment name, service name, business group, tenant, project, etc.</li>
+</ol>
+<ol>
+<li>Operation History: includes the operation history of the cloud hard disk.</li>
+</ol>
+<h4 id="Container Service .afff6"><a name="Container Service .afff6" class="anchor-navigation-ex-anchor" href="#Container%20Service%20.afff6"><i class="fa fa-link" aria-hidden="true"></i></a>Container Service </h4>
+<p>Support to display various component information of Kubernetes in cloud resources, including deployment, container, service, route (Ingress), storage volume (PVC), configuration dictionary (Config Map), secret dictionary (Secrets), etc.</p>
+<h4 id="Network resource .afff6"><a name="Network resource .afff6" class="anchor-navigation-ex-anchor" href="#Network%20resource%20.afff6"><i class="fa fa-link" aria-hidden="true"></i></a>Network resource </h4>
+<p>Supports OpenStack firewall (FireWall), floating IP (Floating IP) independent deployment and full lifecycle management. After the deployment is complete, you can view basic information and health status in Cloud Resources - Network Resources. It also supports OpenStack&apos;s load balancer (LoadBalance) and load balancing listener (Listener), as well as VMware NSX&apos;s virtual server (VirtualServer).</p>
+<h4 id="Load balancer .afff6"><a name="Load balancer .afff6" class="anchor-navigation-ex-anchor" href="#Load%20balancer%20.afff6"><i class="fa fa-link" aria-hidden="true"></i></a>Load balancer </h4>
+<p>If the load balancer (LoadBalancer) is included in the deployment, you can view the details in Cloud Resources - Network Resources - Load Balancer after the deployment is successful.</p>
+<ol>
+<li>On the load balancer (LoadBalancer) list interface, display the name of the load balancer, cloud platform type, status, service group, service deployment, project, owner, IP address, creation time, etc. </li>
+</ol>
+<ol>
+<li>Click on the name to go to the details page, including &quot;Basic Information&quot; and &quot;Operation History&quot;</li>
+</ol>
+<ol>
+<li>Operations (OpenStack):</li>
+</ol>
+<ul>
+<li>Bind floating IP: Select a floating IP, bind the load balancer and floating IP, and start timing to perform operations at specific time.</li>
+</ul>
+<ul>
+<li>Unbind floating IP: If the load balancer is bound to a floating IP, you can unbind the operation and start the operation at a specific time.</li>
+</ul>
+<h4 id="Load balancing listener .afff6"><a name="Load balancing listener .afff6" class="anchor-navigation-ex-anchor" href="#Load%20balancing%20listener%20.afff6"><i class="fa fa-link" aria-hidden="true"></i></a>Load balancing listener </h4>
+<p>VMWare NSX / OpenStack / Azure load balancing listener is supported. VMWare NSX load balancing listener is VirtualServer, OpenStack load balancing listener is Listener, and Azure load balancing listener is LoadBalancerRule. The load balancer can listen for requests on multiple ports, each specified by a load balancing listener. After the deployment is successful, you can view the details in Cloud Resources - Network Resources - Load Balanced Listener.</p>
+<ol>
+<li>In the load balancer listener (Listener) list interface, display the name, status, description, business group, project, owner, protocol, cloud platform type, creation time, etc. of the load balancing listener.</li>
+</ol>
+<ol>
+<li>Click the name to enter the details page, including the &quot;Basic Information&quot; and &quot;Operation History&quot; interface, and operations of &quot;Add Member&quot; and &quot;Delete Member&quot;.</li>
+</ol>
+<ol>
+<li>Operations &#x2013; OpenStack</li>
+</ol>
+<ul>
+<li>&quot;Add members&quot;: add internal and external members. Select the instance to which you want to add members, specify the IP address, port, and weight. Bootable timing can be performed at specific times.</li>
+</ul>
+<ul>
+<li>Delete member: Click to select the member to be deleted, you can set up timing to perform operations at a specific time.</li>
+</ul>
+<h4 id="Floating IP .afff6"><a name="Floating IP .afff6" class="anchor-navigation-ex-anchor" href="#Floating%20IP%20.afff6"><i class="fa fa-link" aria-hidden="true"></i></a>Floating IP </h4>
+<p>Supporting OpenStack&apos;s floating IP (Floating IP), Floating IP can be deployed separately. After the deployment is successful, you can view the detailed information by selecting &quot;Cloud Resources&quot; - &quot;Network Resources&quot; - &quot;Floating IP&quot; in the left navigation bar.</p>
+<ol>
+<li>Select Cloud Resource - Network Resource - Floating IP to view the list of successfully deployed floating IPs. The interface displays the name of the floating IP, cloud platform type, status, business group, service deployment, and Project, owner, IP address, network, mapped address, creation time, etc.</li>
+</ol>
+<ol>
+<li>Click on the name to go to the details page, including &quot;Basic Information&quot; and &quot;Operation History&quot;</li>
+</ol>
+<ol>
+<li>&quot;Basic Information&quot; page, showing the basic information and organization information of the floating IP</li>
+</ol>
+<ol>
+<li>&#x201C;Operation History&#x201D; page, showing the operation history. When clicked, the operation details will be displayed below the operation history list.</li>
+</ol>
+<ol>
+<li>Operations:</li>
+</ol>
+<ul>
+<li>&#x201C;Associated Port&#x201D;: If the current floating IP is not associated with any port, the &#x201C;Associated Port&#x201D; operation will be displayed at the top of the details page. After clicking, select the port to be bound in the bullet box. All unassociated ports (Ports) in the OpenStack cloud platform will be listed in the drop-down box. Select &quot;Submit&quot; after selecting.</li>
+</ul>
+<ul>
+<li>&#x201C;Unbind&#x201D;: If the current Floating IP has been associated with the port, the &#x201C;Unbind&#x201D; operation will be displayed at the top of the details page. Click &#x201C;Submit&#x201D; to enable the operation at a specific </li>
+</ul>
+<h4 id="Firewall .afff6"><a name="Firewall .afff6" class="anchor-navigation-ex-anchor" href="#Firewall%20.afff6"><i class="fa fa-link" aria-hidden="true"></i></a>Firewall </h4>
+<p>Support for OpenStack Firewall as a service, Fwaas for OpenStack objects such as projects, routers and router ports. The core concepts of the OpenStack firewall are firewall policies and firewall rules. A policy is an ordered collection of rules. In the left navigation bar, select &quot;Cloud Resources&quot; - &quot;Network Resources&quot; - &quot;Firewall&quot; to view the deployed firewalls.</p>
+<ol>
+<li>Select Cloud Resources - Network Resources - Firewall to view the successfully deployed firewall list interface, which displays the name of the firewall, cloud platform type, status, business group, service deployment, project, owner, Policy, routing, activation status, administrator status, creation time, etc.</li>
+</ol>
+<ol>
+<li>Click on the name to go to the details page, including &quot;Basic Information&quot; and &quot;Operation History&quot;</li>
+</ol>
+<ol>
+<li>Basic Information: displays basic and organizational information about the firewall.</li>
+</ol>
+<ol>
+<li>Operation History page: Display the operation history. When clicked, the operation details will be displayed below the operation history list.</li>
+</ol>
+<ol>
+<li>Operations&#xFF1A;</li>
+</ol>
+<ul>
+<li>Update Firewall: Click to select an existing firewall policy or create a new firewall policy. Check &quot;Use existing policy&quot; to list all available firewall policies in the OpenStack cloud platform under the current business group. If it is not checked, create a new firewall policy, fill in the policy name (required), policy description (optional), choose whether it is shared, audited, or timed. Click &#x201C;Submit&#x201D; after the operation is completed.</li>
+</ul>
+<ul>
+<li><p>Update Firewall Policy: This page lists a list of all currently available rules. Support for using existing rules and creating new rules. If you use an existing rule, check the rules that will be used in the list. If you create a new rule, click   on the upper right corner of the list to display the new rule interface:</p>
+<p>Fill in the basic information: name, description, protocol (required, TCP, UDP, ICMP, and any), action (required, allowed, denied), source IP, source port, destination IP, destination port, whether the selection is shared and activate.</p>
+<p>You can select the location of the new rule, specify that the current rule is inserted before a rule (before the rule), or specify that the rule is inserted after a rule (after the rule). If both are specified, the former has a higher priority.</p>
+<blockquote>
+<p>&#x300C;Note&#x300D;&#xFF1A;A firewall policy can be associated with multiple rules, but rules can only be associated with one policy.</p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li>Delete firewall rules: Delete the associated rules in the firewall. After deletion, they will not be recoverable. You can select multiple rule deletions at the same time, or you can start timing to perform operations at specific times.</li>
+</ul>
+<h4 id="Security group .afff6"><a name="Security group .afff6" class="anchor-navigation-ex-anchor" href="#Security%20group%20.afff6"><i class="fa fa-link" aria-hidden="true"></i></a>Security group </h4>
+<p>Support for displaying security groups for OpenStack, AWS, Azure, and Alibaba Cloud. If the security group component is deployed, the deployed security group components are viewed in Cloud Resources - Network Resources - Security Groups.</p>
+<ol>
+<li>On the Security Group list page, display the security group name, cloud platform type, status, business group to which it belongs, service deployment, project, owner, creation time, etc.</li>
+</ol>
+<ol>
+<li>Click on the name to go to the details page, including the &quot;Basic Information&quot; and &quot;Operation History&quot;. </li>
+</ol>
+<ol>
+<li>Basic Information page displays basic information, organization information, and inbound/outbound security group rules for the security group.</li>
+</ol>
+<ol>
+<li>Operation History shows the operation history. When clicked, the operation details will be displayed below the operation history list.</li>
+</ol>
+<h4 id="Domain Name System DNS .afff6"><a name="Domain Name System DNS .afff6" class="anchor-navigation-ex-anchor" href="#Domain%20Name%20System%20DNS%20.afff6"><i class="fa fa-link" aria-hidden="true"></i></a>Domain Name System DNS </h4>
+<p>Support OpenStack Domain Name System DNS. If the DNS component is deployed, the deployed DNS components will be viewed in &quot;Cloud Resources&quot; - &quot;Network Resources&quot; - &quot;Domain Name System DNS&quot;.</p>
+<ol>
+<li>On the Domain Name System DNS list, display the DNS name, status, business group, project, owner, DNS type, DNS domain, DNS server, DNS parameters, etc.</li>
+</ol>
+<ol>
+<li>Click on the name to go to the details page, including the &quot;Basic Information&quot; and &quot;Operation History&quot;.</li>
+</ol>
+<ol>
+<li>Operations  </li>
+</ol>
+<ul>
+<li>Update DNS: update DNS parameters, DNS type cannot be changed</li>
+</ul>
+<h3 id="paas-resources"><a name="paas-resources" class="anchor-navigation-ex-anchor" href="#paas-resources"><i class="fa fa-link" aria-hidden="true"></i></a>4.2.2. PaaS resources</h3>
+<p>Supports independent deployment and full lifecycle management of relational databases (RDS) of AWS, Azure,and Aliyun, supporting relational database as a service (RDS as a Service) and web applications. After the deployment is complete, you can view basic information and health status in Cloud Resources - PaaS Resources.</p>
+<h3 id="software-resources"><a name="software-resources" class="anchor-navigation-ex-anchor" href="#software-resources"><i class="fa fa-link" aria-hidden="true"></i></a>4.2.3. Software Resources</h3>
+<blockquote>
+<p>Support unified display and management of software resources.</p>
+</blockquote>
+<h4 id="Software .afff6"><a name="Software .afff6" class="anchor-navigation-ex-anchor" href="#Software%20.afff6"><i class="fa fa-link" aria-hidden="true"></i></a>Software </h4>
+<ol>
+<li>Select Cloud Resources - Software Resources - Software to view a list of successfully deployed software that displays the software name, cloud platform type, status, business group, service deployment, project, owner, version, system type, creation time, etc. Filter your business groups, status, projects, or owners with advanced search, or use normal search for quick targeting.</li>
+</ol>
+<ol>
+<li>Click on the name to go to the details page, including &quot;Basic Information&quot; and &quot;Operation History&quot;</li>
+</ol>
+<ol>
+<li>Basic Information displays basic information, organization information, and parameters of the software.</li>
+</ol>
+<ol>
+<li>Operation History displays the operation history. When clicked, the operation details will be displayed below the operation history list.</li>
+</ol>
+<ol>
+<li>Operations:</li>
+</ol>
+<blockquote>
+<p>The operations displays the corresponding operations according to the operation definition of the software in &quot;Service Design&quot; - &quot;Software Components&quot;, for example, start, stop, delete, create, configure,etc.</p>
+</blockquote>
+<h2 id="host-map"><a name="host-map" class="anchor-navigation-ex-anchor" href="#host-map"><i class="fa fa-link" aria-hidden="true"></i></a>4.3. Host Map</h2>
+<p>The host map can display the health status of the instance and container and display different colors according to the status of the performance indicator. If the instance or container is not configured for monitoring, it is grayed out by default.</p>
+<p>Move the mouse to the instance to display the instance name</p>
+<p>Click to show details&#xFF1A;</p>
+<ul>
+<li><p>Basic information: IP address, operating system, number of vCPUs, memory, total disk space</p>
+</li>
+<li><p>Organizational information: business groups, projects, owners</p>
+</li>
+<li><p>Performance monitoring metrics: memory usage, CPU usage, disk usage</p>
+</li>
+</ul>
+<blockquote>
+<p>&#x300C;Note&#x300D;Will not display performance monitoring indicators if monitoring is not installed.</p>
+</blockquote>
+<p>Displayed content can be filtered according to your needs, such as all or installed monitoring or not installed monitoring, filtering by cloud platform, business group, project screening, label, etc.</p>
+<h2 id="monitoring--alert"><a name="monitoring--alert" class="anchor-navigation-ex-anchor" href="#monitoring--alert"><i class="fa fa-link" aria-hidden="true"></i></a>4.4. Monitoring &amp; Alert</h2>
+<p>Alert provides the user with the virtual machine and any application self-service alert configuration.</p>
+<p>In the left navigation, select &quot;Monitoring &amp; Alert&quot;. There are 5 secondary menus under the Monitoring &amp; Alert, followed by &quot;Alert Policy&quot;, &quot;Alert Rules&quot;, &quot;Triggered Alert&quot;, &quot;Host Monitoring&quot; and &quot;Host Alerts&quot;.</p>
+<h3 id="alert-policy"><a name="alert-policy" class="anchor-navigation-ex-anchor" href="#alert-policy"><i class="fa fa-link" aria-hidden="true"></i></a>4.4.1. Alert Policy</h3>
+<p>Used to define the conditions under which the selected object type (such as instance/application/container, etc.) triggers an alert. Click the second level menu &quot;Alert Policy&quot; under &quot;Monitoring &amp; Alerts&quot; on the left navigation to display the alert policy list. The list includes the alert policy name, category, type (downtime, threshold or prediction), creation time, and creator. Users may add, edit, delete, etc. alert policies.</p>
+<h4 id="Add an Alert Policy .afff6"><a name="Add an Alert Policy .afff6" class="anchor-navigation-ex-anchor" href="#Add%20an%20Alert%20Policy%20.afff6"><i class="fa fa-link" aria-hidden="true"></i></a>Add an Alert Policy </h4>
+<ol>
+<li>In the navigation tree on the left, choose Alert Policy, enter the alert policy list interface, and click Add to enter the alert policy interface.</li>
+</ol>
+<ol>
+<li>On the Add Alert Policy page, define the basic information of the alert policy. Enter the name of the alert policy in turn and select the alert category and alert type. The alert category supports alerts for instances, applications, and containers. The alert type supports downtime alerts, threshold alerts, and predicted alerts for instances, threshold alerts and predicted alerts for applications, thresholds for containers, and predictive alerts.</li>
+</ol>
+<ol>
+<li>Define the triggering conditions of the alert policy according to different alert types selected.</li>
+</ol>
+<ul>
+<li>Downtime alert: Input time (minutes). After the instance loses response within the specified time, it will trigger the downtime alert. </li>
+</ul>
+<ul>
+<li>Threshold alert: Select the maximum/minimum/average value of virtual machine/container&#x2019;s indicator (such as memory usage (percentage), CPU usage (percentage), POD memory usage, etc.) in the past minutes/hours. If the value is less than / less than or equal to / greater than / greater than or equal to certain value, an alert will be triggered.</li>
+</ul>
+<ul>
+<li>Predictive alert: Based on the value of the indicator in the past minutes / hours / days (such as memory usage (percentage), CPU usage (percentage), etc.), predict those in future time range (minutes / hours / days). If the value of the indicator is less than/less than or equal to / greater than / greater than or equal to certain value, an alert will be triggered.</li>
+</ul>
+<ol>
+<li>Click &quot;Save&quot;. The alert policy is added successfully and the alert policy list interface will be displayed.</li>
+</ol>
+<h4 id="Edit an Alert Policy .afff6"><a name="Edit an Alert Policy .afff6" class="anchor-navigation-ex-anchor" href="#Edit%20an%20Alert%20Policy%20.afff6"><i class="fa fa-link" aria-hidden="true"></i></a>Edit an Alert Policy </h4>
+<p>Click &quot;Alert Policy&quot;, select a line of added alert policy, the toolbar &quot;Edit&quot; button becomes available, click the &quot;Edit&quot; button, or directly click the alert policy name to enter the alert policy editing interface.</p>
+<h4 id="Delete an Alert Policy .afff6"><a name="Delete an Alert Policy .afff6" class="anchor-navigation-ex-anchor" href="#Delete%20an%20Alert%20Policy%20.afff6"><i class="fa fa-link" aria-hidden="true"></i></a>Delete an Alert Policy </h4>
+<p>Click &quot;Alert Policy&quot; to select an alert policy that has been added. The &quot;Delete&quot; button on the toolbar becomes available. Click the &quot;Delete&quot; button to confirm the deletion prompt, and the alert policy is deleted successfully.</p>
+<h3 id="alert-rules"><a name="alert-rules" class="anchor-navigation-ex-anchor" href="#alert-rules"><i class="fa fa-link" aria-hidden="true"></i></a>4.4.2. Alert Rules</h3>
+<p>Supports the user to define the scope to which the selected alert policy is applied and the notifications and actions that are triggered.</p>
+<p>Click the secondary menu &quot;Alert Rules&quot; under &quot;Monitoring &amp; Alerts&quot; on the left navigation to display the alert rules list, including the alert name, alert level, alert policy name, range, object, status, creation time, creator, and so on. Alert rules can be added, edited, enabled, disabled, deleted, and so on.</p>
+<h4 id="Add an Alert Rules .afff6"><a name="Add an Alert Rules .afff6" class="anchor-navigation-ex-anchor" href="#Add%20an%20Alert%20Rules%20.afff6"><i class="fa fa-link" aria-hidden="true"></i></a>Add an Alert Rules </h4>
+<ol>
+<li>Click &quot;Alert Rules&quot;, enter the alert rules list interface, and click &quot;Add&quot;.</li>
+</ol>
+<ol>
+<li>Define basic information. Enter the name, select the alert policy, alert range, and alert level. After triggering xx times, it will automatically upgrade to a higher level. This supports alerts for business groups, projects, service deployments, and VMs. The alert object is based on the selected alert range and the alert level is warning and danger.</li>
+</ol>
+<ol>
+<li>Define the user, role, or email address to be notified when the alert is triggered.</li>
+</ol>
+<ol>
+<li>You can define the behavior after the alert is triggered. After triggering the behavior, you can set up to xx operations and stop the automatic execution.</li>
+</ol>
+<ul>
+<li>Support instance expansion operations: shrink one node horizontally, scale one node horizontally, shut down, restart, expand 5G logical volume, increase 1G memory (vSphere), add 1 vCPU (vSphere), etc.</li>
+</ul>
+<ul>
+<li>Support for the expansion of the container: reduce the number of 3 copies, increase the number of 2 copies, etc.</li>
+</ul>
+<ol>
+<li>Click &#x201C;Save&#x201D; to return to the alert rules interface.</li>
+</ol>
+<h3 id="triggered-alert"><a name="triggered-alert" class="anchor-navigation-ex-anchor" href="#triggered-alert"><i class="fa fa-link" aria-hidden="true"></i></a>4.4.3. Triggered Alert</h3>
+<p>Click &quot;Triggered Alerts&quot; to display the list of triggered alerts, including name, target, type, first trigger time, last trigger time, and alert status. The alert status is divided into firing, muted, and resolved. It is also possible to recover, pause, and release the triggered alerts in the list.</p>
+<ol>
+<li>Select a triggered alert. &quot;Pause&quot; and &quot;Relieve&quot; in the toolbar will become available. Click &quot;Pause&quot;, there will be a prompt. After confirmation it will shows that the operation is successful.</li>
+</ol>
+<ol>
+<li>Click on the alert name in the list to view the historical data. This page shows the object triggered the alert, the level of the alert, the triggered condition, the business group, the owner, the IP address, the alert chart (the adjustable time range help flexibly view the alert data for each time period), and the subsequent operation history of the alert.</li>
+</ol>
+<ol>
+<li>Objects triggered alerts can be linked, such as service deployment link to service deployment monitoring page, instance link to instance monitoring page, application link to service deployment monitoring page.</li>
+</ol>
+<h2 id="resource-analysis"><a name="resource-analysis" class="anchor-navigation-ex-anchor" href="#resource-analysis"><i class="fa fa-link" aria-hidden="true"></i></a>4.5. Resource Analysis</h2>
+<h3 id="report"><a name="report" class="anchor-navigation-ex-anchor" href="#report"><i class="fa fa-link" aria-hidden="true"></i></a>4.5.1. Report</h3>
+<p>You can view related billing reports and instance status reports or other custom reports in Resource Analysis - Reports. In Settings - Reports, you can choose to enable or disable a report for different user roles. Support filtering criteria for multiple dimensions of the report and displaying column selection for the header. Excel files can be exported.</p>
+<blockquote>
+<p>&#x300C;Note&#x300D;For the customized configuration of the report, please consult CloudChef engineer.</p>
+</blockquote>
+<h2 id="&#x56DE;&#x6536;&#x7AD9;"><a name="&#x56DE;&#x6536;&#x7AD9;" class="anchor-navigation-ex-anchor" href="#&#x56DE;&#x6536;&#x7AD9;"><i class="fa fa-link" aria-hidden="true"></i></a>4.6. &#x56DE;&#x6536;&#x7AD9;</h2>
+<p>All services are manually removed or automatically dismounted after expiration, and will be placed in the Recycle Bin for reservation, allowing users to recover when needed.</p>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; 2013-2019 CloudChef. All Rights Reserved. <a href="http://www.cloudchef.io/en/" target="_blank">Shanghai CloudChef Information Technology Co., Ltd.</a>  </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> update time&#xFF1A; 2019-11-27 10:27:24 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../02Homepage/" class="navigation navigation-prev " aria-label="Previous page: Homepage">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../05CICD/" class="navigation navigation-next " aria-label="Next page: CICD">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"CloudResourceGuidelines","level":"4.3","depth":1,"next":{"title":"CICD","level":"4.4","depth":1,"path":"UserDoc/05CICD/README.md","ref":"UserDoc/05CICD/README.md","articles":[]},"previous":{"title":"Homepage","level":"4.2","depth":1,"path":"UserDoc/02Homepage/README.md","ref":"UserDoc/02Homepage/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","-lunr","-search","search-plus","expandable-chapters-small","insert-logo","simple-page-toc","favicon","anchor-navigation-ex","page-footer-ex","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"mode":"float","livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"page-footer-ex":{"copyright":"Copyright © 2013-2019 CloudChef. All Rights Reserved. [Shanghai CloudChef Information Technology Co., Ltd.](http://www.cloudchef.io/en/) ","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"update time："},"showLevel":true,"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"sepia","family":"serif","size":1},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{},"printLog":false,"expandable-chapters-small":{},"multipleH1":true,"associatedWithSummary":true,"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none;","url":"https://cloudchef.github.io/doc-en/picture/logo.png"},"search-plus":{}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CloudChef Document","gitbook":"*","description":"Provide you with a rich and detailed guide and product documentation for the SmartCMP Cloud Management Platform.","theme-default":{"showLevel":false},"extension":null},"file":{"path":"UserDoc/03CloudResourceGuidelines/README.md","mtime":"2019-11-27T02:27:24.413Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-23T05:45:21.299Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -34,12 +34,12 @@ Access method:
 
 
 Required credentials: 
-You may be logged in using the system administrator, default tenant user (admin, bgadmin or user) or other users you created under this tenant. Users associated with different roles have different management configurations and usage entitlement. 详细说明请参考“[角色](https://cloudchef.github.io/doc/foundationConcepts/02组织架构/角色.html)”章节。
+You may be logged in using the system administrator, default tenant user (admin, bgadmin or user) or other users you created under this tenant. Users associated with different roles have different management configurations and usage entitlement. 
 
 
 # Other tenant usage & management interface
 
-You may create other tenants using Admin management & control interface. Tenant provides isolation of resource usage and management configuration.有关租户的详细说明请参考“[租户](https://cloudchef.github.io/doc/foundationConcepts/02组织架构/租户.html)”章节。
+You may create other tenants using Admin management & control interface. Tenant provides isolation of resource usage and management configuration.
 
 Purpose:
  + Connect and manage cloud platform resources

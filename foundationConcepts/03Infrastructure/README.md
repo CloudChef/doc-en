@@ -36,6 +36,7 @@ Resources, such as computing, storage, and network, are classified and specified
 
 The following table lists the resource entrance configurations for each cloud platform resource bundle:
 
+
  Cloud Platform Type|     Resource Bundle Entrance
  :------: |:------: 
 vSphere |vSphere Cluster
@@ -47,21 +48,32 @@ AWS  |AWS Zone, Availability Zone, and VPC
 Microsoft Azure  |Azure Subscription ID, zone, and resource group
 QingCloud   |QingCloud Zone, Availability Zone, and VPC
 
+
 One or more resource bundles (including multiple resource bundles from the same cloud platform) can be associated with each business group. At the same time, each resource bundle can be assigned to one business group or shared to multiple or all service groups.
+
 
 You can:
 
 + Specify the computing resources of the virtualization platform, or the area of the public cloud, the availability zone, etc.
+
 + Set the available resource quota, including the number of CPUs, the amount of memory, the number of virtual machines that can be deployed, etc.
+
 + Specify specific storage resources and network resources
+
 + Manually import the inventory resources in the cloud platform or set a timing policy to automatically synchronize the inventory resources in the cloud platform.
+
 
 For example, you can create a vSphere resource bundle:
 
+
 + Specify a vSphere cluster in the managed vCenter to provide computing resources;
+
 + Set the resource quota of the resource bundle: the number of CPUs, the amount of memory, the number of virtual machines that can be deployed, the number of snapshots allowed, and so on;
+
 + Specify the data stores that can be used and set the storage space available for each data store;
+
 + Specify the virtual switch that can be used and set the IP address allocation method.
+
 
 #  Virtual Machine Template
 
