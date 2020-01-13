@@ -14,7 +14,7 @@ There are two types of work order services:
 2. Services that require IT manual intervention (for example, manual work order service for resetting passwords.)
 
 
->「Note」更多云资源蓝图服务和手工工单服务使用指南请您参考:[云资源蓝图服务使用指南](http://CMP-PUBLIC-IP/help/UserDoc/03云资源服务使用指南/)和[手工工单服务使用指南](http://CMP-PUBLIC-IP/help/UserDoc/04手工工单服务使用指南/)
+>「Note」For more guidance on cloud resource blueprint service and manual work order service, please refer to:[Cloud Resource Guidelines](https://cloudchef.github.io/doc-en/UserDoc/03CloudResourceGuidelines/)和[Request Service](https://cloudchef.github.io/doc-en/UserDoc/04RequestService/)
 
 
 This chapter helps users get started with service request and self-service.

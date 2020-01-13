@@ -95,11 +95,6 @@ End user can request the service in a self-service manner through the service ca
 +	Recycle Bin：All services are manually removed or automatically dismounted after expiration and placed in the Recycle Bin for retention. Support restorage from the recycle bin, manually deletion (all resources are deleted from the cloud platform after deletion), or set the retention time for the recycle bin and automatically delete at expiration (support to set the recycle bin retention time to 0 days, that is, the service is not reserved in recycle bin) 
 
 
-## Dashboard
-Administrators can define dashboards in Dashboard, and defined dashboards will be assigned to different roles based on defined permissions.
-+ System default cloud resource usage dashboard: Cloud resource distribution, Instance overview, Instance OS distribution, Instance with alerts, Ongoing operations, service deployments to be expired, service deployments to be uninstalled, Instances with the highest CPU/memory/disk usage - Top10, Instances with the lowest CPU/memory/disk usage - Top10
-
-
 
 ## Monitor & Alert
 Subscribe to host alerts and define response behavior to alerts:
@@ -117,7 +112,7 @@ Provide analysis reports for the use of various resources:
 +	Reposts：billing reports, cloud platform overview reports, and other custom reports
 
 
-## 基础设施	
+## Infrastructure	
 +Cloud Entries：Such as cloud platform type, name, username and password, etc.
 +	Resource Bundles：Such as vCPU, memory, number of virtual machines, network, etc.
 +	VM Templates：Unified management of templates and images for various cloud platforms
@@ -159,9 +154,14 @@ Subscribe to resource bundle quotas and IP pool alerts and define response behav
 
 ## Settings
 +   System：User login type, DNS configuration
++   Notifications：SMTP mail, SMS, Enterprise WeChat, DingTalk, send system notifications, alarms and other messages to the connected message notification platform
 +	Menu：Define multiple dashboards or access third-party systems and set different roles to view and customize the location of the extended menu.
 +	Report：Set the enable/disable status of the report and the role to be assigned
-+	Audits：Record all user actions under the current tenant, available for query
+
+## Backup and Security
++   Bastion Host: Add details of the bastion host that needs to be connected and managed.
++	Backup system: Add details of the backup recovery management system that needs to be connected and managed.
++	Audit: Users can view all login and operation information recorded by the cloud platform.
 
 
 
@@ -179,3 +179,5 @@ Click on "Operation History" in the top right corner. The list shows the current
 
 # Documentation
 Click on the question mark icon in the upper right corner to go directly to the online documentation. You can view the product basic concepts, administrator manual and user manual online to learn about the basic concepts and functions of SmartCMP.
+
+>「Note」 The administrator can hide "About” or "Help Document" in the upper left corner of the homepage navigation bar in "System Configuration"-"Interface Settings".

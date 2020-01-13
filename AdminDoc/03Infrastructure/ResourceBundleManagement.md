@@ -14,17 +14,20 @@ The administrator allocates the resource bundle to the business group to impleme
 
 After the cloud platform is successfully added, the cloud platform resources are divided into one or more resource bundles, and the corresponding resource quotas are allocated to different business groups. The relationship between resource bundles and business groups is divided into three types:
 
-1.  ①	Resource bundle is only assigned to a unique business group
+1.  Resource bundle is only assigned to a unique business group
 
-2.  ②	Resource bundle is assigned to all business groups, and the newly added business group automatically associates the resource bundle
+2.  Resource bundle is assigned to all business groups, and the newly added business group automatically associates the resource bundle
 
-3.  ③	Resource bundles are shared to multiple business groups
+3.  Resource bundles are shared to multiple business groups
+
++  Support resource bundle replication. Usage scenarios: When an administrator configures multiple clusters for vCenter, each business group needs to configure these clusters as resource bundles, allowing administrators to quickly create resource bundles with the same or similar configuration. Specific operation steps: In the left navigation, select "Infrastructure" and select "Resource Bundle Management". In the list of resource bundles, select a resource bundle and click the copy button (When multiple resource bundles are selected, the copy button will not work.) to generate a new resource bundle creation page. The name of the copied resource is automatically changed to "<original resource bundle name> -1" (for example, the original resource bundle name is vSphereDemo, and the copied one is vSphereDemo-1). All configurations are the same as the original resource bundle. The administrator can modify the related parameters of the original resource bundle, including the assigned business group and the sharing mode. 
+
++  Support resource bundle enable or disable. When the administrator is creating and editing a resource bundle, a selection button is added below the priority to enable the resource bundle, which is selected by default. Resource bundles, whether enabled or disabled, can be assigned to business groups. After disabling, when deploying cloud resources, the selection of this resource bundle is not supported, but the existing resources are not affected in any way.
 
 
 
 
-
-## Add a vSphere Resource Bundle {#Add a vSphere Resource Bundle}
+## Add a vSphere Resource Bundle {#AddavSphereResourceBundle}
 
 You can add a vSphere resource bundle by following the steps below: 
 
@@ -77,7 +80,7 @@ You can add a vSphere with NSX resource bundle by following the steps below:
  + Folder	Select folder (optional)
  + VMware NSX Transmission Area	Used to configure the NSX logical switch. If not selected, the NXS Logical Switch subpage will not be displayed on the Network Resources page.
 
-3.  Computation Resources: same as the previous section [vSphere资源池配置](#添加vsphere资源池)
+3.  Computation Resources: same as the previous section [Add a vSphere Resource Bundle](#AddavSphereResourceBundle)
 
 
 4.  Network resources:
@@ -310,11 +313,11 @@ You can add a F5 Big IP resource bundle by following the steps below:
 
 2.  Basic Information: Fill in the resource bundle name, service group, resource label (optional), cloud platform portal, IP pool, and allow sharing to multiple service groups.
 
->「Note」For the shared status of the associated service group and resource bundle, refer to: [业务组添加资源池](http://CMP-PUBLIC-IP/help/AdminDoc/04组织架构管理/业务组.html#业务组添加资源池)
+>「Note」For the shared status of the associated service group and resource bundle, refer to: [Add Resource Bundle to Business Group](https://cloudchef.github.io/doc-en/AdminDoc/04Organization/BusinessGroup.html#Add%20Resource%20Bundle%20to%20Business%20Group)
 
 3.  Click the “Save” button to successfully create a F5 Big IP resource bundle.
 
->「Note」F5 Big IP resource bundle needs to be associated with an IP pool before it can be saved. If there is no corresponding IP pool of F5 Big IP, you need to add the corresponding IP pool to complete the creation of the resource bundle. Please refer to [添加IP池](http://CMP-PUBLIC-IP/help/AdminDoc/03基础设施管理/IP地址管理.html#添加IP池)。
+>「Note」F5 Big IP resource bundle needs to be associated with an IP pool before it can be saved. If there is no corresponding IP pool of F5 Big IP, you need to add the corresponding IP pool to complete the creation of the resource bundle. Please refer to [Add an IP Pool](https://cloudchef.github.io/doc-en/AdminDoc/03Infrastructure/IPAM.html#add-an-ip-pool)。
 
 ## Add CISCO ACI Resource Bundle {#Add CISCO ACI Resource Bundle}
 

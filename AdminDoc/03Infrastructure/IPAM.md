@@ -72,7 +72,7 @@ Click "Infrastructure" - "IPAM" to display a list of IP pools. On this page, use
 
 On the IP address list interface, select an IP pool and click Edit to enter the IP pool editing interface. Click "Delete" to confirm the deletion and click "Yes" to delete the IP pool.
 
-# 4.5.4	Manage IP Addresses
+# Manage IP Addresses
 
 On the IP address list interface, click the IP pool name to manage the IP address. The main function points are:
 

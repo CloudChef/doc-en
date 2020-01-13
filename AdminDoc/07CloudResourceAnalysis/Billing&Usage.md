@@ -61,7 +61,7 @@ The usage score is a combination of the average usage of CPU, memory, and disk. 
  + Revert to Snapshot	         To restore a virtual machine to a previous snapshot, you can trigger this task by setting "Timing" (at some point in the future).
  + vMotion Migration	         Compute resource migration and storage migration
 
->「Note」If you need to see more details about VM operation, please refer to: [VM Operations](http://CMP-PUBLIC-IP/help/AdminDoc/06云资源的全生命周期管理/我的部署.html)
+>「Note」If you need to see more details about VM operation, please refer to: [VM Operations](https://cloudchef.github.io/doc-en/AdminDoc/06CloudServiceMgmt/Deployments.html)
 
 # Billing Rules
 

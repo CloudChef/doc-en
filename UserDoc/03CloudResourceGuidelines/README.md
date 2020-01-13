@@ -257,6 +257,11 @@ Steps：
 Select the instance under Deployments and select the software you need to install. The software list is derived from the "Software Components" and allows you to change the property key values of the software.
 
 
+#### Other
+
+In the detailed interface of the intance operation, there are “Other” tabs with a list of custom operations that belong to the instance, such as "backup" operation. Prerequisite: The administrator has configured cloud resource operation entitlements for the current user. 
+
+
 
 # Instance
 
@@ -818,6 +823,17 @@ Displayed content can be filtered according to your needs, such as all or instal
 Alert provides the user with the virtual machine and any application self-service alert configuration.
 
 In the left navigation, select "Monitoring & Alert". There are 5 secondary menus under the Monitoring & Alert, followed by "Alert Policy", "Alert Rules", "Triggered Alert", "Host Monitoring" and "Host Alerts".
+
+
+### Component monitoring
+
+Component monitoring, as a separate page, shows the monitoring of applications. SmartCMP has built-in common monitoring agent components, including RedisExporter, NginxExporter, MySQLExporter, etc., to support adding monitoring agent components.
+
+>「Note」Business group administrators may only view the monitoring resources for the current business group.
+
+Click "Monitor & Alert"-"Component Monitor" in the left navigation bar and the left side displays the tree structure of the Export components while the right side displays the relevant Exporter (used to describe all Exporter components, each components can define the types of components they support.)
+
+For example: Click the NginxExporter displayed on the right to enter the "NginxExporter" tab. The left side of the page displays the NginxExporter associated instances, and the right side displays the related description information of the NginxExporter component.
 
 
 ### Alert Policy

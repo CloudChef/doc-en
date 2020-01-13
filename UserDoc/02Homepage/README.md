@@ -118,3 +118,4 @@ Click on "Operation History" in the top right corner. The list shows the current
 
 Click on the question mark icon in the upper right corner to go directly to the online documentation. You can view the product basic concepts, administrator manual and user manual online to learn about the basic concepts and functions of SmartCMP.
 
+>「Note」When the tenant administrator configures to hide "About" or "Help Documents" in "System"-"Interface Settings", after an ordinary user logs in, "About" or "Help Documents" will not be displayed in the upper left corner of the homepage navigation bar.

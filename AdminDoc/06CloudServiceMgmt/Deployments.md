@@ -143,7 +143,7 @@ Users can view and manage the instance list according to the following steps. Th
 
 >「Note」Only those virtual machines with the operation permission configured when the business group is set or the service is configured can see the list of allowed operations after the deployment is generated. For details on how to configure the virtual machine operation entitlement, see "Business Group Management" and "Service Configuration".
 
-## Instance Operation{#7.3.4	Instance Operation}
+## Instance Operation{#Instance Operation}
 
 On the instance list interface or click the instance name to enter the instance details page, you can perform the following operations on the instance. The operations are enabled or disabled by the business group/service deployment.
 
@@ -362,11 +362,11 @@ Only built-in monitoring agents are supported for the OpenStack cloud platform.
 If the instance has built-in agent monitoring installed, it can be updated through this operation.
 
 
+### Others
 
+Support customize operations according to actual needs. Click "More Operations"-"Others" to display a list of customized operations. For example, the following figure customizes the backup operation for the virtual machine of the vSphere cloud platform. For the detailed steps of the custom operation, please refer to: Action Configuration
 
-
-
-
+![Instance](../../picture/Admin/others.png)
 
 
 
@@ -457,7 +457,7 @@ Kubernetes' deployment provides declarative updates for Pod and Replica Sets. By
 
 -   Update Images: Update the instance image of the deployment. Click to select the container node to be updated in the pop-up box (required), select the image source, select the image name (required), select the image label, or enable the timing to perform operations at specific times. Click "Submit" and wait for the operation to complete.
 
- >「Note」Support integration of Habor and Docker native images as Image Registry. In the Kubernetes cloud platform, a container image source can be added. Reference: [Add Kubernetes Cloud Platform ](http://CMP-PUBLIC-IP/help/AdminDoc/03基础设施管理/云平台管理.html)
+ >「Note」Support integration of Habor and Docker native images as Image Registry. In the Kubernetes cloud platform, a container image source can be added. Reference: [Add Kubernetes Cloud Platform ](https://cloudchef.github.io/doc-en/AdminDoc/03Infrastructure/CloudPlatformManagement.html)
 
 -   Adjust container configuration: adjust the size of the vCPU and memory of the selected container node, including the request value and maximum value, and the request value (request) must be less than the maximum value (limit)
 

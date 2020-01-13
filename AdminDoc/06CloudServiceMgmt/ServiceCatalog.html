@@ -366,6 +366,19 @@
             
         </li>
     
+        <li class="chapter " data-level="3.3.9" data-path="../03Infrastructure/ResourceTag.html">
+            
+                <a href="../03Infrastructure/ResourceTag.html">
+            
+                    
+                    ResourceTag
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -469,12 +482,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.5.1" data-path="../05ServiceDesign/SoftwareComponents.html">
+        <li class="chapter " data-level="3.5.1" data-path="../05ServiceDesign/ComponentLibrary.html">
             
-                <a href="../05ServiceDesign/SoftwareComponents.html">
+                <a href="../05ServiceDesign/ComponentLibrary.html">
             
                     
-                    SoftwareComponents
+                    ComponentLibrary
             
                 </a>
             
@@ -759,6 +772,19 @@
             
         </li>
     
+        <li class="chapter " data-level="3.12" data-path="../12Security&Audits/">
+            
+                <a href="../12Security&Audits/">
+            
+                    
+                    Security&Audits
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -876,80 +902,77 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#self-selection-blueprint-for-service-request"><b>1. </b>Self-selection blueprint for service request</a></li><li><span class="title-icon "></span><a href="#Service%20Catalog%20Request"><b>2. </b>Service Catalog Request</a></li></ul></div><a href="#self-selection-blueprint-for-service-request" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p><strong>Service Catalog</strong></p>
-<p>After the service configuration is successfully published, you will see the services published by the business group and the services shared to all business groups in the service catalog interface. You can apply for a guided request in the service catalog or a published service. You can quickly locate the service you need to apply through a service group, business group, or search box.</p>
-<h1 id="self-selection-blueprint-for-service-request"><a name="self-selection-blueprint-for-service-request" class="anchor-navigation-ex-anchor" href="#self-selection-blueprint-for-service-request"><i class="fa fa-link" aria-hidden="true"></i></a>1. Self-selection blueprint for service request</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#service-catalog-display"><b>1. </b>Service Catalog Display</a></li><li><span class="title-icon "></span><a href="#Tab%20page%20display"><b>2. </b>Tab page display</a></li><li><span class="title-icon "></span><a href="#hierarchy-display"><b>3. </b>Hierarchy display</a></li><li><span class="title-icon "></span><a href="#select-blueprint-for-cloud-resource-request"><b>4. </b>Select Blueprint for Cloud Resource Request</a></li></ul></div><a href="#service-catalog-display" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p><strong>Service Catalog</strong></p>
+<h1 id="service-catalog-display"><a name="service-catalog-display" class="anchor-navigation-ex-anchor" href="#service-catalog-display"><i class="fa fa-link" aria-hidden="true"></i></a>1. Service Catalog Display</h1>
+<p>After the service configuration is published successfully, you will see the published service card in the service catalog interface. The interface display of the service catalog supports two methods:</p>
 <ol>
-<li><p>Go to the &quot;Services Catalog&quot; and click &quot;Apply&quot; on the card for applying for cloud resources. Specify a blueprint and click &quot;Next&quot;.</p>
-</li>
-<li><p>On the &quot;Basic Information&quot; page, fill in&#xFF1A;</p>
-<ul>
-<li>Business group: Deploy the business group to which it belongs</li>
-<li>Service deployment name: Deployment name (if the service group has set the service deployment naming rules, the service deployment name will be automatically generated according to the rules, no need to fill in)</li>
-<li>Project: Deployment project</li>
-<li>Owner: Deployment owner</li>
-</ul>
-</li>
-<li><p>Fill in the relevant request parameters, such as: resource bundle, private network, virtual machine configuration, storage size, number of nodes, and so on. Click &quot;Save&quot;, click &quot;Submit&quot; after confirming that it is correct, and wait for the deployment to complete.</p>
-</li>
+<li>Tab page display: Group display according to the tab page, you can quickly locate the service you need to apply for through the service group label, business group or search box. </li>
+<li>Hierarchical display: According to the card mode, first display the grouping (icon, name, description) in folder display mode, click on a grouping, and then display all the cards in this grouping. For cards without grouping, if you display according to the hierarchy, an ungrouped service folder will be added, click to enter all ungrouped cards. If the cards are grouped, this folder is not displayed. </li>
 </ol>
-<h1 id="Service Catalog Request"><a name="Service Catalog Request" class="anchor-navigation-ex-anchor" href="#Service%20Catalog%20Request"><i class="fa fa-link" aria-hidden="true"></i></a>2. Service Catalog Request</h1>
-<p>Users can apply for configured services or shared services published by the business group in the service catalog.</p>
+<blockquote>
+<p>&#x300C;Note&#x300D; Service directory display method, select in the system configuration-interface configuration function area, the specific operation steps, please refer to:<a href="http://CMP-PUBLIC-IP/help/AdminDoc/09&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;/#&#x754C;&#x9762;&#x914D;&#x7F6E;" target="_blank">Interface configuration</a></p>
+</blockquote>
+<h1 id="Tab page display"><a name="Tab page display" class="anchor-navigation-ex-anchor" href="#Tab%20page%20display"><i class="fa fa-link" aria-hidden="true"></i></a>2. Tab page display</h1>
+<p>When the service catalog is displayed as a tab page, you can use service grouping tags, such as: database, infrastructure, work order services, etc., or through different business groups, or use the search box to quickly locate the service you need to apply for. </p>
+<p>Take &quot;Deploy a virtual machine on vSphere cloud platform&quot; as an example:</p>
 <ol>
-<li><p>Click &#x201C;Service Catalog&#x201D; in the left navigation bar, select a service, and click to enter the service application page.</p>
-</li>
-<li><p>The details of the service are displayed at the top of the service request page:</p>
-<ul>
-<li>Description    Description of the service</li>
-<li>Basic information    Service lease time and retention time configured by service configuration/business group configuration</li>
-<li>Topology    Topology diagram used by the service</li>
-</ul>
-</li>
-<li><p>&#x2462;    Fill in the relevant request parameters below the service request page:
-Organization information</p>
-<ul>
-<li>Business group    If the service is a full business group, that is, a shared service, you need to select a business group (this business group needs to have a related resource bundle, otherwise it will not be allowed to apply); if the service has been assigned a business group, the business group does not need to be filled out.</li>
-<li>Project    If the project is divided under the business group, you can select the project.</li>
-<li>Owner    Select the owner of the service, the owner must be a member of the business group</li>
-</ul>
-</li>
+<li>Click &quot;Service Catalog&quot; on the left navigation bar, select a &quot;vSphere VM&quot; service, and click to enter the service application page </li>
+<li>Related parameters on the service request page:</li>
 </ol>
+<p>Organization Information</p>
+<ul>
+<li>Business group If the service is all business groups, that is, shared services, you need to select a business group (the business group must have related resource bundles, otherwise applications will not be allowed); if the service has already been assigned a business group during service configuration, you do not need to fill this. </li>
+<li>Project If the project is divided under this business group, you can select the project</li>
+<li>Owner Select the owner of the service. The owner must be a member of the business group, the owner of the service deployment. Support updating owner in service deployment. </li>
+</ul>
 <p>Deployment information</p>
 <ul>
-<li>Name    If the service deployment name naming rule is configured for the business group, the service deployment name does not need to be filled in. The service deployment name is automatically generated according to the business group rules. </li>
-<li>If the business group name is not configured in the business group, you need to manually fill in the service.</li>
-<li>Quantity    Fill in the number of deployments, the default is 1</li>
-<li>Execution time    Can start service deployment at a specified time, accurate to the minute</li>
-<li>Key-value label    Checked by default, all server nodes use the same key-value label.</li>
-<li>If not checked, all server nodes under the service deployment will be listed, and key value labels can be set separately for each server node.</li>
+<li>Name If the service group has been configured with the &#x201C;Service Deployment Name Naming Rule&#x201D;, the service deployment name does not need to be filled in and will be automatically generated according to the business group rules. If the business group is not configured with the &#x201C;Service Deployment Name Naming Rule&#x201D;, it must be manually filled </li>
+<li>Quantity Enter the number of deployments. The default is 1.</li>
+<li>Execution time You can specify the time to start service deployment, accurate to the minute </li>
+<li>Key-value labels Checked by default, all server nodes use the same key-value labels. If not checked, all server nodes under the service deployment will be listed, and key-value labels can be set separately for each server node </li>
 </ul>
 <p>Other information</p>
 <ul>
-<li>Parameters for form    If you customize the relevant fields for the cloud resource blueprint service and the manual single service in the form configuration of the service configuration, fill in the required information here</li>
+<li>Parameters of the form configuration If you customize the relevant fields for the cloud resource blueprint service and the manual order service in the form configuration of the service configuration, fill in the required information here 
+Request parameters</li>
+<li>Request parameters If when configuring the service only the &#x201C;Allow change&#x201D; option is checked, the application parameter column will appear, and related server, network, and other components can be configured as required. </li>
+<li>Software configuration If you select &#x201C;Add software when applying&#x201D; during service configuration, a software configuration bar will appear. You can add software for the computing node / software component of the service. Click &#x201C;Add Software&#x201D; to select the software to be installed. All software components will be listed. Select the relationship: &quot;install to&quot; or &quot;depends on&quot;; select the nodes to install or depend on.</li>
 </ul>
-<p>Request Parameters</p>
+<p> Click &quot;Apply&quot; after completing the filling. It will be directly deployed or wait for approval according to the business group workflow. You can check the deployment status in &quot;Deployments&quot;-&quot;My Deployments&quot; (also see the deployment status in the &quot;Operation History&quot; in the upper right corner), Or check the approval process in &quot;Service Request&quot;-&quot;Pending Approval&quot;. </p>
+<p> If when you apply for the service, you can&#x2019;t fill in the relevant parameters all at once, click &#x201C;Save&#x201D; to save the filled parameters. In the next application, click &#x201C;Load&#x201D; to reload and automatically fill in the last filled in parameters.</p>
+<p> When you apply for a service, configure the charging rules in advance (private and public clouds are different, see below), the platform can display the cost of this application, and the specific configuration steps of the charging rules:</p>
 <ul>
-<li>Request Parameters    If during service configuration, only &quot;Allow modification&quot; is selected (&#x201C;Modify only when approved&#x201D; is not checked), the application parameter field will appear. You can configure the relevant Server and Network parameters as required. </li>
-<li>Software Configuration    If the &#x201C;Add Software during request&#x201D; is selected during service configuration, the software configuration bar will appear. You can add software to the computing node/software component of the service and click &#x201C;Add Software&#x201D;.
-  Select the software to be installed and all software components will be listed
-  Select relationship: &#x201C;Install to&#x201D; or &#x201C;Depend on&#x201D;
-  Select the node to install to or depend on</li>
+<li>For the private cloud, after the administrator configures the private cloud&apos;s charging rules in &quot;Billing &amp; Usage&quot;-&quot;Billing Rules&quot;, when users apply for services, they directly use the billing API to billing charging.</li>
+<li>For the public cloud, you need to cache the unit price API structure of the public cloud, and then calculate the cost. </li>
 </ul>
+<h1 id="hierarchy-display"><a name="hierarchy-display" class="anchor-navigation-ex-anchor" href="#hierarchy-display"><i class="fa fa-link" aria-hidden="true"></i></a>3. Hierarchy display</h1>
+<ul>
+<li>Hierarchy display method, according to the card model, first display the service grouping. For specific, please refer to: <a href="https://cloudchef.github.io/doc-en/AdminDoc/05ServiceDesign/ServiceGrouping.html" target="_blank">Service Grouping</a> </li>
+</ul>
+<ul>
+<li>In the service catalog view interface, you can view the icon, name, description, and folder display mode of the service group. Click a group to display all the cards of the service group. (Note: When the service card created by the administrator does not have a service group, if it is displayed in a hierarchy, this type of card will be stored in the &quot;Ungrouped Services&quot; folder. Click to enter all ungrouped cards. If the administrator created service cards are grouped, so the &quot;Ungrouped Services&quot; folder is not displayed.) </li>
+</ul>
+<h1 id="select-blueprint-for-cloud-resource-request"><a name="select-blueprint-for-cloud-resource-request" class="anchor-navigation-ex-anchor" href="#select-blueprint-for-cloud-resource-request"><i class="fa fa-link" aria-hidden="true"></i></a>4. Select Blueprint for Cloud Resource Request</h1>
+<p>SmartCMP supports one service card to bind multiple blueprints and supports users to quickly select blueprints according to their needs. For example, the service card of &quot;Request Database&quot; is configured with Mysql, Oracl, NoSQL and other database-related blueprints in advance. </p>
+<p>For example: You can choose a blueprint self-service application by following these steps: </p>
 <ol>
-<li><p>After completing the request, click &#x201C;Apply&#x201D; to directly deploy or wait for approval according to the business group process control. You can view the deployment status in &#x201C;Deployments&#x201D; - &#x201C;My Deployments&#x201D; (you can also view the deployment in the operation history in the upper right corner) or go to &quot;Requests&quot; - &quot;My Requests&quot; to view the approval process.</p>
+<li><p>Enter the &quot;Service Catalog&quot;, click &quot;Apply&quot; on the &quot;Apply for Cloud Resources&quot; card, specify a blueprint to associate, and click &quot;Next&quot; </p>
 </li>
-<li><p>When you apply for the service, if you cannot fill in the relevant parameters at one time, click &#x201C;Save&#x201D; to save the filled parameters, and at the next application, click &#x201C;Load&#x201D; to reload which will automatically fill the last filled in parameters. </p>
-</li>
-<li><p>When you apply for a service, the platform can display the cost of this application (on a monthly basis).</p>
+<li><p>&quot;Basic Information&quot; page, fill in:</p>
 <ul>
-<li><p>For the private cloud, after the administrator configures the accounting rules of the private cloud in the &#x201C;Billing &amp; Usage&#x201D;-&#x201C;Billing Rules&#x201D;, the user directly uses the charging API to perform charging when applying for the service.</p>
-</li>
-<li><p>The public cloud needs to cache the public cloud&apos;s unit price API structure and then calculate the cost.</p>
-</li>
+<li>Business group The business group to which the deployment belongs </li>
+<li>Service deployment name Deployment name (if the service group has set a service deployment naming rule, the service deployment name will be automatically generated in accordance with the rules, there is no need to fill in) </li>
+<li>Project Deployment project </li>
+<li>Owner Deployment owner</li>
 </ul>
 </li>
 </ol>
-<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; 2013-2019 CloudChef. All Rights Reserved. <a href="http://www.cloudchef.io/en/" target="_blank">Shanghai CloudChef Information Technology Co., Ltd.</a>  </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> update time&#xFF1A; 2019-12-11 11:52:23 </span> </footer>
+<ol>
+<li>Fill in the relevant application parameters, such as: resource bundle, private network, virtual machine configuration, storage size, number of nodes, and so on.</li>
+<li>Click &quot;Save&quot;, click &quot;Submit&quot; after confirming that there are no errors, and wait for the deployment to complete.</li>
+</ol>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; 2013-2019 CloudChef. All Rights Reserved. <a href="http://www.cloudchef.io/en/" target="_blank">Shanghai CloudChef Information Technology Co., Ltd.</a>  </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> update time&#xFF1A; 2020-01-13 16:28:26 </span> </footer>
                                 
                                 </section>
                             
@@ -992,7 +1015,7 @@ Organization information</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"ServiceCatalog","level":"3.6.1","depth":2,"next":{"title":"ServiceRequest","level":"3.6.2","depth":2,"path":"AdminDoc/06CloudServiceMgmt/ServiceRequest.md","ref":"AdminDoc/06CloudServiceMgmt/ServiceRequest.md","articles":[]},"previous":{"title":"CloudServiceMgmt","level":"3.6","depth":1,"path":"AdminDoc/06CloudServiceMgmt/README.md","ref":"AdminDoc/06CloudServiceMgmt/README.md","articles":[{"title":"ServiceCatalog","level":"3.6.1","depth":2,"path":"AdminDoc/06CloudServiceMgmt/ServiceCatalog.md","ref":"AdminDoc/06CloudServiceMgmt/ServiceCatalog.md","articles":[]},{"title":"ServiceRequest","level":"3.6.2","depth":2,"path":"AdminDoc/06CloudServiceMgmt/ServiceRequest.md","ref":"AdminDoc/06CloudServiceMgmt/ServiceRequest.md","articles":[]},{"title":"Deployments","level":"3.6.3","depth":2,"path":"AdminDoc/06CloudServiceMgmt/Deployments.md","ref":"AdminDoc/06CloudServiceMgmt/Deployments.md","articles":[]},{"title":"Monitoring&Alert","level":"3.6.4","depth":2,"path":"AdminDoc/06CloudServiceMgmt/Monitoring&Alert.md","ref":"AdminDoc/06CloudServiceMgmt/Monitoring&Alert.md","articles":[]},{"title":"ResourceRecycle","level":"3.6.5","depth":2,"path":"AdminDoc/06CloudServiceMgmt/ResourceRecycle.md","ref":"AdminDoc/06CloudServiceMgmt/ResourceRecycle.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["splitter","-lunr","-search","search-plus","expandable-chapters-small","insert-logo","simple-page-toc","favicon","anchor-navigation-ex","page-footer-ex","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"mode":"float","livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"page-footer-ex":{"copyright":"Copyright © 2013-2019 CloudChef. All Rights Reserved. [Shanghai CloudChef Information Technology Co., Ltd.](http://www.cloudchef.io/en/) ","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"update time："},"showLevel":true,"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"sepia","family":"serif","size":1},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{},"printLog":false,"expandable-chapters-small":{},"multipleH1":true,"associatedWithSummary":true,"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none;","url":"https://cloudchef.github.io/doc-en/picture/logo.png"},"search-plus":{}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CloudChef Document","gitbook":"*","description":"Provide you with a rich and detailed guide and product documentation for the SmartCMP Cloud Management Platform.","theme-default":{"showLevel":false},"extension":null},"file":{"path":"AdminDoc/06CloudServiceMgmt/ServiceCatalog.md","mtime":"2019-12-11T03:52:23.230Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-23T05:45:21.299Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"ServiceCatalog","level":"3.6.1","depth":2,"next":{"title":"ServiceRequest","level":"3.6.2","depth":2,"path":"AdminDoc/06CloudServiceMgmt/ServiceRequest.md","ref":"AdminDoc/06CloudServiceMgmt/ServiceRequest.md","articles":[]},"previous":{"title":"CloudServiceMgmt","level":"3.6","depth":1,"path":"AdminDoc/06CloudServiceMgmt/README.md","ref":"AdminDoc/06CloudServiceMgmt/README.md","articles":[{"title":"ServiceCatalog","level":"3.6.1","depth":2,"path":"AdminDoc/06CloudServiceMgmt/ServiceCatalog.md","ref":"AdminDoc/06CloudServiceMgmt/ServiceCatalog.md","articles":[]},{"title":"ServiceRequest","level":"3.6.2","depth":2,"path":"AdminDoc/06CloudServiceMgmt/ServiceRequest.md","ref":"AdminDoc/06CloudServiceMgmt/ServiceRequest.md","articles":[]},{"title":"Deployments","level":"3.6.3","depth":2,"path":"AdminDoc/06CloudServiceMgmt/Deployments.md","ref":"AdminDoc/06CloudServiceMgmt/Deployments.md","articles":[]},{"title":"Monitoring&Alert","level":"3.6.4","depth":2,"path":"AdminDoc/06CloudServiceMgmt/Monitoring&Alert.md","ref":"AdminDoc/06CloudServiceMgmt/Monitoring&Alert.md","articles":[]},{"title":"ResourceRecycle","level":"3.6.5","depth":2,"path":"AdminDoc/06CloudServiceMgmt/ResourceRecycle.md","ref":"AdminDoc/06CloudServiceMgmt/ResourceRecycle.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["splitter","-lunr","-search","search-plus","expandable-chapters-small","insert-logo","simple-page-toc","favicon","anchor-navigation-ex","page-footer-ex","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"mode":"float","livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"page-footer-ex":{"copyright":"Copyright © 2013-2019 CloudChef. All Rights Reserved. [Shanghai CloudChef Information Technology Co., Ltd.](http://www.cloudchef.io/en/) ","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"update time："},"showLevel":true,"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"sepia","family":"serif","size":1},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{},"printLog":false,"expandable-chapters-small":{},"multipleH1":true,"associatedWithSummary":true,"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none;","url":"https://cloudchef.github.io/doc-en/picture/logo.png"},"search-plus":{}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CloudChef Document","gitbook":"*","description":"Provide you with a rich and detailed guide and product documentation for the SmartCMP Cloud Management Platform.","theme-default":{"showLevel":false},"extension":null},"file":{"path":"AdminDoc/06CloudServiceMgmt/ServiceCatalog.md","mtime":"2020-01-13T08:28:26.662Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-13T08:29:09.037Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

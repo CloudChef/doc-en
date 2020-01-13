@@ -21,7 +21,7 @@ For the specific work order service scenario, please refer to the following step
 
 The service group is a collection of service personnel who process work order tasks during the work order service management process, and supports the tenant administrator to customize the associated users.
 
->「Note」Previous content has already introduced the service group in detail. If you need to set up a service group, please refer to [Set up Service Group](http://CMP-PUBLIC-IP/help/AdminDoc/04组织架构管理/服务团队.html)
+>「Note」Previous content has already introduced the service group in detail. If you need to set up a service group, please refer to [Set up Service Group](https://cloudchef.github.io/doc-en/AdminDoc/04Organization/ServiceGroup.html)
 
 # Define Work Order Service Process{#Define Work Order Service Process}
 

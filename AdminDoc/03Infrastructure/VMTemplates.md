@@ -1,4 +1,4 @@
-**虚拟机模板**
+**VM Templates**
 
 The platform supports the creation of virtual machine templates. One operating system can correspond to multiple virtual machine templates. A virtual machine template is associated with a template or image in the cloud platform
 

@@ -5,6 +5,15 @@ Alert provides the user with the virtual machine and any application self-servic
 
 In the left navigation, select "Monitoring & Alert". There are 5 secondary menus under the Monitoring & Alert, followed by "Alert Policy", "Alert Rules", "Triggered Alert", "Host Monitoring" and "Host Alerts".
 
+# Component monitoring
+
+As a separate page, component monitoring displays application monitoring, and the monitoring agent component is synchronized with the monitoring agent component in the component library. Specific steps for adding a proxy component, please refer to: Component Library 
+
+Click "Monitor & Alert"-"Component Monitoring" in the left navigation bar. The left side displays the tree structure of the Export components, and the right side displays the relevant Exporter (used to describe all Exporter components, each can define the types of components they support.). Click on the NginxExporter displayed on the right to enter the "NginxExporter" tab. The left side of the page displays the NginxExporter associated instance, and the right side displays the related description information of the NginxExporter component.
+
+>「Note」 Component monitoring entitlement management: Every user can see the menu, but the scope of component resources that can be viewed is based on the user's configured entitlements in advance. For example, the tenant administrator sees the resources he owns and the business group administrator sees all resources in the business group he manages, etc. 
+
+
 
 # Alert Policy
 

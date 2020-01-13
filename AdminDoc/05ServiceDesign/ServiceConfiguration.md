@@ -4,7 +4,7 @@
 The software architect can publish the designed blueprint as a service, and the IT administrator can integrate the service with the internal processes and publish it to the service catalog. 
 The main functions of the service items are:
 
->「Note」After the service is released, you can apply for the service through the service catalog. For details, see: [服务目录申请](http://CMP-PUBLIC-IP/help/AdminDoc/06云服务管理/#服务目录申请)
+>「Note」After the service is released, you can apply for the service through the service catalog. For details, see: [Service Catalog](https://cloudchef.github.io/doc-en/AdminDoc/06CloudServiceMgmt/ServiceCatalog.html)
 
  + Service is associated with a specified blueprint, business group
 
@@ -24,9 +24,9 @@ You can add a service configuration by following the steps below:
 
 2.  Fill in the service name, service description (optional), select the business group, service type. When the service type is cloud resource blueprint service, select the blueprint design. When selecting the manual work order service, select the process selection and click " submit"
 
- Next, Introduce you to the specific steps of the cloud resource blueprint service configuration. For the specific steps of the manual work order service configuration, please refer to: [手工工单服务配置](http://CMP-PUBLIC-IP/help/AdminDoc/08工单服务管理#配置工单)
+ Next, Introduce you to the specific steps of the cloud resource blueprint service configuration. For the specific steps of the manual work order service configuration, please refer to: [Manual Work Order Service Configuration](https://cloudchef.github.io/doc-en/AdminDoc/08RequestServiceMgmt/#Manual%20Work%20Order%20Service%20Configuration)
 
-
+>「Note」The description of the service configuration supports Markdown syntax writing rules to show the display format of different service descriptions during service request. 
 
 3.  Fill in the following information on the "Overview" tab.
 
@@ -46,9 +46,7 @@ You can add a service configuration by following the steps below:
 + Service deployment retention time (day)	After the retention time is reached, the deployment will be dismounted. The configurable retention time is set within the interval configured by the business group. Check "Allow modification" and "Modify only when approved". 
 
 + Enable association rules	  Support for forcibly distributing vSphere virtual machines to different physical machines or to the same physical machine
-+ Allow software to be added when applying	If checked, when the service is successfully published, the service will allow the service to add software when applying.
-+ Pre-deployment operations	  Set up the pre-deployment process (select an approval template)
-+ Post-deployment operations	Set up the post-deployment process (mail notification)
+
 
 
 4.   Click the “Approval Configuration” tab to select the approval process (built-in default approval process or custom approval process, for example: parallel approval process), view approval process flow chart, approval process step
@@ -64,7 +62,7 @@ There are three types of components in the component configuration list: computi
 
  + Computational components: refer to servers or compute nodes such as Server, Windows Server, Instance, etc.
 
- + Software components: applications that are typically placed on servers or compute nodes, such as Apache, MySQL, etc.
+ + Software components configuration: applications that are typically placed on servers or compute nodes, such as Apache, MySQL, etc.
 
  + Network components: refer to the network configuration of the server, such as network
 
@@ -74,25 +72,29 @@ Component configuration:
 
  - Software components: You can add monitoring points to enable monitoring. The nodes where the software components are located must be enabled for monitoring, and the monitoring of software components will take effect. After the monitored server or node and software components are deployed successfully, you can view the currently deployed monitoring data information on the Monitoring tab of the Deployment Details page. The corresponding node instance details page also has a node monitoring tab for the user to monitor the current node's data. At the same time, if the software component with monitoring points is installed in the current node, you can view the monitoring data of the software components by adding monitoring points.
 
- 
- 
-8.   Click “Input and Output”: You can add input and output parameters. After the service is deployed successfully, you can view the relevant output data on the details page.
+
+## Cloud Resource Allocation Strategy
+
+In the service configuration, configure the cloud resource configuration of the instance node. Pay attention to the resource bundle selection strategy. The platform mainly provides the following strategies:
+
++	Manual designation: Specify the resource bundle manually. If the resource bundle selection strategy selects “manual designation”, which supports the use of resource labels and narrows down the selection, the “resource bundle” selection item will appear. Select the resource bundle in the drop-down box and specify the resource bundle. You can choose to check "Allow modification" and "Only modify during approval". 
+
++	Automatically select the one with largest remaining capacity: The platform automatically selects the currently selectable resource bundle according to the policy, with the smallest resource usage and the largest remaining capacity.
+
++	Automatically select the lowest cost: The platform supports setting resource charging rules and selecting the currently selectable resource bundle according to the policy, with the lowest cost and the least cost.
+
++	Even Allocation: When services are deployed, resources are evenly distributed to different resource bundles.
 
 
-+ Input: Click Add to fill in the name (required), description, default value, etc.
-
-+ Output: Click Add to fill in the output information such as the name (required), description, and expression (required). Expressions can be selected as they are, or they can be entered as needed.
-
-9.   Service Deployment Operation Entitlement: Here you can enable actions in Service Deployment Management and configure the required approval process. For each operation, different rules and approval processes can be configured for different roles. By default, the business group configuration is inherited, and can be added or deleted. The role list can be filtered.
 
 
 # Add Cloud Resource Blueprint Service Configuration
 
 ## Configure vSphere Single-Node Service {#Configure vSphere Single-Node Service}
 
-1.  Click “Service desgin” - “Catalog Config” on the left navigation, click “Add” in the upper left corner to enter the new service configuration interface, fill in the service name, service description (optional), blueprint design (select [创建的vSphere单节点蓝图](http://CMP-PUBLIC-IP/help/AdminDoc/05服务建模/蓝图设计.html#创建vSphere单节点蓝图), business group, click "submit"
+1.  Click “Service desgin” - “Catalog Config” on the left navigation, click “Add” in the upper left corner to enter the new service configuration interface, fill in the service name, service description (optional), blueprint design (select [Build vSphere Single-node Blueprints](https://cloudchef.github.io/doc-en/AdminDoc/05ServiceDesign/BlueprintDesign.html#Build%20vSphere%20Single-node%20Blueprints), business group, click "submit"
 
-2.  "Overview" "Input and Output" and "Service Deployment Operation Entitlement" configuration please refer to [概述]
+2.  "Overview" "Input and Output" and "Service Deployment Operation Entitlement" configuration please refer to [Overview]
 
 3.  Components: You can see the vSphere service topology and all components: Server, Network
 
@@ -195,7 +197,7 @@ Configure the vSphere service with the NSX cloud platform. Here are the pre-serv
 
 4.  Click Save to configure the VMware NSX resource bundle successfully.
 
-**Start configuring the VMware NSX virtual machine service:**
+### Start configuring the VMware NSX virtual machine service:
 
 1.  "Service Design" - "Catalog Config" - "Add", fill in the service name, select the VMware NSX Blueprint, select the business group, click "Submit"
 
@@ -247,7 +249,7 @@ Properties (check to use existing security groups)
 
 ## Configure vSphere MySQL with Monitoring Service {#Configure vSphere MySQL with Monitoring Service}
 
-1.  In the left navigation, click "Service Design" - “Catalog Config”, click "Add" in the upper left corner to enter the new service configuration interface, fill in the service name, service description (optional), blueprint design (select [创建的vSphereMySQL带监控蓝图](http://CMP-PUBLIC-IP/help/AdminDoc/05服务建模/蓝图设计.html#创建vSphereMySQL带监控蓝图), business group, click "Submit" 
+1.  In the left navigation, click "Service Design" - “Catalog Config”, click "Add" in the upper left corner to enter the new service configuration interface, fill in the service name, service description (optional), blueprint design (select [Create vSphere MySQL with Monitoring Blueprint](https://cloudchef.github.io/doc-en/AdminDoc/05ServiceDesign/BlueprintDesign.html#Create%20vSphere%20MySQL%20with%20Monitoring%20Blueprint), business group, click "Submit" 
 
 2.  "Overview" "Input and Output" and "Service Deployment Operation License" view configuration please refer to Overview
 
@@ -385,16 +387,16 @@ Properties (check to use an existing firewall)
 
 
 
-## Configure OpenStack LoadBalancer with SecuriryGroup Service{#Configure OpenStack LoadBalancer with SecuriryGroup Service}
+## Configure OpenStack LoadBalancer with SecurityGroup Service{#Configure OpenStack LoadBalancer with SecurityGroup Service}
 1.  In the left navigation, select "Service Design" - “Catalog Config”, click "Add" in the upper left corner to enter the new service configuration interface, fill in the service name, service description (optional), blueprint design, business group, click "Submit"
 
 2.  "Overview" "Input and Output" and "Service Deployment Operation Entitlement" configuration please refer to Overview
 
-3.  Component: You can see the OpenStack LoadBalancer with SecuriryGruop service topology and all components: Server, Network, LoadBalancer, Listener, SecurityGroup
+3.  Component: You can see the OpenStack LoadBalancer with SecurityGroup service topology and all components: Server, Network, LoadBalancer, Listener, SecurityGroup
 
- + Server: Server node configuration refer to [Configure OpenStack Single-node Service](http://CMP-PUBLIC-IP/help/AdminDoc/05服务建模/蓝图设计.html#创建OpenStack单节点蓝图)
+ + Server: Server node configuration refer to [Create OpenStack Single-node Blueprint](https://cloudchef.github.io/doc-en/AdminDoc/05ServiceDesign/BlueprintDesign.html#Create%20OpenStack%20Single-node%20Blueprint)
 
- + Network: Network node configuration refer to  [Configure OpenStack Single-node Service]()
+ + Network: Network node configuration refer to  [Create OpenStack Single-node Blueprint](https://cloudchef.github.io/doc-en/AdminDoc/05ServiceDesign/BlueprintDesign.html#Create%20OpenStack%20Single-node%20Blueprint)
 
  + LoadBalancer: Click the LoadBalancer name to enter the node detailed settings. There are two tabs: Basic Information and Properties.
 
@@ -478,7 +480,7 @@ Properties (check to use existing resources)
 
 >「Note」In the OpenStack resource bundle, you need to select an IPSec policy group in the "Network Resources" - "Security Policy Group" before you can select an existing security group on the SecurityGroup "Properties" page.
 
-4. Click “Save” to return to the component list interface. Click "Verify", after the verification is successful, "Save and Publish" the service, OpenStack LoadBalancer with SecuriryGruop VM service is configured and released successfully.
+4. Click “Save” to return to the component list interface. Click "Verify", after the verification is successful, "Save and Publish" the service, OpenStack LoadBalancer with SecurityGruop VM service is configured and released successfully.
 
 ## Configure OpenStack FloatingIP Service {#Configure OpenStack FloatingIP Service}
 
@@ -550,15 +552,15 @@ Properties:
 
 ## Configure Kubernetes Service {#Configure Kubernetes Service}
 
-1.  ①	In the navigation tree on the left, choose Service desgin - Catalog Config, click Add in the upper left corner to enter the new service configuration interface, fill in the service name, service description (optional), blueprint design (choose 6.3.3.9 Creat Kubernetes Blueprint), business group, click "Submit"
+1.  In the navigation tree on the left, choose Service desgin - Catalog Config, click Add in the upper left corner to enter the new service configuration interface, fill in the service name, service description (optional), blueprint design (choose 6.3.3.9 Creat Kubernetes Blueprint), business group, click "Submit"
 
-2.  ②	"Overview" "Input and Output" and "Service Deployment Operation License" view configuration please refer to Overview
+2.  "Overview" "Input and Output" and "Service Deployment Operation License" view configuration please refer to Overview
 
-3.  ③	"Component Configuration" view: you can see the Kubernetes service topology map and all the components in the service configuration. According to the Kubernetes blueprint, there are four components, namely Deployment, Service, Container, PersistentVolumeClaim.
+3.  "Component Configuration" view: you can see the Kubernetes service topology map and all the components in the service configuration. According to the Kubernetes blueprint, there are four components, namely Deployment, Service, Container, PersistentVolumeClaim.
 
- + 	Deployment: Click the Deployment name, go to the “Basic Information” page, click “Properties”, you can choose the number of copies, the default is 1, click “Save”
+ + Deployment: Click the Deployment name, go to the “Basic Information” page, click “Properties”, you can choose the number of copies, the default is 1, click “Save”
 
- + 	Container: Click on the Container name to go to the basic information page, click on the "Properties" tab:
+ + Container: Click on the Container name to go to the basic information page, click on the "Properties" tab:
 
   Container         
 
@@ -872,7 +874,7 @@ By default, "Use existing security group" is selected. Select an existing securi
 +   Service deployment name	 Deployment name (If the service group has set the service deployment naming rules, the service deployment name will be automatically generated according to the rules, no need to fill in)
 +   Logo image	             Upload image, more beautiful in the service catalog display
 +   Description	             Deployment Description
-+   Service grouping	Built-in three types: work order service, database, infrastructure, support for customization. For details on service grouping, please refer to: [Service Grouping](http://CMP-PUBLIC-IP/help/AdminDoc/05服务建模/服务分组.html)
++   Service grouping	Built-in three types: work order service, database, infrastructure, support for customization. For details on service grouping, please refer to: [Service Grouping](https://cloudchef.github.io/doc-en/AdminDoc/05ServiceDesign/ServiceGrouping.html)
 +   Order                   	Specify the order in the service catalog, The smaller the value, the higher the order
 +   Service status	          Shows service status in real time, such as: not released
 +   Service deployment lease time (day)	           Lease time, after the lease time, all instances in the deployment will be down and archived
@@ -902,7 +904,7 @@ By default, "Use existing security group" is selected. Select an existing securi
 
 4. Component Configuration view: You can see the OpenStack service topology and all components: Server, Network, F5 service all components: Virtual Server, Pool, and SNAT Pool 
 
-OpenStack Server and Network components configuration reference: [Configure OpenStack Single-node Service](http://CMP-PUBLIC-IP/help/AdminDoc/05服务建模/蓝图设计.html#创建OpenStack单节点蓝图)
+OpenStack Server and Network components configuration reference: [Create OpenStack Single-node Blueprint](https://cloudchef.github.io/doc-en/AdminDoc/05ServiceDesign/BlueprintDesign.html#Create%20OpenStack%20Single-node%20Blueprint)
 
  Component configuration of the F5 service:
 

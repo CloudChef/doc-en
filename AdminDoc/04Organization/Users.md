@@ -10,7 +10,7 @@ In the left navigation, select "Organization" - "Users". This page displays all 
 
 3.  Roles: The default user is a tenant member. The system has software architect, infrastructure administrator, tenant administrator and other roles by default. You can also customize the role and assign corresponding permissions to the role. For details, refer to Roles. When a role is selected, the entity object and scope of the role corresponding to the role are displayed. 
 
-4.  Associated Business Group page: Select the business group and associate the business group with the user. For details, see [Add Business Group](http://CMP-PUBLIC-IP/help/AdminDoc/04组织架构管理/业务组.html)
+4.  Associated Business Group page: Select the business group and associate the business group with the user. For details, see [Add Business Group](https://cloudchef.github.io/doc-en/AdminDoc/04Organization/BusinessGroup.html)
 
 5.  Click “Save” and the user is created successfully.
 

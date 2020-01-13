@@ -30,6 +30,8 @@ Provides common task configuration for automatic operation triggered by alerts, 
 + Implementation ideas: After the event occurs, the alert can be triggered. The configuration operation is the same as the pipeline configuration task.
 + For example, after the cloud resource is deployed, not only can the e-mail notification occur, but also the operation of the cloud resource. The notification and operation can be configured at the same time.
 
+ + Other common usage scenarios include: after the VM is deployed, you need to register to the bastion host; after the VM is deleted, you can unregister the bastion host; after the alert scenario occurs, you can create a work order process 
+
 
 # Event History
 List the events triggered and the status of the tasks performed. The event history page displays:

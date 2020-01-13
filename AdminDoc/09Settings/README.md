@@ -14,6 +14,32 @@ Login Type
 >「Note」DNS domain name needs to be configured on the DNS server. If not, it will report an error when applying for service.
 
 
+
+# Interface configuration
+
+Use "System"-"Interface Configuration" to determine brand and service request information including color, headers, browser tabs, login pages, about pages, and whether to display help documentation, and adjust the display of service catalogs. 
+
+Specific steps for configuring the brand: 
+Select the light color or dark color style to control the color display style in the left navigation area. You can choose whether to hide the page. When you choose not to hide, use the color palette to select the page color and text color. Define text content; upload browser icon, customize browser title; upload login page background image, define the text on the left side of the login page, customize the text style, the text supports Markdown syntax format; You can choose whether to hide the page, when you choose not to, upload the picture, define the product name and copyright statement; define whether to display the help document, and when you choose to hide, the question mark button in the upper right corner of the navigation bar will be hidden. 
+
+Specific steps for configuring service requests: 
+The service catalog currently supports 2 views.
+ On the Service Request tab, 
+ +	Tenant administrators can configure how groups and services are displayed in the service catalog: tab display or hierarchy display 
+ +	Specific display method: 
+    Tab display: group display according to the tab page. 
+    Hierarchical display method, according to the card mode, first display the service group
+    In the service catalog interface, you can view the service group icon, name, description and folder display mode. Click on a group to show all the cards of this service group.
+
+
+
+
+
+
+
+
+
+
 # Notifications
 
 ## SMTP configuration
@@ -102,12 +128,6 @@ The report configuration function provides users with more various types of repo
 
 + After the configuration is completed, you can view the corresponding report in Resource Analysis - Report.
 
-#Audits
-
-
-Supports records of user access and operation information. The tenant administrator and sysadmin have this permission by default.
-
-Click "Settings" - "Audits" in the left navigation bar to see the operation record under the tenant. Displays the operator, operation object, operation name, operation parameters, status, and operation time. You can use the "Advanced Search" to quickly filter and locate, supporting operator, status, operation object, start and end time screening, or use the common search function.
 
 
 

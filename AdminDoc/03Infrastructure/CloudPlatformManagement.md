@@ -5,7 +5,7 @@
 **Cloud Platform Management**
 
 
-System administrators and tenant administrators can add vSphere, VMware NSX, OpenStack, PowerVC, Hyper-V, CloudView, EMC SCP, NFS, physical servers, Kubernetes, Docker, NFS, Aliyun, Tencent Cloud, QingCloud, AWS, Azure and other cloud platforms from different vendors, as well as F5 load balancer and ACI network in Infrastructure - Cloud Entries. The cloud platform can also be edited and deleted after it is created.
+System administrators and tenant administrators can add vSphere, VMware NSX, OpenStack, PowerVC, Hyper-V, EMC SCP, NFS, physical servers, Kubernetes, Docker, NFS, Aliyun, Tencent Cloud, QingCloud, AWS, Azure, Kingsoft, SmartX, UCloud, ZStack and other cloud platforms from different vendors, as well as F5 load balancer and ACI network in Infrastructure - Cloud Entries. The cloud platform can also be edited and deleted after it is created.
 
 # Add a Cloud Platform
 
@@ -430,7 +430,7 @@ Parameter|         Description|          Example
 3.  Click Verify, after the verification is successful, click “Submit” and the F5 BIG-IP virtualization platform is successfully connected.
 
 
-## 添加CISCO ACI平台 {#添加CISCOACI平台}
+## Add CISCO ACI Cloud Platform {#Add CISCO ACI Cloud Platform}
 
 You can add a CISCO ACI cloud platform by following the steps:
 
@@ -461,8 +461,8 @@ You can add a Kingsoft cloud platform by following the steps:
 Parameter|         Description|          Example
 :------:|:------:|:-----:
 Cloud Name|Kingsoft Cloud Name|Kingsoft
-Access Key ID|Kingsoft Access Key ID| Similar to [阿里云](http://CMP-PUBLIC-IP/help/AdminDoc/03基础设施管理/云平台管理.html#添加阿里云平台)
-Access Key Secret|Kingsoft Access Key Secret|Similar to [阿里云](http://CMP-PUBLIC-IP/help/AdminDoc/03基础设施管理/云平台管理.html#添加阿里云平台)
+Access Key ID|Kingsoft Access Key ID| Similar to [Aliyun](https://cloudchef.github.io/doc-en/AdminDoc/03Infrastructure/CloudPlatformManagement.html#Add%20Aliyun%20Cloud%20Platform)
+Access Key Secret|Kingsoft Access Key Secret|Similar to [Aliyun](https://cloudchef.github.io/doc-en/AdminDoc/03Infrastructure/CloudPlatformManagement.html#Add%20Aliyun%20Cloud%20Platform)
 
 3.  Click Verify, after the verification is successful, click “Submit” and the Kingsoft cloud platform is successfully connected.
 
@@ -505,7 +505,7 @@ After adding the vSphere cloud platform successfully, click the cloud platform n
 
 After adding the OpenStack cloud platform successfully, click the cloud platform name or select the cloud platform and click “Edit” to enter the “Overview” page of the cloud platform. Click “Resource Information” to display the overall resources of the current OpenStack cloud platform: including available Zone name, total number of resource bundles, deployed virtual machines, CPU, memory, storage, and more.	
 
-## View PowerVC Cloud Platform Resource Usage {#查看powervc云平台资源使用情况}
+## View PowerVC Cloud Platform Resource Usage {#View PowerVC Cloud Platform Resource Usage}
 
 After adding the PowerVC cloud platform successfully, click the cloud platform name or select the cloud platform and click “Edit” to enter the “Overview” page of the cloud platform. Click “Resource Information” to display the overall resources of the current PowerVC cloud platform: including available Zone name, total number of resource bundles, deployed virtual machines (deployed/reserved total), CPU, memory, storage, and more.
 

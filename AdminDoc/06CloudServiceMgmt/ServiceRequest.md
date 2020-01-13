@@ -3,21 +3,21 @@
 On the pending page, the approver configured by the administrator in the approval process has the approval authority and can view the details of the service request to be approved and approve the operation.
 
 >「Note」
- If you want to view the details of a pending service request, please refer to: [Pending Approval](#待审批)。
+ If you want to view the details of a pending service request, please refer to: [Pending Approval](#Pendingapproval)。
 
 After the approver has completed the approval process, click on "Requests" - "Approved" on the left menu bar to view a list of all approved requests. This page displays the request number, request type, service deployment name, applicant, business group, project, request status, request time, and completion time.
 
 >「Note」
-If you want to view the details of a pending service request, please refer to: [Approved Request](#待审批)。
+If you want to view the details of a pending service request, please refer to: [Approved Request](#ApprovedRequest)。
 
-# Approved Request
+# Approved Request{#ApprovedRequest}
 
 All requests that have been approved are displayed here.
 
 In the left navigation bar, click "Requests" - "Approved". The approved page displays the parts of all the approval requests that you have approved, including the basic information of the approval request: request number, request type, service deployment name. applicant, business group, project, request status, request time.
 
 
-# Pending approval
+# Pending approval{#Pendingapproval}
 
 On the pending page, the approver configured by the administrator in the approval process has the approval authority and can view the details of the service request to be approved and approve the operation.
 

@@ -182,7 +182,7 @@ A universal solution designed by SmartCMP that can access the computing, storage
 
 ### Edit the connection {#Edit the connection}
 
-Refer to  [组件的添加和设置](http://CMP-PUBLIC-IP/help/AdminDoc/05服务建模/软件组件.html)
+Refer to [Software Components](https://cloudchef.github.io/doc-en/AdminDoc/05ServiceDesign/SoftwareComponents.html)
 
 ### Delete Connection {#Delete Connection}
 
@@ -600,4 +600,4 @@ You can cancel the blueprint that has been released by following the steps below
 
 1.  In the left navigation, select "Service Design" - "Blueprints"
 
-2.  ②Select the “Published” blueprint in the list, click the operation button and select “Unpublish”. The blueprint is unpublished successfully. The blueprint status in the list is “Unpublished”.
+2.  Select the “Published” blueprint in the list, click the operation button and select “Unpublish”. The blueprint is unpublished successfully. The blueprint status in the list is “Unpublished”.

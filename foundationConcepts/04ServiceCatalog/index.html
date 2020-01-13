@@ -366,6 +366,19 @@
             
         </li>
     
+        <li class="chapter " data-level="3.3.9" data-path="../../AdminDoc/03Infrastructure/ResourceTag.html">
+            
+                <a href="../../AdminDoc/03Infrastructure/ResourceTag.html">
+            
+                    
+                    ResourceTag
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -469,12 +482,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.5.1" data-path="../../AdminDoc/05ServiceDesign/SoftwareComponents.html">
+        <li class="chapter " data-level="3.5.1" data-path="../../AdminDoc/05ServiceDesign/ComponentLibrary.html">
             
-                <a href="../../AdminDoc/05ServiceDesign/SoftwareComponents.html">
+                <a href="../../AdminDoc/05ServiceDesign/ComponentLibrary.html">
             
                     
-                    SoftwareComponents
+                    ComponentLibrary
             
                 </a>
             
@@ -759,6 +772,19 @@
             
         </li>
     
+        <li class="chapter " data-level="3.12" data-path="../../AdminDoc/12Security&Audits/">
+            
+                <a href="../../AdminDoc/12Security&Audits/">
+            
+                    
+                    Security&Audits
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -876,7 +902,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#component"><b>1. </b>Component</a></li><li><span class="title-icon "></span><a href="#blueprint"><b>2. </b>Blueprint</a></li><li><span class="title-icon "></span><a href="#workflow"><b>3. </b>Workflow</a></li><li><span class="title-icon "></span><a href="#form"><b>4. </b>Form</a></li><li><span class="title-icon "></span><a href="#catalog-group"><b>5. </b>Catalog Group</a></li><li><span class="title-icon "></span><a href="#service-publishing"><b>6. </b>Service Publishing</a></li><ul><li><span class="title-icon "></span><a href="#lease-period"><b>6.1. </b>Lease Period</a></li><li><span class="title-icon "></span><a href="#approval-process"><b>6.2. </b>Approval Process</a></li></ul><li><span class="title-icon "></span><a href="#service-deployment"><b>7. </b>Service Deployment</a></li><ul><li><span class="title-icon "></span><a href="#service-deployment-and-naming-specification-for-cloud-resources"><b>7.1. </b>Service Deployment and Naming Specification for Cloud Resources</a></li><li><span class="title-icon "></span><a href="#service-deployment-and-operation-entitlement-for-cloud-resources"><b>7.2. </b>Service Deployment and Operation Entitlement for Cloud Resources</a></li></ul></ul></div><a href="#component" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p><strong>Service Model</strong></p>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#component"><b>1. </b>Component</a></li><ul><li><span class="title-icon "></span><a href="#component-builds-up-blueprint"><b>1.1. </b>Component builds up blueprint</a></li><li><span class="title-icon "></span><a href="#object-oriented-design"><b>1.2. </b>Object-oriented design</a></li></ul><li><span class="title-icon "></span><a href="#blueprint"><b>2. </b>Blueprint</a></li><li><span class="title-icon "></span><a href="#workflow"><b>3. </b>Workflow</a></li><li><span class="title-icon "></span><a href="#form"><b>4. </b>Form</a></li><li><span class="title-icon "></span><a href="#catalog-group"><b>5. </b>Catalog Group</a></li><li><span class="title-icon "></span><a href="#service-publishing"><b>6. </b>Service Publishing</a></li><ul><li><span class="title-icon "></span><a href="#lease-period"><b>6.1. </b>Lease Period</a></li><li><span class="title-icon "></span><a href="#approval-process"><b>6.2. </b>Approval Process</a></li></ul><li><span class="title-icon "></span><a href="#service-deployment"><b>7. </b>Service Deployment</a></li><ul><li><span class="title-icon "></span><a href="#service-deployment-and-naming-specification-for-cloud-resources"><b>7.1. </b>Service Deployment and Naming Specification for Cloud Resources</a></li><li><span class="title-icon "></span><a href="#service-deployment-and-operation-entitlement-for-cloud-resources"><b>7.2. </b>Service Deployment and Operation Entitlement for Cloud Resources</a></li></ul></ul></div><a href="#component" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p><strong>Service Model</strong></p>
 <p>In SmartCMP, there are two types of services:</p>
 <ul>
 <li><p>Cloud Resource Blueprint Service: Refers to the request and automatic deployment of each cloud platform resource. These services can be infrastructure services (such as virtual machines, firewalls, DNS, etc.), application services (such as databases, or integrated applications including network load balancing, Web components, and databases), etc.</p>
@@ -887,12 +913,37 @@
 <p>The following diagram depicts the logical connections between components, blueprints, services, and deployments. Components include software components and infrastructure components. Software architect builds the topology map of the application and configures resources and parameters for the service, publishing the service card to the service catalog. Members of the business group apply for self-service in the service catalog according to actual needs, and the services are automatically combined according to policies and specifications to complete automated deployment and delivery.</p>
 <p><img src="../../picture/foundationConcepts/Pic05-CloudResourceModel.png" alt="&#x4E91;&#x670D;&#x52A1;&#x6A21;&#x578B;&#x793A;&#x4F8B;"></p>
 <h1 id="component"><a name="component" class="anchor-navigation-ex-anchor" href="#component"><i class="fa fa-link" aria-hidden="true"></i></a>1. Component</h1>
+<p>Any resource is a component object. Whether it is software, infrastructure or container resources, different types of cloud resources are component objects and can be componentized. The definition of components adopts an object-oriented design method, uses a unified data structure for modeling, and standardizes configuration properties. SmartCMP provides not only built-in rich component resources and common operations, but also highly scalable capabilities, flexibly add component resources and configure operations according to user needs.</p>
+<p>Rich component library: component resources out of the box. SmartCMP cloud management platform has a large number of commonly used component resources built in, including IaaS (cloud hosts, networks, storage, etc. of different cloud platforms), PaaS (servers, databases, RDS, etc.), containers (Kubernetes, Docker), software (MySQL, Oracle, Nginx, etc.) and agents (monitoring agents, automation agents). Different types of resources are created and managed in a unified interface, using a tree-like grouping directory, supporting custom component grouping, supporting secondary editing, fast copying, Import and export components.</p>
+<blockquote>
+<p>&#x300C;Note&#x300D;Detailed creation and management steps please refer to: component library</p>
+</blockquote>
+<p>Custom components: Users can create reusable components according to their needs, componentize any resource, and standardize the process of configuring components, including defining resource types, versions, attributes, component operations, etc., and all configuration interfaces are open to user customization. For example, when a DBA creates a database cluster and an Oracle database needs to be deployed, DBA can add Oracle components to the component library and configure components according to requirements, including configuring component profiles, instructions, properties, scripts, and operations (create, start, stop, restart, delete, etc. the specified database)</p>
+<blockquote>
+<p>&#x300C;Note&#x300D; For detailed steps of the custom component, please refer to: Creating a component</p>
+</blockquote>
+<h2 id="component-builds-up-blueprint"><a name="component-builds-up-blueprint" class="anchor-navigation-ex-anchor" href="#component-builds-up-blueprint"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Component builds up blueprint</h2>
 <p>A component is the basic unit that makes up a blueprint. The components in SmartCMP consist of two types:</p>
 <ul>
 <li><p>Infrastructure components: including computing components (e.g., virtual machines, containers, etc.), network components (e.g., load balancing, security groups, firewalls, etc.), storage components (e.g., disks, object storage, etc.). These components are built into SmartCMP and can be selected during blueprint design.</p>
 </li>
 <li><p>Software components: for the installation of application software, including middleware, relational databases, non-relational databases, and so on. You can standardize configuration properties and use scripts to specify how to install, configure, uninstall, or update components during software deployment (you can also customize the other operations you need). Software architects can create custom components, update existing components, or delete components that have been removed through the software component management interface. Software components can be used with infrastructure components when designing blueprints.</p>
 </li>
+</ul>
+<p><img src="../../picture/foundationConcepts/components.png" alt="Components"></p>
+<blockquote>
+<p>&#x300C;Note&#x300D;SmartCMP has a large number of commonly used components built in. When you add custom infrastructure components or software components, you can choose to instantiate them when you add them so that you can also choose them during blueprint design.</p>
+</blockquote>
+<h2 id="object-oriented-design"><a name="object-oriented-design" class="anchor-navigation-ex-anchor" href="#object-oriented-design"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Object-oriented design</h2>
+<p>The design of components adopts the structure of object-oriented design. Object-oriented has three characteristics of encapsulation, inheritance and polymorphism. Inheritance allows child categories to have various properties and methods of the parent category without the need to write the same code again. While making the child category inherit the parent category, you can redefine certain properties and rewrite certain methods, that is, to override the original properties and methods of the parent category, so that it has different functions from the parent category.</p>
+<ul>
+<li>Operations and attributes are inheritable. Start, stop, restart, delete, and refresh the built-in components of the system. (Take the refresh operation as an example, the operation is configured in system in advance, and the implementation methods, scripts, tasks, and parameters necessary for the operation are used.) The built-in operation can be applied to any resource on the platform. Therefore, when the component Oracle is created, the built-in &quot;start, stop, restart, delete, refresh&quot; operations are automatically inherited. When the component type Software is selected, the created Oracle component has various attributes of the parent Software component and can also be customized to obtain different functions from the parent one. It should be noted that the attribute key value added by the user and the attribute key value in the parent component cannot be the same, otherwise the attribute definition in the parent component will be overwritten. You can also add a script file by creating a new file, which will be used to extend the component. For example: the custom component Oracle&apos;s install.sh script will be associated with the &quot;create operation&quot;.</li>
+</ul>
+<ul>
+<li>Encapsulation hides the implementation details of complex operations and only provides public access to the outside world. The platform has complex operations built-in and works out of the box, reducing differences and difficulty in understanding. For example: &quot;adjust virtual machine configuration&quot; operation (adjust virtual machine calculation specifications and cloud platform specifications), when the cloud platform type is different, the SmartCMP cloud management platform hides the details of the flow of resource operations, only exposing public access interfaces. For example, the &quot;Adjust virtual machine configuration&quot; operation is applied to a virtual machine on the Hyper-V platform and a virtual machine on the OpenStack platform. The specific technical implementation is different, but the user configuration interface displays the same content.</li>
+</ul>
+<ul>
+<li>Polymorphism refers to the same operation, which has a different effect due to different parameters passed in. For example, when the component Oracle is created, different application systems have specific requirements and custom requirements for Oracle&apos;s deployment requirements and parameter control. &quot;Attributes&quot; can be set according to the deployment requirements of different systems, by setting custom attributes, exposing configuration parameters that application components need to fill out to the interface configuration, and passing custom parameters. When Oracle is deployed automatically, the SmartCMP cloud management platform automatically invokes relevant parameters to perform application installation and configuration, which meets different requirements for Oracle deployment in different data clusters.</li>
 </ul>
 <h1 id="blueprint"><a name="blueprint" class="anchor-navigation-ex-anchor" href="#blueprint"><i class="fa fa-link" aria-hidden="true"></i></a>2. Blueprint</h1>
 <p>A blueprint is a complete specification of the overall application, including computing, storage, networking, software, etc., used to determine attributes and dependencies, workflows, and execution strategies for various resources. You can create a standardized service framework by designing blueprint on visualized canvas and combining one or more components. Once the blueprint is published, it can be used to create a service.</p>
@@ -971,7 +1022,7 @@
 <li><p>Each service inherits the operation entitlement of the business group by default. You can also configure an operation entitlement for the service separately, overriding those in the business group.</p>
 </li>
 </ul>
-<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; 2013-2019 CloudChef. All Rights Reserved. <a href="http://www.cloudchef.io/en/" target="_blank">Shanghai CloudChef Information Technology Co., Ltd.</a>  </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> update time&#xFF1A; 2019-11-26 14:24:54 </span> </footer>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; 2013-2019 CloudChef. All Rights Reserved. <a href="http://www.cloudchef.io/en/" target="_blank">Shanghai CloudChef Information Technology Co., Ltd.</a>  </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> update time&#xFF1A; 2020-01-13 16:28:26 </span> </footer>
                                 
                                 </section>
                             
@@ -1014,7 +1065,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"ServiceCatalog","level":"2.5","depth":1,"next":{"title":"CICD","level":"2.6","depth":1,"path":"foundationConcepts/05CICD/README.md","ref":"foundationConcepts/05CICD/README.md","articles":[]},"previous":{"title":"Infrastructure","level":"2.4","depth":1,"path":"foundationConcepts/03Infrastructure/README.md","ref":"foundationConcepts/03Infrastructure/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","-lunr","-search","search-plus","expandable-chapters-small","insert-logo","simple-page-toc","favicon","anchor-navigation-ex","page-footer-ex","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"mode":"float","livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"page-footer-ex":{"copyright":"Copyright © 2013-2019 CloudChef. All Rights Reserved. [Shanghai CloudChef Information Technology Co., Ltd.](http://www.cloudchef.io/en/) ","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"update time："},"showLevel":true,"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"sepia","family":"serif","size":1},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{},"printLog":false,"expandable-chapters-small":{},"multipleH1":true,"associatedWithSummary":true,"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none;","url":"https://cloudchef.github.io/doc-en/picture/logo.png"},"search-plus":{}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CloudChef Document","gitbook":"*","description":"Provide you with a rich and detailed guide and product documentation for the SmartCMP Cloud Management Platform.","theme-default":{"showLevel":false},"extension":null},"file":{"path":"foundationConcepts/04ServiceCatalog/README.md","mtime":"2019-11-26T06:24:54.062Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-23T05:45:21.299Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"ServiceCatalog","level":"2.5","depth":1,"next":{"title":"CICD","level":"2.6","depth":1,"path":"foundationConcepts/05CICD/README.md","ref":"foundationConcepts/05CICD/README.md","articles":[]},"previous":{"title":"Infrastructure","level":"2.4","depth":1,"path":"foundationConcepts/03Infrastructure/README.md","ref":"foundationConcepts/03Infrastructure/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","-lunr","-search","search-plus","expandable-chapters-small","insert-logo","simple-page-toc","favicon","anchor-navigation-ex","page-footer-ex","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"mode":"float","livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"page-footer-ex":{"copyright":"Copyright © 2013-2019 CloudChef. All Rights Reserved. [Shanghai CloudChef Information Technology Co., Ltd.](http://www.cloudchef.io/en/) ","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"update time："},"showLevel":true,"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"sepia","family":"serif","size":1},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{},"printLog":false,"expandable-chapters-small":{},"multipleH1":true,"associatedWithSummary":true,"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none;","url":"https://cloudchef.github.io/doc-en/picture/logo.png"},"search-plus":{}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CloudChef Document","gitbook":"*","description":"Provide you with a rich and detailed guide and product documentation for the SmartCMP Cloud Management Platform.","theme-default":{"showLevel":false},"extension":null},"file":{"path":"foundationConcepts/04ServiceCatalog/README.md","mtime":"2020-01-13T08:28:26.126Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-13T08:29:09.037Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

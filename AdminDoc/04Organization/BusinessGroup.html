@@ -366,6 +366,19 @@
             
         </li>
     
+        <li class="chapter " data-level="3.3.9" data-path="../03Infrastructure/ResourceTag.html">
+            
+                <a href="../03Infrastructure/ResourceTag.html">
+            
+                    
+                    ResourceTag
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -469,12 +482,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.5.1" data-path="../05ServiceDesign/SoftwareComponents.html">
+        <li class="chapter " data-level="3.5.1" data-path="../05ServiceDesign/ComponentLibrary.html">
             
-                <a href="../05ServiceDesign/SoftwareComponents.html">
+                <a href="../05ServiceDesign/ComponentLibrary.html">
             
                     
-                    SoftwareComponents
+                    ComponentLibrary
             
                 </a>
             
@@ -759,6 +772,19 @@
             
         </li>
     
+        <li class="chapter " data-level="3.12" data-path="../12Security&Audits/">
+            
+                <a href="../12Security&Audits/">
+            
+                    
+                    Security&Audits
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -876,8 +902,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#511----create-business-group"><b>1. </b>5.1.1    Create Business Group</a></li><ul><li><span class="title-icon "></span><a href="#Add%20Resource%20Bundle%20to%20Business%20Group"><b>1.1. </b>Add Resource Bundle to Business Group </a></li></ul><li><span class="title-icon "></span><a href="#view-current-business-group"><b>2. </b>View Current Business Group</a></li><li><span class="title-icon "></span><a href="#modify-the-business-group-configuration"><b>3. </b>Modify the Business Group Configuration</a></li><ul><li><span class="title-icon "></span><a href="#add-a-sascaded-business-group"><b>3.1. </b>Add a Sascaded Business Group</a></li><li><span class="title-icon "></span><a href="#delete-a-business-group"><b>3.2. </b>Delete a Business Group</a></li></ul></ul></div><a href="#511----create-business-group" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p><strong>Business Group</strong></p>
-<h1 id="511----create-business-group"><a name="511----create-business-group" class="anchor-navigation-ex-anchor" href="#511----create-business-group"><i class="fa fa-link" aria-hidden="true"></i></a>1. 5.1.1    Create Business Group</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#create-business-group"><b>1. </b>Create Business Group</a></li><li><span class="title-icon "></span><a href="#view-current-business-group"><b>2. </b>View Current Business Group</a></li><li><span class="title-icon "></span><a href="#modify-the-business-group-configuration"><b>3. </b>Modify the Business Group Configuration</a></li><ul><li><span class="title-icon "></span><a href="#add-a-sascaded-business-group"><b>3.1. </b>Add a Sascaded Business Group</a></li><li><span class="title-icon "></span><a href="#delete-a-business-group"><b>3.2. </b>Delete a Business Group</a></li></ul></ul></div><a href="#create-business-group" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p><strong>Business Group</strong></p>
+<h1 id="create-business-group"><a name="create-business-group" class="anchor-navigation-ex-anchor" href="#create-business-group"><i class="fa fa-link" aria-hidden="true"></i></a>1. Create Business Group</h1>
 <ol>
 <li><p>On the left navigation, select &#x201C;Organization&#x201D; - &#x201C;Business Group&#x201D; and click &#x201C;Add&#x201D;.</p>
 </li>
@@ -903,31 +929,100 @@
 <p>Remove user: If there is already a user in the business group, select a user in the list and click &#x201C;Remove User&#x201D; to cancel the association between the user and the business group. The user will not be able to view and use the resources of the business group.</p>
 <p>Associated role: Select a user in the list interface, click on &#x201C;Associate Role&#x201D;, check &#x201C;Business Group Administrator&#x201D;, and click &#x201C;Submit&#x201D; to give the user the role of the business group administrator.</p>
 <ul>
-<li>Naming Specifications:</li>
+<li>Rules:</li>
 </ul>
 <p>Service deployment name naming rules: You can set the business group service deployment naming rules. When a service group member applies for a service, the service deployment name is automatically generated according to the rules. Existing fields: business group name, project name, owner name, timestamp (yyyyMMddHHmmss), service configuration name, project abbreviation, business group abbreviation</p>
 <p>VM name naming rules: The virtual machine display name in the SmartCMP or vCenter/OpenStack management interface. Existing fields: IP address, service group name, project name, owner name, deployment name, virtual machine blueprint node name, OS host name, project abbreviation, business group abbreviation</p>
 <p>Windows hostname naming rules: Windows virtual machine hostname. Existing fields: business group name, project name, owner name, deployment name, virtual machine blueprint node name, project abbreviation, business group abbreviation</p>
 <p>Linux hostname naming rules: Linux virtual machine hostname. Existing fields: business group name, project name, owner name, deployment name, virtual machine blueprint node name, project abbreviation, business group abbreviation  </p>
 <blockquote>
-<p>&#x300C;Warning&#x300D;Virtual machine hostname does not support special symbols, otherwise deploying virtual machine may fail. Windows host name naming rules generated by the Windows host name more than 15 characters will automatically intercept the field (15-suffix length). There are suffixes in the naming rules, you can choose the &quot;naming suffix&quot; that is already in the &quot;infrastructure&quot;.</p>
+<p>&#x300C;Note&#x300D;Virtual machine hostname does not support special symbols, otherwise deploying virtual machine may fail. Windows host name naming rules generated by the Windows host name more than 15 characters will automatically intercept the field (15-suffix length). There are suffixes in the naming rules, you can choose the &quot;naming suffix&quot; that is already in the &quot;infrastructure&quot;.</p>
 </blockquote>
 <p>Public network IP name naming rules: business group name, project name, owner name, project short name, business group short name, instance name.</p>
+<p>Specification: The configuration specification of business group requesting resources in the service catalog and requesting the maximum CPU and memory of instance, leaving blank to indicate no limit.</p>
 <ul>
-<li>Budget Control: 
-Administrators can configure a monthly budget for this business group while leaving blank means no restrictions. When this month&apos;s spending exceeds the budget, users will not be able to apply for new cloud resources. 
-You can view the utilization, resource usage, and remaining quantity of business group cloud resources on this page in real time.</li>
+<li>Cloud Resource Operation Entitlement</li>
 </ul>
-<h2 id="Add Resource Bundle to Business Group"><a name="Add Resource Bundle to Business Group" class="anchor-navigation-ex-anchor" href="#Add%20Resource%20Bundle%20to%20Business%20Group"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Add Resource Bundle to Business Group </h2>
-<p> The resource bundle is associated with the business group so that users in the business group can apply for these resources.</p>
+<p>There are two methods for setting entitlements for cloud resource related operations. One is setting in the business group --- Cloud Resource Ops Entitlement; the other is setting in the Service Configuration.</p>
+<p>The cloud resource operation entitlement in the service configuration will inherit the business group configuration. You can enable or disable the operations and modify the approval process within this range. Operations disabled in the business group cannot be enabled at the service configuration. For details, refer to: <a href="https://cloudchef.github.io/doc-en/AdminDoc/05ServiceDesign/Workflow.html#Service%20Deployment%20Operation%20Entitlement%20.afff6" target="_blank">Add a service deployment operation entitlement to a business group</a></p>
+<p>Specific steps:</p>
+<ol>
+<li><p>&quot;Organization Structure&quot;-&quot;Business Group&quot;, select the &quot;Cloud Resource Ops Entitlement&quot; tab, which will list all the enabled cloud resource operations for the business group. </p>
+</li>
+<li><p>After the configuration is completed and the service request is successfully deployed, you can enter the instance details page in &quot;Deployments&quot;-&quot;Instances&quot; to perform the corresponding operations on the virtual machine.</p>
+</li>
+</ol>
+<p>Add cloud resource operation entitlement in business group</p>
+<p>Operation entitlements for cloud resources can be added at the business group level.</p>
+<ol>
+<li><p>&quot;Organization Structure&quot;-&quot;Business Group&quot;, select &quot;Cloud Resource Ops Entitlement&quot; tab</p>
+</li>
+<li><p>Click &quot;Add&quot;, the &quot;Add Operation Entitlement&quot; page appears, which supports adding custom operations</p>
+</li>
+<li><p>The first column on the left side of the page is the operation list of cloud resources (including virtual machines, cloud disks, container services, network resources, etc.), the second column is the role list, the third column is the activation status list, and the rightmost column is approval template list </p>
+</li>
+<li><p>Select an operation in the virtual machine operation list, such as enable, stop, suspend, etc. In the role list, select the role that can perform this operation. In the activation status list, you can select not enable (cannot perform the virtual machine operation), enable (can perform the virtual machine operation), or enable and approve (can perform this virtual machine operation while need to select an approval template in the approval template list)</p>
+</li>
+<li><p>&quot;Approval template&quot;: select the default template (business group administrator approval template or tenant administrator approval template)</p>
+</li>
+<li><p>Click &quot;Save&quot;</p>
+</li>
+</ol>
 <ul>
-<li><p>Add a resource bundle: Click Add Resource bundle, select the resource bundle in the list, and click OK to associate the relationship between the resource bundle and the business group.</p>
+<li>Service Deployment Operation Entitlement</li>
+</ul>
+<p>The service deployment operation entitlement specifies the operations that can be performed after the service is successfully deployed and the approval process for the operation.</p>
+<p>On the &quot;Deployments&quot;-&quot;M Deployments&quot; page, select a service deployment. The top of the list page will show the operations that can be performed by the service deployment.</p>
+<p>Add a service deployment operation entitlement to a business group</p>
+<ol>
+<li><p>&quot;Organization Structure&quot;-&quot;Business Group&quot;, click on the business group name to enter the overview page, and select the &quot;Service Deployment Ops Entitlement&quot; tab</p>
 </li>
-<li><p>Remove a resource bundle: Select a resource bundle from the list, click Remove Resource bundle, and confirm the relationship between the resource bundle and the business group. If there are deployments unmounted on this resource bundle, it cannot be removed.</p>
+<li><p>Click &quot;Add&quot;, &quot;Add Operation Entitlement&quot; page appears</p>
+</li>
+<li><p>The first column on the left side of the page is the operation list, the second column is the role list, the third column is the activation status list, and the rightmost column is the approval template list.</p>
+</li>
+<li><p>Select an operation in the operation list, such as changing owner, starting service deployment, stopping service deployment, etc. Select the role that can perform this operation in the role list. In the enabled status list, you can check whether to enable (cannot perform the operation), enable (can perform the operation), or enable and approve (can perform the operation while need to select an approval template in the approval template list)</p>
+</li>
+<li><p>Click &quot;Save&quot; to successfully add the service deployment operation permission to the business group</p>
+</li>
+</ol>
+<ul>
+<li>Resource Quota</li>
+</ul>
+<p>Business group resource quota meets the needs of controlling department-level resource quotas. The budget quota of the business group is independent of the resource quota of the resource bundle. When the budget of the business group reaches the threshold and there is a large amount of resource quota remaining in the resource bundle, business group members cannot request new resources in the service catalog. Note: The resource quota can be configured with a larger amount than the business group budget. Specifically, the following resources can be set: CPU, memory, storage, and number of virtual machines. Note: First, you must enable &quot;Enable resource quota&quot;. </p>
+<ul>
+<li><p>Disabled by default: The resource quota interface prohibits input and does not calculate the amount of resources used</p>
+</li>
+<li><p>Enabled: The above resources can set quotas. They are all non-required items. Only integers greater than or equal to zero can be entered. Leave blank to indicate no limit. Supports viewing of used quotas. (If a certain quota is unlimited, then the remaining is always unlimited. The usage rate is always 0%.) When new service deployment occupies resources, operations modify the configuration, or the resource usage or the business group gets changed, the corresponding resource usage will change. </p>
 </li>
 </ul>
-<p>Approval Process: Select approval and specific approval template or no approval</p>
-<p>Cloud Resource Ops Entitlement and Service Deployment Ops Entitlement: refer to <a href="http://CMP-PUBLIC-IP/help/AdminDoc/05&#x670D;&#x52A1;&#x5EFA;&#x6A21;/&#x6D41;&#x7A0B;&#x914D;&#x7F6E;.html#&#x5728;&#x4E1A;&#x52A1;&#x7EC4;&#x4E2D;&#x6DFB;&#x52A0;&#x4E91;&#x8D44;&#x6E90;&#x64CD;&#x4F5C;&#x8BB8;&#x53EF;" target="_blank">&#x5728;&#x4E1A;&#x52A1;&#x7EC4;&#x4E2D;&#x6DFB;&#x52A0;&#x4E91;&#x8D44;&#x6E90;&#x64CD;&#x4F5C;&#x8BB8;&#x53EF;</a>&#x53CA;<a href="http://CMP-PUBLIC-IP/help/AdminDoc/05&#x670D;&#x52A1;&#x5EFA;&#x6A21;/&#x6D41;&#x7A0B;&#x914D;&#x7F6E;.html#&#x5728;&#x4E1A;&#x52A1;&#x7EC4;&#x4E2D;&#x6DFB;&#x52A0;&#x670D;&#x52A1;&#x90E8;&#x7F72;&#x64CD;&#x4F5C;&#x8BB8;&#x53EF;" target="_blank">&#x5728;&#x4E1A;&#x52A1;&#x7EC4;&#x4E2D;&#x6DFB;&#x52A0;&#x670D;&#x52A1;&#x90E8;&#x7F72;&#x64CD;&#x4F5C;&#x8BB8;&#x53EF;</a></p>
+<blockquote>
+<p>&#x300C;Note&#x300D;If the business group has not enabled quotas, but the business group has resources occupied, after the quota is enabled, the business group needs to be able to display the resources that have been used. Quotas for child business groups are temporarily independent, that is, they are not restricted by the parent business group and can be configured separately.</p>
+</blockquote>
+<ul>
+<li>Budget Quota </li>
+</ul>
+<p>The administrator can configure a monthly budget for this business group, leaving it blank for unlimited.</p>
+<blockquote>
+<p>&#x300C;Note&#x300D;Personal budget cannot be greater than the total budget of the business group.</p>
+</blockquote>
+<p>When the spending of this month exceeds the budget, users will not be able to request new cloud resources, and paid instances belonging to users will be shut down. Supports control of resources and resource requests based on configured policies. You can view the real-time usage rate, resource usage, and remaining amount of cloud resources of the business group on this page. Specific steps:</p>
+<ul>
+<li><p>Select year or month as the time unit. Select monthly to indicate that it is cleared on the 1st of each month and restore the initial value; select annual to indicate that the zero has been cleared on the beginning of the next year and restore the initial value. </p>
+</li>
+<li><p>Business group quota management: Fill in the total budget. Set the percentage. When the overall cost of the business group exceeds the configured total budget percentage, subsequent notifications are triggered, and the system will automatically send a notification to the business group administrator. </p>
+</li>
+<li><p>User quota management: Set personal budget and percentage. When personal budget usage reaches the threshold, trigger subsequent notifications and send notifications to users.</p>
+</li>
+<li><p>Budget strategy: Select &quot;Cannot request new resources after the budget is used up&quot;. When the business group budget is used up, all users associated with the business group will not be able to request new resources that require payment. Select &quot;Paid resources will be automatically shut down after the budget is used up&quot;. For example: Configure vSphere billing rules. Deploy vSphere instances. Configure business group billing and personal budgets. Configure &quot;Shutdown after budgets are used up&quot;, and when personal budgets are used up, the instances belonging to the individual will be shut down, or when the business group budget is used up, those belonging to the business group will be shut down. After shutdown, reservation will be made according to the retention time of the business group and after the retention time expires, the resources will be put into the recycle bin.</p>
+</li>
+</ul>
+<blockquote>
+<p>&#x300C;Note&#x300D;When there are multiple users with different quotas in the business group, one user owing money does not affect other users&apos; requests for resources. The instances belonging to that user are shut down which does not affect the status of other users&apos;.</p>
+</blockquote>
+<ul>
+<li>Personal budget renewal: Submit the renewal work order. The administrator can modify the quota for each user on the &quot;User&quot; tab. Specific operation steps: Select &quot;User&quot;-&quot;Budget Configuration&quot; and modify the user&apos;s personal budget.</li>
+</ul>
 <p>Click Save to view the current business group.</p>
 <h1 id="view-current-business-group"><a name="view-current-business-group" class="anchor-navigation-ex-anchor" href="#view-current-business-group"><i class="fa fa-link" aria-hidden="true"></i></a>2. View Current Business Group</h1>
 <p>Choose Organization - Business Groups to view all current business groups. Displays the name of the business group, the upper-level business group, the creator, and the creation time. You can add, edit, and delete business groups.</p>
@@ -957,7 +1052,7 @@ You can view the utilization, resource usage, and remaining quantity of business
 <blockquote>
 <p>&#x300C;Important&#x300D;Deleting business group will delete the script library, naming suffix, key pair, etc. under the business group and remove all users from the business group. Before deleting a business group, ensure that all service deployments under the business group have been uninstalled successfully, and all resource bundles under the business group are removed, and all released and unpublished services are deleted.</p>
 </blockquote>
-<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; 2013-2019 CloudChef. All Rights Reserved. <a href="http://www.cloudchef.io/en/" target="_blank">Shanghai CloudChef Information Technology Co., Ltd.</a>  </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> update time&#xFF1A; 2019-12-06 14:58:49 </span> </footer>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; 2013-2019 CloudChef. All Rights Reserved. <a href="http://www.cloudchef.io/en/" target="_blank">Shanghai CloudChef Information Technology Co., Ltd.</a>  </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> update time&#xFF1A; 2020-01-13 16:28:26 </span> </footer>
                                 
                                 </section>
                             
@@ -1000,7 +1095,7 @@ You can view the utilization, resource usage, and remaining quantity of business
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"BusinessGroup","level":"3.4.1","depth":2,"next":{"title":"Project","level":"3.4.2","depth":2,"path":"AdminDoc/04Organization/Project.md","ref":"AdminDoc/04Organization/Project.md","articles":[]},"previous":{"title":"Organization","level":"3.4","depth":1,"path":"AdminDoc/04Organization/README.md","ref":"AdminDoc/04Organization/README.md","articles":[{"title":"BusinessGroup","level":"3.4.1","depth":2,"path":"AdminDoc/04Organization/BusinessGroup.md","ref":"AdminDoc/04Organization/BusinessGroup.md","articles":[]},{"title":"Project","level":"3.4.2","depth":2,"path":"AdminDoc/04Organization/Project.md","ref":"AdminDoc/04Organization/Project.md","articles":[]},{"title":"Users","level":"3.4.3","depth":2,"path":"AdminDoc/04Organization/Users.md","ref":"AdminDoc/04Organization/Users.md","articles":[]},{"title":"Roles","level":"3.4.4","depth":2,"path":"AdminDoc/04Organization/Roles.md","ref":"AdminDoc/04Organization/Roles.md","articles":[]},{"title":"ServiceGroup","level":"3.4.5","depth":2,"path":"AdminDoc/04Organization/ServiceGroup.md","ref":"AdminDoc/04Organization/ServiceGroup.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["splitter","-lunr","-search","search-plus","expandable-chapters-small","insert-logo","simple-page-toc","favicon","anchor-navigation-ex","page-footer-ex","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"mode":"float","livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"page-footer-ex":{"copyright":"Copyright © 2013-2019 CloudChef. All Rights Reserved. [Shanghai CloudChef Information Technology Co., Ltd.](http://www.cloudchef.io/en/) ","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"update time："},"showLevel":true,"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"sepia","family":"serif","size":1},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{},"printLog":false,"expandable-chapters-small":{},"multipleH1":true,"associatedWithSummary":true,"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none;","url":"https://cloudchef.github.io/doc-en/picture/logo.png"},"search-plus":{}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CloudChef Document","gitbook":"*","description":"Provide you with a rich and detailed guide and product documentation for the SmartCMP Cloud Management Platform.","theme-default":{"showLevel":false},"extension":null},"file":{"path":"AdminDoc/04Organization/BusinessGroup.md","mtime":"2019-12-06T06:58:49.459Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-23T05:45:21.299Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"BusinessGroup","level":"3.4.1","depth":2,"next":{"title":"Project","level":"3.4.2","depth":2,"path":"AdminDoc/04Organization/Project.md","ref":"AdminDoc/04Organization/Project.md","articles":[]},"previous":{"title":"Organization","level":"3.4","depth":1,"path":"AdminDoc/04Organization/README.md","ref":"AdminDoc/04Organization/README.md","articles":[{"title":"BusinessGroup","level":"3.4.1","depth":2,"path":"AdminDoc/04Organization/BusinessGroup.md","ref":"AdminDoc/04Organization/BusinessGroup.md","articles":[]},{"title":"Project","level":"3.4.2","depth":2,"path":"AdminDoc/04Organization/Project.md","ref":"AdminDoc/04Organization/Project.md","articles":[]},{"title":"Users","level":"3.4.3","depth":2,"path":"AdminDoc/04Organization/Users.md","ref":"AdminDoc/04Organization/Users.md","articles":[]},{"title":"Roles","level":"3.4.4","depth":2,"path":"AdminDoc/04Organization/Roles.md","ref":"AdminDoc/04Organization/Roles.md","articles":[]},{"title":"ServiceGroup","level":"3.4.5","depth":2,"path":"AdminDoc/04Organization/ServiceGroup.md","ref":"AdminDoc/04Organization/ServiceGroup.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["splitter","-lunr","-search","search-plus","expandable-chapters-small","insert-logo","simple-page-toc","favicon","anchor-navigation-ex","page-footer-ex","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"mode":"float","livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"page-footer-ex":{"copyright":"Copyright © 2013-2019 CloudChef. All Rights Reserved. [Shanghai CloudChef Information Technology Co., Ltd.](http://www.cloudchef.io/en/) ","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"update time："},"showLevel":true,"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"sepia","family":"serif","size":1},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{},"printLog":false,"expandable-chapters-small":{},"multipleH1":true,"associatedWithSummary":true,"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none;","url":"https://cloudchef.github.io/doc-en/picture/logo.png"},"search-plus":{}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CloudChef Document","gitbook":"*","description":"Provide you with a rich and detailed guide and product documentation for the SmartCMP Cloud Management Platform.","theme-default":{"showLevel":false},"extension":null},"file":{"path":"AdminDoc/04Organization/BusinessGroup.md","mtime":"2020-01-13T08:28:26.339Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-13T08:29:09.037Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

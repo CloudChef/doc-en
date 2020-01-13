@@ -14,12 +14,45 @@ The following diagram depicts the logical connections between components, bluepr
 
 # Component
 
+Any resource is a component object. Whether it is software, infrastructure or container resources, different types of cloud resources are component objects and can be componentized. The definition of components adopts an object-oriented design method, uses a unified data structure for modeling, and standardizes configuration properties. SmartCMP provides not only built-in rich component resources and common operations, but also highly scalable capabilities, flexibly add component resources and configure operations according to user needs.
+
+Rich component library: component resources out of the box. SmartCMP cloud management platform has a large number of commonly used component resources built in, including IaaS (cloud hosts, networks, storage, etc. of different cloud platforms), PaaS (servers, databases, RDS, etc.), containers (Kubernetes, Docker), software (MySQL, Oracle, Nginx, etc.) and agents (monitoring agents, automation agents). Different types of resources are created and managed in a unified interface, using a tree-like grouping directory, supporting custom component grouping, supporting secondary editing, fast copying, Import and export components.
+
+>「Note」Detailed creation and management steps please refer to: component library
+
+Custom components: Users can create reusable components according to their needs, componentize any resource, and standardize the process of configuring components, including defining resource types, versions, attributes, component operations, etc., and all configuration interfaces are open to user customization. For example, when a DBA creates a database cluster and an Oracle database needs to be deployed, DBA can add Oracle components to the component library and configure components according to requirements, including configuring component profiles, instructions, properties, scripts, and operations (create, start, stop, restart, delete, etc. the specified database)
+
+>「Note」 For detailed steps of the custom component, please refer to: Creating a component
+
+
+## Component builds up blueprint
+
 A component is the basic unit that makes up a blueprint. The components in SmartCMP consist of two types:
 
++	Infrastructure components: including computing components (e.g., virtual machines, containers, etc.), network components (e.g., load balancing, security groups, firewalls, etc.), storage components (e.g., disks, object storage, etc.). These components are built into SmartCMP and can be selected during blueprint design.
 
-+ Infrastructure components: including computing components (e.g., virtual machines, containers, etc.), network components (e.g., load balancing, security groups, firewalls, etc.), storage components (e.g., disks, object storage, etc.). These components are built into SmartCMP and can be selected during blueprint design.
++	Software components: for the installation of application software, including middleware, relational databases, non-relational databases, and so on. You can standardize configuration properties and use scripts to specify how to install, configure, uninstall, or update components during software deployment (you can also customize the other operations you need). Software architects can create custom components, update existing components, or delete components that have been removed through the software component management interface. Software components can be used with infrastructure components when designing blueprints.
 
-+ Software components: for the installation of application software, including middleware, relational databases, non-relational databases, and so on. You can standardize configuration properties and use scripts to specify how to install, configure, uninstall, or update components during software deployment (you can also customize the other operations you need). Software architects can create custom components, update existing components, or delete components that have been removed through the software component management interface. Software components can be used with infrastructure components when designing blueprints.
+
+![Components](../../picture/foundationConcepts/components.png)
+
+>「Note」SmartCMP has a large number of commonly used components built in. When you add custom infrastructure components or software components, you can choose to instantiate them when you add them so that you can also choose them during blueprint design.
+
+
+## Object-oriented design
+
+The design of components adopts the structure of object-oriented design. Object-oriented has three characteristics of encapsulation, inheritance and polymorphism. Inheritance allows child categories to have various properties and methods of the parent category without the need to write the same code again. While making the child category inherit the parent category, you can redefine certain properties and rewrite certain methods, that is, to override the original properties and methods of the parent category, so that it has different functions from the parent category.
+
+
++ 	Operations and attributes are inheritable. Start, stop, restart, delete, and refresh the built-in components of the system. (Take the refresh operation as an example, the operation is configured in system in advance, and the implementation methods, scripts, tasks, and parameters necessary for the operation are used.) The built-in operation can be applied to any resource on the platform. Therefore, when the component Oracle is created, the built-in "start, stop, restart, delete, refresh" operations are automatically inherited. When the component type Software is selected, the created Oracle component has various attributes of the parent Software component and can also be customized to obtain different functions from the parent one. It should be noted that the attribute key value added by the user and the attribute key value in the parent component cannot be the same, otherwise the attribute definition in the parent component will be overwritten. You can also add a script file by creating a new file, which will be used to extend the component. For example: the custom component Oracle's install.sh script will be associated with the "create operation".
+
+
++ 	Encapsulation hides the implementation details of complex operations and only provides public access to the outside world. The platform has complex operations built-in and works out of the box, reducing differences and difficulty in understanding. For example: "adjust virtual machine configuration" operation (adjust virtual machine calculation specifications and cloud platform specifications), when the cloud platform type is different, the SmartCMP cloud management platform hides the details of the flow of resource operations, only exposing public access interfaces. For example, the "Adjust virtual machine configuration" operation is applied to a virtual machine on the Hyper-V platform and a virtual machine on the OpenStack platform. The specific technical implementation is different, but the user configuration interface displays the same content.
+
+
++   Polymorphism refers to the same operation, which has a different effect due to different parameters passed in. For example, when the component Oracle is created, different application systems have specific requirements and custom requirements for Oracle's deployment requirements and parameter control. "Attributes" can be set according to the deployment requirements of different systems, by setting custom attributes, exposing configuration parameters that application components need to fill out to the interface configuration, and passing custom parameters. When Oracle is deployed automatically, the SmartCMP cloud management platform automatically invokes relevant parameters to perform application installation and configuration, which meets different requirements for Oracle deployment in different data clusters.
+
+
 
 
 # Blueprint
