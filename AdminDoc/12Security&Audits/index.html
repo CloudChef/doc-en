@@ -275,7 +275,20 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3.2" data-path="../03Infrastructure/ResourceBundleManagement.html">
+        <li class="chapter " data-level="3.3.2" data-path="../03Infrastructure/CloudGateways.html">
+            
+                <a href="../03Infrastructure/CloudGateways.html">
+            
+                    
+                    CloudGateways
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3" data-path="../03Infrastructure/ResourceBundleManagement.html">
             
                 <a href="../03Infrastructure/ResourceBundleManagement.html">
             
@@ -288,7 +301,20 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3.3" data-path="../03Infrastructure/VMTemplates.html">
+        <li class="chapter " data-level="3.3.4" data-path="../03Infrastructure/Image.html">
+            
+                <a href="../03Infrastructure/Image.html">
+            
+                    
+                    Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.5" data-path="../03Infrastructure/VMTemplates.html">
             
                 <a href="../03Infrastructure/VMTemplates.html">
             
@@ -301,7 +327,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3.4" data-path="../03Infrastructure/ComputingSpecifications.html">
+        <li class="chapter " data-level="3.3.6" data-path="../03Infrastructure/ComputingSpecifications.html">
             
                 <a href="../03Infrastructure/ComputingSpecifications.html">
             
@@ -314,38 +340,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3.5" data-path="../03Infrastructure/IPAM.html">
+        <li class="chapter " data-level="3.3.7" data-path="../03Infrastructure/IPAM.html">
             
                 <a href="../03Infrastructure/IPAM.html">
             
                     
                     IPAM
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.3.6" data-path="../03Infrastructure/KeyPair.html">
-            
-                <a href="../03Infrastructure/KeyPair.html">
-            
-                    
-                    KeyPair
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.3.7" data-path="../03Infrastructure/NamingSuffix.html">
-            
-                <a href="../03Infrastructure/NamingSuffix.html">
-            
-                    
-                    NamingSuffix
             
                 </a>
             
@@ -463,6 +463,32 @@
             
         </li>
     
+        <li class="chapter " data-level="3.4.6" data-path="../04Organization/NamingSuffix.html">
+            
+                <a href="../04Organization/NamingSuffix.html">
+            
+                    
+                    NamingSuffix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.7" data-path="../04Organization/ProfileTemplate.html">
+            
+                <a href="../04Organization/ProfileTemplate.html">
+            
+                    
+                    ProfileTemplate
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -560,7 +586,20 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.7" data-path="../05ServiceDesign/ScriptLibrary.html">
+        <li class="chapter " data-level="3.5.7" data-path="../05ServiceDesign/ServiceLevelAgreement.html">
+            
+                <a href="../05ServiceDesign/ServiceLevelAgreement.html">
+            
+                    
+                    ServiceLevelAgreement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.8" data-path="../05ServiceDesign/ScriptLibrary.html">
             
                 <a href="../05ServiceDesign/ScriptLibrary.html">
             
@@ -708,6 +747,19 @@
             
                     
                     Governance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.4" data-path="../13Fund/">
+            
+                <a href="../13Fund/">
+            
+                    
+                    Fund
             
                 </a>
             
@@ -904,16 +956,34 @@
                                 
                                 <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#Bastion%20Host"><b>1. </b>Bastion Host</a></li><li><span class="title-icon "></span><a href="#Backup%20system"><b>2. </b>Backup system</a></li><li><span class="title-icon "></span><a href="#audits"><b>3. </b>Audits</a></li></ul></div><a href="#Bastion%20Host" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p><strong>Backup and security</strong></p>
 <h1 id="Bastion Host"><a name="Bastion Host" class="anchor-navigation-ex-anchor" href="#Bastion%20Host"><i class="fa fa-link" aria-hidden="true"></i></a>1. Bastion Host</h1>
-<p>SmartCMP supports accessing virtual machines through bastion hosts and scheduling various bastion hosts through a unified HTTP request.</p>
+<p>SmartCMP supports accessing virtual machines through bastion hosts and scheduling various bastion hosts through a unified HTTP request. The platform not only supports the use of embedded bastion hosts, but can also be connected to third-party bastion hosts.</p>
 <p>Core usage scenarios: </p>
-<p>Permission management: Integrate the access control of the bastion host and the platform (the platform and the bastion host are connected to the permission system, set user permissions, and set whether users can connect to the virtual machine through SSH or RDP. </p>
-<p>User management: all users accessing the virtual machine need to go through the bastion host. </p>
-<p>Operations: after the virtual machine is created, register the virtual machine to the bastion host; after the virtual machine is deleted, log out the virtual machine from the bastion host; after the virtual machine changes, update the bastion host. For example when a virtual machine&#x2019;s owner is changed, the registration information of the virtual machine in the bastion host is modified synchronously.</p>
+<ul>
+<li><p>Permission management: Integrate the access control of the bastion host and the platform (the platform and the bastion host are connected to the permission system, set user permissions, and set whether users can connect to the virtual machine through SSH or RDP. </p>
+</li>
+<li><p>User management: all users accessing the virtual machine need to go through the bastion host. </p>
+</li>
+<li><p>Operations: after the virtual machine is created, register the virtual machine to the bastion host; after the virtual machine is deleted, log out the virtual machine from the bastion host; after the virtual machine changes, update the bastion host. For example when a virtual machine&#x2019;s owner is changed, the registration information of the virtual machine in the bastion host is modified synchronously.</p>
+</li>
+<li><p>Session management and video playback: The platform also supports the bastion host session management function. When the user performs operations on the remote instance through the bastion host, a real-time session link will be formed, and the tenant administrator can view the current ongoing session. If an exception is found, the administrator can manually terminate one or more sessions by clicking terminate to disconnect the corresponding user&apos;s session. User can also view the history of all the sessions, learn the details of each historical session, and click playback to view the recording.</p>
+</li>
+</ul>
 <p>Specific configuration steps:</p>
 <ul>
-<li>The specific steps of bastion host entrance connection to GuacaMole (that is, Apache Guacamole): click on the left navigation bar &quot;Security Audit&quot;-&quot;Bastion Host&quot;, click add, fill in the bastion host information, name (virtual machine name), description , Guacd address (that is, the URL link of the bastion host), Guacd port (that is, the access port of the bastion host), SmartCMP uses Cloudchef-Integration to verify that the login information is correct. </li>
-<li>Bind the bastion host to the resource bundle: Click the &quot;Infrastructure&quot;-&quot;Resource Bundle Management&quot; on the left navigation bar, and specify one of the bastion hosts that have been connected. For example: when adding a vSphere resource bundle, bind the bastion host Guacd, the virtual machine deployed using the vSphere resource bundle will be automatically registered to the bastion host, and the virtual machine deployed using the vSphere resource bundle will be automatically unregistered from the bastion host when it is uninstalled. </li>
-<li>Use of the bastion host. After the vSphere resource bundle is bound to the bastion host, use the vSphere resource bundle to successfully deploy the instance. Click the left navigation bar &quot;Deployments&quot;-&quot;Instance&quot;-&quot;Overview&quot; tab, select Remote protocol types, including: based on cloud platform, RDP or VNC (choose based on RDP or VNC, you need to select the remote protocol port). After the selection is completed, click &quot;Remote Terminal&quot; and you can directly pass &quot;RDP or VNC&quot;. The instance is configured to open the remote terminal on the cloud platform. You can modify the parameters of the protocol information through the remote terminal, for example, modify the user name and password of the virtual machine.</li>
+<li>Specific steps for accessing Guacamole (ie Apache Guacamole) bastion host: Click &quot;Backup &amp; Security&quot;-&quot;Guacamole&quot; on the left navigation bar, click Add, fill in the bastion host information, name (virtual machine name), description, Guacd Address (that is, the URL link of the bastion host) and Guacd port (that is, the access port of the bastion host). SmartCMP uses Cloudchef-Integration to verify if the login information is correct.</li>
+</ul>
+<blockquote>
+<p>Connect to third-party bastion hosts, for example: Qizhi bastion hosts, access through the &quot;bastion host entrance&quot;. &quot;Guacamole bastion host&quot; is the embedded bastion host management interface of SmartCMP.</p>
+</blockquote>
+<ul>
+<li><p>Bind the bastion host to the resource bundle: Click the &quot;Infrastructure&quot;-&quot;Resource Bundle Management&quot; on the left navigation bar, and specify one of the bastion hosts that have been connected. For example: when adding a vSphere resource bundle, bind the bastion host Guacd, the virtual machine deployed using the vSphere resource bundle will be automatically registered to the bastion host, and the virtual machine deployed using the vSphere resource bundle will be automatically unregistered from the bastion host when it is uninstalled. </p>
+</li>
+<li><p>Use of the bastion host. After the vSphere resource bundle is bound to the bastion host, use the vSphere resource bundle to successfully deploy the instance. Click the left navigation bar &quot;Deployments&quot;-&quot;Instance&quot;-&quot;Overview&quot; tab, select Remote protocol types, including: based on cloud platform, RDP or VNC (choose based on RDP or VNC, you need to select the remote protocol port). After the selection is completed, click &quot;Remote Terminal&quot; and you can directly pass &quot;RDP or VNC&quot;. The instance is configured to open the remote terminal on the cloud platform. You can modify the parameters of the protocol information through the remote terminal, for example, modify the user name and password of the virtual machine.</p>
+</li>
+<li><p>Every time the operation personnel logs in to the virtual machine through Web SSH for operation, system will automatically use the bastion host&apos;s Web SSH service, and each connection will generate a session record of operation. Audit personnel may click on the &quot;Backup &amp; Security&quot;-&quot;Guacamole&quot;-active session on the left navigation bar to check if there&apos;s any illegal operation, if found, they can manually click the &quot;terminate&quot; button to immediately terminate the session.</p>
+</li>
+<li><p>Click &quot;Backup &amp; Security&quot;-&quot;Guacamole&quot;-Session Management on the left navigation bar to view the detailed information of the session, including: host name, IP address, protocol, Guacd name, user name, start time, duration and operation recording. Click Play to play the operation video online.</p>
+</li>
 </ul>
 <h1 id="Backup system"><a name="Backup system" class="anchor-navigation-ex-anchor" href="#Backup%20system"><i class="fa fa-link" aria-hidden="true"></i></a>2. Backup system</h1>
 <p>SmartCMP supports fast and reliable backup of all instances on the vSphere cloud platform based on Veeam. Configure the backup management platform and bind the resource bundle to the backup management platform. The instances deployed in this resource bundle can be managed by Veeam. Supports recovery of individual files, entire virtual machines, applications, and more, ensuring service security and high availability.</p>
@@ -928,7 +998,7 @@
 </ul>
 <p>Specific configuration steps: </p>
 <ul>
-<li><p>Backup management portal configuration: Click &quot;Security Audit&quot;-&quot;Backup Management Platform&quot; on the left navigation bar, click Add, fill in Veeam information, name (name of Veeam system platform), description, Veeam address (i.e. URL link of Veeam platform) , Username and password (i.e. login username and password for Veeam platform) </p>
+<li><p>Backup management portal configuration: Click &quot;Backup &amp; Security&quot;-&quot;Backup Management Platform&quot; on the left navigation bar, click Add, fill in Veeam information, name (name of Veeam system platform), description, Veeam address (i.e. URL link of Veeam platform) , Username and password (i.e. login username and password for Veeam platform) </p>
 </li>
 <li><p>Bind to the resource bundle: Click the &quot;Infrastructure&quot;-&quot;Resource bundle Management&quot; cloud platform resource information tab on the left navigation bar to specify the backup management platform that has been connected. For example, when adding a vSphere resource bundle, bind the backup management platform Veeam, and the virtual machines deployed using the vSphere resource bundle will be automatically associated with Veeam, and the instance will be managed through the backup management platform. </p>
 </li>
@@ -939,7 +1009,7 @@
 <p>Support records of user access and operation information. The tenant administrator and sysadmin have this permission by default. If you need to add this permission to other roles, please add a role and add this permission. </p>
 <p>For details, see <a href="https://cloudchef.github.io/doc-en/AdminDoc/04Organization/Roles.html" target="_blank">Roles</a></p>
 <p>Click &quot;System Management&quot;-&quot;Operation Audit&quot; on the left navigation bar, you can see the operation records of the tenant. It displays the operator, operation object, operation name, operation parameter, status, and operation time. You can use &quot;Advanced Search&quot; for quick filtering and positioning. It supports the filtering of operators, statuses, operating objects,and start and end times. You can also use ordinary search functions.</p>
-<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; 2013-2019 CloudChef. All Rights Reserved. <a href="http://www.cloudchef.io/en/" target="_blank">Shanghai CloudChef Information Technology Co., Ltd.</a>  </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> update time&#xFF1A; 2020-01-10 18:04:00 </span> </footer>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; 2016-2020 CloudChef. All Rights Reserved. <a href="http://www.cloudchef.io/en/" target="_blank">Shanghai CloudChef Information Technology Co., Ltd.</a>  </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> update time&#xFF1A; 2020-05-28 16:57:08 </span> </footer>
                                 
                                 </section>
                             
@@ -982,7 +1052,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Security&Audits","level":"3.12","depth":1,"next":{"title":"QuickStart","level":"4.1","depth":1,"path":"UserDoc/01QuickStart/README.md","ref":"UserDoc/01QuickStart/README.md","articles":[]},"previous":{"title":"TenantManagement","level":"3.11","depth":1,"path":"AdminDoc/10TenantManagement/README.md","ref":"AdminDoc/10TenantManagement/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","-lunr","-search","search-plus","expandable-chapters-small","insert-logo","simple-page-toc","favicon","anchor-navigation-ex","page-footer-ex","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"mode":"float","livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"page-footer-ex":{"copyright":"Copyright © 2013-2019 CloudChef. All Rights Reserved. [Shanghai CloudChef Information Technology Co., Ltd.](http://www.cloudchef.io/en/) ","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"update time："},"showLevel":true,"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"sepia","family":"serif","size":1},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{},"printLog":false,"expandable-chapters-small":{},"multipleH1":true,"associatedWithSummary":true,"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none;","url":"https://cloudchef.github.io/doc-en/picture/logo.png"},"search-plus":{}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CloudChef Document","gitbook":"*","description":"Provide you with a rich and detailed guide and product documentation for the SmartCMP Cloud Management Platform.","theme-default":{"showLevel":false},"extension":null},"file":{"path":"AdminDoc/12Security&Audits/README.md","mtime":"2020-01-10T10:04:00.295Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-13T08:54:02.113Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Security&Audits","level":"3.12","depth":1,"next":{"title":"QuickStart","level":"4.1","depth":1,"path":"UserDoc/01QuickStart/README.md","ref":"UserDoc/01QuickStart/README.md","articles":[]},"previous":{"title":"TenantManagement","level":"3.11","depth":1,"path":"AdminDoc/10TenantManagement/README.md","ref":"AdminDoc/10TenantManagement/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","-lunr","-search","search-plus","expandable-chapters-small","insert-logo","simple-page-toc","favicon","anchor-navigation-ex","page-footer-ex","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"mode":"float","livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"page-footer-ex":{"copyright":"Copyright © 2016-2020 CloudChef. All Rights Reserved. [Shanghai CloudChef Information Technology Co., Ltd.](http://www.cloudchef.io/en/) ","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"update time："},"showLevel":true,"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"sepia","family":"serif","size":1},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{},"printLog":false,"expandable-chapters-small":{},"multipleH1":true,"associatedWithSummary":true,"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none;","url":"https://cloudchef.github.io/doc-en/picture/logo.png"},"search-plus":{}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CloudChef Document","gitbook":"*","description":"Provide you with a rich and detailed guide and product documentation for the SmartCMP Cloud Management Platform.","theme-default":{"showLevel":false},"extension":null},"file":{"path":"AdminDoc/12Security&Audits/README.md","mtime":"2020-05-28T08:57:08.717Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-28T08:57:45.023Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

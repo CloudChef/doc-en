@@ -1,11 +1,11 @@
 
  **Workflow application scenario**
 
-In the process of self-service request, approval, automated deployment, operations, and manual work order of cloud resources, the workflow defines the methods and strategies of these task processing or service configuration processes.
+In the process of self-service request, approval, automated deployment, operations, and manual ticket of cloud resources, the workflow defines the methods and strategies of these task processing or service configuration processes.
 
-The system provides standard workflows by default and supports administrators to define the processes required for flexible services through the workflow designer, control cloud application, operations, and recycle, and manage and close manual work order services.
+The system provides standard workflows by default and supports administrators to define the processes required for flexible services through the workflow designer, control cloud application, operations, and recycle, and manage and close manual ticket services.
 
-There are three main types of workflows for the platform: approval, manual work order service, and cloud resource blueprint service process.
+There are three main types of workflows for the platform: approval, manual ticket service, and cloud resource blueprint service process.
 
 # Approval Workflow Management
 
@@ -206,17 +206,17 @@ The Service Deployment Operational Entitlement stipulates that the operations in
 
 2.  If you do not check "Inherit Business Group Configuration", click Edit  after each operation, select the activation status and approval template, click , and finally click "Save". 
 
-# Manual Work Order Service Workflow Management
+# Manual Ticket Service Workflow Management
 
-The manual work order service workflow defines the specific processing steps, service teams, service personnel, and transfer methods of the work order tasks.
+The manual ticket service workflow defines the specific processing steps, service teams, service personnel, and transfer methods of the ticket tasks.
 
-## Built-in manual work order service workflow {#Built-in manual work order service workflow .afff6}
+## Built-in manual Ticket service workflow {#Built-in manual ticket service workflow .afff6}
 
-The built-in manual work order service workflow of the platform includes standard manual work orders, standard event management workflows, application service workflows, and supports tenant administrators to customize service workflows.
+The built-in manual ticket service workflow of the platform includes standard manual tickets, standard event management workflows, application service workflows, and supports tenant administrators to customize service workflows.
 
-The built-in manual work order workflow cannot be modified or deleted. It only supports viewing and use. The user-defined manual work order service workflow supports modification and deletion.
+The built-in manual ticket workflow cannot be modified or deleted. It only supports viewing and use. The user-defined manual ticket service workflow supports modification and deletion.
 
-The standard event workflow Incident Report is used to solve problems related to IT resources, such as server down, network IP address conflicts, and so on. The workflow type belongs to the manual work order service.
+The standard event workflow Incident Report is used to solve problems related to IT resources, such as server down, network IP address conflicts, and so on. The workflow type belongs to the manual ticket service.
 
 The specific process is as follows:
 
@@ -239,7 +239,7 @@ After the second-line support process receives the event, the operations that ca
 
 -   Transfer to other teams
 
-2.  The email notifies the user that the problem has been solved. After the user who initiated the manual ticket service application receives the problem-solving email, the user performs the service shutdown operation, and the work order status changes to “processed”; if the user chooses to re-process the work order , then return to the handler of the previous level. (When the email informs the user in the previous step, whoever processed it is returned to whom, the second-line processing returns to the second line, and the first line returns to the first line), and the work order status changes to "Processing".
+2.  The email notifies the user that the problem has been solved. After the user who initiated the manual ticket service application receives the problem-solving email, the user performs the service shutdown operation, and the ticket status changes to “processed”; if the user chooses to re-process the ticket , then return to the handler of the previous level. (When the email informs the user in the previous step, whoever processed it is returned to whom, the second-line processing returns to the second line, and the first line returns to the first line), and the ticket status changes to "Processing".
 
 # Cloud Resource Blueprint Service Workflow
 
@@ -258,9 +258,9 @@ To meet the service process requirements of different service items, the platfor
 
 1.  Click "Service Design" - "Workflow" in the left navigation bar, click the "Add" button.
 
-2.  Enter the new workflow page and enter the basic information of the custom process: workflow name, description, category (cloud resource blueprint service, manual work order service and approval process). After saving the name, category and other information, you can use the workflow designer to design and define the processes you need to enable.
+2.  Enter the new workflow page and enter the basic information of the custom process: workflow name, description, category (cloud resource blueprint service, manual ticket service and approval process). After saving the name, category and other information, you can use the workflow designer to design and define the processes you need to enable.
 
- Introduce the method of creating the basic flow chart: the left circle represents the starting node, the right circle represents the ending node, and the work order task processing flow can be customized after the task 1, the custom task 2, or the rest of the custom task. as the picture shows:
+ Introduce the method of creating the basic flow chart: the left circle represents the starting node, the right circle represents the ending node, and the ticket task processing flow can be customized after the task 1, the custom task 2, or the rest of the custom task. as the picture shows:
 
 
 ![Workflow](../../picture/Admin/Workflow03.png)
@@ -282,4 +282,4 @@ In the left navigation bar, click "Service Design" – “Workflow”, select a 
 
 In the left navigation bar, click "Service Design" – “Workflow”, select a service workflow, and click the "Disable" button to disable the service workflow.
 
->「Note」There are two main workflows for the system: standard cloud service deployment and standard manual work orders. These two built-in workflows are enabled by default and cannot be disabled, modified, or deleted.
+>「Note」There are two main workflows for the system: standard cloud service deployment and standard manual tickets. These two built-in workflows are enabled by default and cannot be disabled, modified, or deleted.

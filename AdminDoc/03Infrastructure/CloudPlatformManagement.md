@@ -238,15 +238,22 @@ Parameter|         Description|          Example
 
   Aliyun AccessKey acquisition method
 
-> 1\. Get Access Key
-> Secret: Log in to your Aliyun Cloud Management Console, click on the personal information in the upper right corner of the page, expand the panel, select "access keys" inside, or you can log in directly to https://ak-console.aliyun.com，
-> Enter the Access Keys management interface, view your Access Key list. If the current list is empty, you can also create one.
->
-> 2\. Get Access Key
-> ID: Aliyun Cloud Account ID is the unique identifier assigned to each user by Aliyun Cloud. It cannot be changed. The format is 16 digits, such as: 102462945332\*\*\*\* (to avoid coincidence with real users, last 4 digits are omitted).If the user wants to view his or her Ali cloud account ID, please visit the Aliyun account "Security Settings" in the login status, address: https://account.console.aliyun.com/secure
-> Find your account ID on the Security Settings page.
+>「Note」  For security reasons, visitors need to verify their identity when calling Alibaba Cloud's API, and verify the Access Key to ensure that the visitor has relevant permissions. Get Access Key Secret:Log in to your Aliyun Cloud Management Console, click on the personal information in the upper right corner of the page, expand the panel, select "access keys".
 
- Click Verify, after the verification is successful, click “Submit” and the Aliyun virtualization platform is successfully connected.
+![获取阿里云的 Access Key](../../picture/Admin/ali_AK.png)
+
+>「Note」 or you can log in directly to <https://ak-console.aliyun.com> and enter the Access Keys management interface to view your Access Key list. If the current list is empty, you can also create one. When creating a new AccessKey, Alibaba Cloud will send a verification code to the account contact's phone.
+
+![创建阿里云的 Access Key](../../picture/Admin/ali_AK_C.png)
+
+>「Note」 Get Access Key ID:Aliyun Cloud Account ID is the unique identifier assigned to each user by Aliyun Cloud. It cannot be changed. If the user wants to view his or her Ali cloud account ID, please visit the Aliyun account "Security Settings" in the login status, address:<https://account.console.aliyun.com/secure>. Find your account ID on the Security Settings page.
+
+![获取阿里云的 Access Key ID](../../picture/Admin/ali_AKID.png)
+
+
+4.  Click Verify, after the verification is successful, click “Submit” and the Aliyun virtualization platform is successfully connected.
+
+ 
 
 ## Add Apsara Stack Cloud Platform {#Add Apsara Stack Cloud Platform}
 
@@ -282,18 +289,11 @@ Parameter|         Description|          Example
 3.  Like Aliyun Access Key, Tencent Cloud provides an API key verification mechanism for API services. The API key is issued by Tencent Cloud to the owner of the virtual machine. It consists of Secret ID and Secret Key, corresponding to the access key ID and access key of SmartCMP accessing to Tencent cloud platform.
   
 
+>「Note」  Acquisition method: Log in to your Tencent Cloud console, click on “Cloud Products” in the upper left corner, click on “Cloud API Key” in the pop-up interface, or you can log in directly to https://console.qcloud.com/capi. Go to the “Cloud API Key” management interface and you will see your API key list. The API key consists of APP ID, Secret ID and Secret Key. If the list is empty, please click “New Key” to create one.
 
+![获取腾讯云的访问密钥](../../picture/Admin/tencent_ID.png)
 
-> Acquisition method:
->
-> 1.
-> Log in to your Tencent Cloud console, click on “Cloud Products” in the upper left corner, click on “Cloud API Key” in the pop-up interface, or you can log in directly to https://console.qcloud.com/capi
->
-> 2.
-> Go to the “Cloud API Key” management interface and you will see your API key list. The API key consists of APP ID, Secret ID and Secret Key. If the list is empty, please click “New Key” to create one.
->
-> 3.
->  Tencent Cloud Account ID is the unique identification code assigned to each user by Tencent Cloud. To view your own Tencent Cloud account ID, please visit “Account Information” in the login status. Address: https://console.qcloud.com/developer；
+>「Note」    Tencent Cloud Account ID is the unique identification code assigned to each user by Tencent Cloud. To view your own Tencent Cloud account ID, please visit “Account Information” in the login status. Address: https://console.qcloud.com/developer
 
 4.  Click Verify, after the verification is successful, click “Submit” and the Tencent virtualization platform is successfully connected.
 
@@ -313,21 +313,12 @@ Parameter|         Description|                        Example
   Type    |     Choose Private or Public  |                        Private/Public
   API URL |     If private, you need to provide QingCloud private cloud API URL |  http://x.x.x.x
 
-  ③	Similar to Aliyun Cloud Access Key, QingCloud Public Cloud provides a set of API key verification mechanism for API services. Through this key, users can import cloud resources in QingCloud to the platform. The API key is issued by QingCloud to the owner of the virtual machine, which consists of qy_access_key_id and qy_secret_access_key.
+3.  Similar to Aliyun Cloud Access Key, QingCloud Public Cloud provides a set of API key verification mechanism for API services. Through this key, users can import cloud resources in QingCloud to the platform. The API key is issued by QingCloud to the owner of the virtual machine, which consists of qy_access_key_id and qy_secret_access_key.
 
 
+>「Note」    Log in to your QingCloud console, click on “API Key” in the left menu to enter the API Key Management page, or you can log in directly to [https://console.qingcloud.com/access_keys/](https://console.qingcloud.com/access_keys/). Click the Create button, the “New API Key” window will pop up, enter the name, such as: cloud service, click the “Submit” button. In the pop-up "Download Key" window, click the Download button and download the key file: access_key.csv to the local. Please note that the download link for the API key will only appear once, if you did not download it when you created it, please re-create a new API key. Open the file with Notepad: access_key.csv, you can see the API key information: qy_access_key_id and qy_secret_access_key
 
-
-> 1\. Log in to your QingCloud console, click on “API Key” in the left menu to enter the API Key Management page, or you can log in directly to [https://console.qingcloud.com/access_keys/](https://console.qingcloud.com/access_keys/)
-
->2\.  Click the Create button, the “New API Key” window will pop up, enter the name, such as: cloud service, click the “Submit” button
-
->3\.  In the pop-up "Download Key" window, click the Download button and download the key file: access_key.csv to the local. Please note that the download link for the API key will only appear once, if you did not download it when you created it, please re-create a new API key
-
->4\.  Open the file with Notepad: access_key.csv, you can see the API key information: qy_access_key_id and qy_secret_access_key
-
-
->5\.  Click Verify, after the verification is successful, click “Submit” and the QingCloud virtualization platform is successfully connected.
+4. Click Verify, after the verification is successful, click “Submit” and the QingCloud virtualization platform is successfully connected.
 
 ## Add AWS Cloud Platform {#Add AWS Cloud Platform}
 
@@ -345,26 +336,9 @@ Parameter|         Description|          Example
 
 3.  Amazon AWS access key (Access Key) is a credential for AWS users to confirm user identity when accessing cloud resources through API. SmartCMP manages AWS cloud resources through API, so users need to obtain AWS access key first. The Access Key is issued by Amazon AWS to the owner of the virtual machine. It consists of the Access Key ID and the Secret Access Key. 
 
-> 1\. Sign into the AWS Management Console 
-> 
-> Log in to the management console using the AWS primary account (or a sub-account with Administrator Access management policy permissions), and click on "Identity & Access Management" in Security & Identity to enter the IAM Control Panel.
-> 
->
-> 2\. View user list
->
-> After entering the IAM control panel, click on "Users" to view a list of all users
->
-> 3\. View user security certificate
->
-> To import cloud resources into the platform, make sure that the Access Key has sufficient resource permissions. Select a user with the appropriate permissions, click on the username, enter the user details page, and click on "Security Certificate"
-> 
->
-> 4\. Create an access key
->
-> Please click "Create Access Key" to open the key information window. It should be noted that in the AWS console, the user only has one chance to view the access key, so be sure to save the key information after creating the access key successfully
->
-> The access key ID in the figure is the Access Key ID used when importing the virtual machine, and the private access key is the Secret Access Key (the default is not displayed, click the “Show” link)
-> 
+>「Note」  Log in to the management console using the AWS primary account (or a sub-account with Administrator Access management policy permissions), and click on "Identity & Access Management" in Security & Identity to enter the IAM Control Panel. After entering the IAM control panel, click on "Users" to view a list of all users.
+
+>「Note」  View user security certificate: To import cloud resources into the platform, make sure that the Access Key has sufficient resource permissions. Select a user with the appropriate permissions, click on the username, enter the user details page, and click on "Security Certificate". Create an access key: Please click "Create Access Key" to open the key information window. It should be noted that in the AWS console, the user only has one chance to view the access key, so be sure to save the key information after creating the access key successfully. The access key ID in the figure is the Access Key ID used when importing the virtual machine, and the private access key is the Secret Access Key (the default is not displayed, click the “Show” link)
 
 4.  Click Verify, after the verification is successful, click “Submit” and the AWS virtualization platform is successfully connected.
 
@@ -384,32 +358,30 @@ Parameter|         Description|          Example
   Access domain  |   Username     |      
   Subscription ID  |      |          
 
-3.  In fact, Microsoft Azure does not have a concept of so-called "API access credentials", we need to access the API through the application client information in its "Active Directory". And compared to other cloud vendors, Microsoft Azure's API access credentials are slightly more complex and need to be obtained in multiple steps. It consists of a subscription ID, a client ID, and an access key.
+Microsoft Azure's API access credentials need to be obtained in multiple steps. It consists of a subscription ID, a client ID, and an access key.
  
 
-<!-- -->
   Get the access domain of Microsoft Azure:
 
-> Enter Azure Active Directory in the Azure console, and then click the secondary menu "Properties"; In the Active Directory property page, we can see "Directory ID", which is the access domain of Azure;
-> 
-> 
+>「Note」  Enter Azure Active Directory in the Azure console, and then click the secondary menu "Properties"; In the Active Directory property page, we can see "Directory ID", which is the access domain of Azure.
+
+![获取Azure的访问域](../../picture/Admin/azure_ID.png)
 
   Get the subscription ID: 
 
-> Before you can purchase an Azure product, you must first create a subscription, and then you need to purchase cloud resources under this subscription. Cloud resources cannot be accessed across subscriptions. Therefore, when you have multiple subscriptions, please make sure that the subscription ID you entered is the subscription to the cloud resource you need to import, otherwise you may not be able to list the cloud resources.
->
-> Log in to the Azure console and select “Cost Management + Billing” on the left menu (the menu order is customizable). In “Overview”, find the subscription to which you want to import the cloud resource and get the “Subscription ID”. If you have multiple subscriptions and want to manage them through the platform, create multiple cloud accounts for batch import
+>「Note」  Before you can purchase an Azure product, you must first create a subscription, and then you need to purchase cloud resources under this subscription. Cloud resources cannot be accessed across subscriptions. Therefore, when you have multiple subscriptions, please make sure that the subscription ID you entered is the subscription to the cloud resource you need to import, otherwise you may not be able to list the cloud resources. Log in to the Azure console and select “Cost Management + Billing” on the left menu (the menu order is customizable). In “Overview”, find the subscription to which you want to import the cloud resource and get the “Subscription ID”. If you have multiple subscriptions and want to manage them through the platform, create multiple cloud accounts for batch import.
 
-
+![获取Azure的访问域](../../picture/Admin/azure_ID02.png)
 
  Get the client ID and the access key:
 
-> Go to Azure Active Directory in the Azure console and click on the secondary menu "Properties"; on the Active Directory properties page, we can see the "Directory ID", which is the client ID of Azure
+
+>「Note」 In [Azure Active Directory], click the secondary menu "[Application Registration]", all existing applications will be listed, and the client ID can be found at the application (client) ID. Click the application to enter the details On the page, first click the "[Certificate and Password]" button on the left, then find the "Add Client Password" on the right, add the client password, and after adding it successfully, you can view the access key. 
+
+![获取Azure的访问域](../../picture/Admin/azure_ID03.png)
 
 
-> Click the application to enter the details page, first click the "Settings" button, then find the "API access rights / key" on the right.
-
-4.  Click Verify, after the verification is successful, click “Submit” and the Azure virtualization platform is successfully connected.
+Click Verify, after the verification is successful, click “Submit” and the Azure virtualization platform is successfully connected.
 
 ## Add F5 BIG-IP Cloud Platform {#Add F5 BIG-IP Cloud Platform}
 

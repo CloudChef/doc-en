@@ -31,11 +31,11 @@ Click "Home" in the top right corner to view the homepage details, including:
 
 -   The number of services to be dismounted: Click on the link to go to Deployment - My Deployment to view the deployment that will be dismounted within two weeks.
 
-Work order Service:
+Ticket Service:
 
--   The number of approvals (i.e. the number of manual work order requests waiting for approval), click on the link to enter the “Requests” - “My Requests”, the request type is manual work order service, and the application status is pending	 approval.
+-   The number of approvals (i.e. the number of manual ticket requests waiting for approval), click on the link to enter the “Requests” - “My Requests”, the request type is manual ticket service, and the application status is pending	 approval.
 
--   The number of services in process (i.e. the number of manual work order requests being processed), click on the link to enter the “Requests” - “My Requests”, the request type is manual work order service, and the application status is in progress.
+-   The number of services in process (i.e. the number of manual ticket requests being processed), click on the link to enter the “Requests” - “My Requests”, the request type is manual ticket service, and the application status is in progress.
 
 -   Request Service：Click on the link to enter the Service Catalog to apply for the service or resource you need.
 
@@ -181,3 +181,7 @@ Click on "Operation History" in the top right corner. The list shows the current
 Click on the question mark icon in the upper right corner to go directly to the online documentation. You can view the product basic concepts, administrator manual and user manual online to learn about the basic concepts and functions of SmartCMP.
 
 >「Note」 The administrator can hide "About” or "Help Document" in the upper left corner of the homepage navigation bar in "System Configuration"-"Interface Settings".
+
+
+# User Center
+Click User Icon in the upper right corner of the welcome page, you can edit user information, modify the password, view Frequently Asked Questions (Frequently Asked Questions are uniformly configured by the system administrator on the tenant management interface), or log out of the current account.

@@ -825,9 +825,9 @@ Alert provides the user with the virtual machine and any application self-servic
 In the left navigation, select "Monitoring & Alert". There are 5 secondary menus under the Monitoring & Alert, followed by "Alert Policy", "Alert Rules", "Triggered Alert", "Host Monitoring" and "Host Alerts".
 
 
-### Component monitoring
-
-Component monitoring, as a separate page, shows the monitoring of applications. SmartCMP has built-in common monitoring agent components, including RedisExporter, NginxExporter, MySQLExporter, etc., to support adding monitoring agent components.
+### Resource monitoring
+ 
+Resource monitoring, as a separate page, shows the monitoring of applications and instances. SmartCMP has built-in common monitoring agent components, including Instance Exporter (by installing this component, all virtual machine monitoring information can be displayed uniformly), RedisExporter (Redis memory database monitoring information component), MySQLExporter (MySQL database monitoring information component), etc., and support adding monitoring agent components.
 
 >「Note」Business group administrators may only view the monitoring resources for the current business group.
 

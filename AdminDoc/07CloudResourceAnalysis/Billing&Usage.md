@@ -65,11 +65,19 @@ The usage score is a combination of the average usage of CPU, memory, and disk. 
 
 # Billing Rules
 
-SmartCMP allows custom billing rules to bill private cloud resources and synchronize public cloud bills (see the "Billing Synchronization" section) to unify the cost management and analysis of public and private clouds.
+SmartCMP allows custom billing rules to charge a variety of different types of resources on managed cloud platforms and synchronize public cloud bills (see the "Billing Synchronization" section) to unify the cost management and analysis of public and private clouds.
 
-Billing by unit price means that the current billing specifications are billed for a single resource. The list lists the resource types and prices that have been created. System administrators and tenant administrators can edit and delete the created billing specifications and add new billing specifications.
++ The platform supports multiple billing modes, including standard mode, professional mode, and public cloud billing.
+    + Standard mode means that the current billing specifications are billed for a single resource. You can select the cloud platform and resource bundle, specify the component type, and select specific components to set the price. For example: Set prices for all resource bundles under the Tencent cloud platform and IaaS component category instances.
+    + Professional mode, define a set of billing rules through scripts, for example: Alibaba Cloud has a variety of specifications, and the prices of different specifications are inconsistent. Use a script that supports JavaScript to define a set of Alibaba Cloud different specifications' billing price.
+    + Public cloud billing model, for public cloud resale business scenarios, tenant administrators can set different discount factors, currency conversion, and bill synchronization for different resources.
 
-Click on the left menu bar "Billing & Usage" - "Billing Rules", you will see a list of created billing rules, showing cloud platform, resource category, storage category, pricing unit,price, currency unit, period, and so on.
++ Billing rules support multiple currency units, including RMB, USD, Saudi Riyal, etc. Tenant administrators can select a currency unit in the system configuration, (default RMB) can choose Saudi Riyal or US dollar. After that, the billing rules and the currency unit when the fund account is recharged are kept consistent with the configuration.
+
+
+The following describes the steps for adding, editing, and deleting billing rules:
+Click "Billing & Usage"-"Billing Rules" in the left menu bar, you will see a list of the created billing rules which lists the information of the resource types and prices that have been created. System administrators and tenant administrators can edit and delete the created billing specifications and add new billing specifications. Billing rules will display the cloud platform, resource category, storage category, pricing unit, price, currency unit, period, etc.
+
 
 1. Add billing rules: Go to the menu "Billing & Usage" - "Billing Rules", click "Add", select cloud platform management, resource bundle resource category (CPU, memory, storage component, floating IP, Load balancer, load balancer), pricing unit, price, currency unit (RMB), period (hour, day, week, month), click "Submit". Add the calculation of resource price successfully and the billing management list shows just added Information.
 

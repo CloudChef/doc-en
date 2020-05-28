@@ -9,7 +9,7 @@ After the service configuration is published successfully, you will see the publ
 
 # Tab page display{#Tab page display}
 
-When the service catalog is displayed as a tab page, you can use service grouping tags, such as: database, infrastructure, work order services, etc., or through different business groups, or use the search box to quickly locate the service you need to apply for. 
+When the service catalog is displayed as a tab page, you can use service grouping tags, such as: database, infrastructure, ticket services, etc., or through different business groups, or use the search box to quickly locate the service you need to apply for. 
 
 Take "Deploy a virtual machine on vSphere cloud platform" as an example:
 

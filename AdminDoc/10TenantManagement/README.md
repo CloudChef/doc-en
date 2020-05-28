@@ -8,7 +8,7 @@ SmartCMP supports the multi-tenant hybrid cloud billing management mode. In the 
 
 + Log into system through URL http://server-address/#/login?tenant=admin, and click on "Tenant Center" - "Tenant" in the menu.
 
-- Add tenant: Click “Tenant Center” - “Tenant” in the menu, click “Add” button on the tenant page, input ID and name of the tenant in “Basic Information”, set the logo image and theme color of the tenant, click “save”
+- Add tenant: Click “Tenant Center” - “Tenant” in the menu, click “Add” button on the tenant page, input ID and name of the tenant in “Basic Information”, click “save”
 
 - Edit tenant: Click “Tenant Center” - “Tenant” in the menu, select a tenant on the tenant page, click “Edit” button, enter the tenant information to be modified; when editing the tenant, set the theme color for the tenant, you can choose the default 3 themes or customize, click "Save" after "OK"
 
@@ -30,6 +30,7 @@ Log in to the system management as tenant and click on "System Management" - "Li
   + Number of authorized instances: Use this system to create virtual machine caps. Exceeding the upper limit will not allow deployment of new virtual machines
   + Number of authorized physical CPUs (number): Use this system to create a virtual physical CPU upper limit. If this item is set, the number of authorized instances is considered to be unlimited. In a hybrid cloud environment, if it is purchased according to the CPU, the virtual machine on the public cloud is calculated according to 15 virtual machines equal to 1 physical CPU. Exceeding the upper limit will not allow deployment of new virtual machines.
   + Status: Shows the status of the license: valid and expired
+  + The contents of the above will also be displayed on the About page. On the tenant's console interface, click the left navigation bar, and the About button will display all the information about the tenant.
 
 1. Click the Add button to enter the license add page, enter the license, click "Add"
 

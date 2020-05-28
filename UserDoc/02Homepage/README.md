@@ -24,11 +24,11 @@ Click "Home" in the top right corner to view the homepage details, including:
 
 -   The number of services to be dismounted: Click on the link to go to Deployment - My Deployment to view the deployment that will be dismounted within two weeks.
 
-Work order Service:
+Ticket Service:
 
--   The number of approvals (i.e. the number of manual work order requests waiting for approval), click on the link to enter the “Requests” - “My Requests”, the request type is manual work order service, and the application status is pending approval.
+-   The number of approvals (i.e. the number of manual ticket requests waiting for approval), click on the link to enter the “Requests” - “My Requests”, the request type is manual ticket service, and the application status is pending approval.
 
--   The number of services in process (i.e. the number of manual work order requests being processed), click on the link to enter the “Requests” - “My Requests”, the request type is manual work order service, and the application status is in progress.
+-   The number of services in process (i.e. the number of manual ticket requests being processed), click on the link to enter the “Requests” - “My Requests”, the request type is manual ticket service, and the application status is in progress.
 
 -    Request Service：Click on the link to enter the Service Catalog to apply for the service or resource you need.
 
@@ -119,3 +119,14 @@ Click on "Operation History" in the top right corner. The list shows the current
 Click on the question mark icon in the upper right corner to go directly to the online documentation. You can view the product basic concepts, administrator manual and user manual online to learn about the basic concepts and functions of SmartCMP.
 
 >「Note」When the tenant administrator configures to hide "About" or "Help Documents" in "System"-"Interface Settings", after an ordinary user logs in, "About" or "Help Documents" will not be displayed in the upper left corner of the homepage navigation bar.
+
+
+# My Credentials
+
++ Users can create and manage their own credentials. Credentials include two types: keys or passwords. Users save frequently used credentials at a unified entrance. When applying for services and performing change operations, saved identity verification can be directly selected. In addition, users can also use the credentials shared by the tenant administrator and the IaaS administrator.
++ Specific steps for adding credentials:
+    + On the "My Credentials" page, enter the key name (only numbers or letters), select the algorithm (RSA) and length which currently supports lengths of 1024, 2048 and 4096.
+    + Import key, users can import private key and public key to save in the system for later use. Click "Import Key", enter the key name, and fill in the private key.
+    + Steps to create and use password type credentials: when adding (password), fill in the user name, password, and confirm password (the password entered before and after must be consistent).
+    + Users choose their own credentials or manually enter their username and password when applying for services.
+    + In the operation interface of service deployment, after installing the software, if user need to verify the identity after selecting the node, he can select the credentials created or shared in the drop-down box, or manually input the username and password.

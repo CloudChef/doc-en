@@ -22,9 +22,9 @@ You can add a service configuration by following the steps below:
 
 1.  In the left navigation bar, select "Service desgin" - “Catalog Config” and click "Add".
 
-2.  Fill in the service name, service description (optional), select the business group, service type. When the service type is cloud resource blueprint service, select the blueprint design. When selecting the manual work order service, select the process selection and click " submit"
+2.  Fill in the service name, service description (optional), select the business group, service type. When the service type is cloud resource blueprint service, select the blueprint design. When selecting the manual ticket service, select the process selection and click " submit"
 
- Next, Introduce you to the specific steps of the cloud resource blueprint service configuration. For the specific steps of the manual work order service configuration, please refer to: [Manual Work Order Service Configuration](https://cloudchef.github.io/doc-en/AdminDoc/08RequestServiceMgmt/#Manual%20Work%20Order%20Service%20Configuration)
+ Next, Introduce you to the specific steps of the cloud resource blueprint service configuration. For the specific steps of the manual ticket service configuration, please refer to: [Manual Ticket Service Configuration](https://cloudchef.github.io/doc-en/AdminDoc/08RequestServiceMgmt/#Manual%20Work%20Order%20Service%20Configuration)
 
 >「Note」The description of the service configuration supports Markdown syntax writing rules to show the display format of different service descriptions during service request. 
 
@@ -874,7 +874,7 @@ By default, "Use existing security group" is selected. Select an existing securi
 +   Service deployment name	 Deployment name (If the service group has set the service deployment naming rules, the service deployment name will be automatically generated according to the rules, no need to fill in)
 +   Logo image	             Upload image, more beautiful in the service catalog display
 +   Description	             Deployment Description
-+   Service grouping	Built-in three types: work order service, database, infrastructure, support for customization. For details on service grouping, please refer to: [Service Grouping](https://cloudchef.github.io/doc-en/AdminDoc/05ServiceDesign/ServiceGrouping.html)
++   Service grouping	Built-in three types: ticket service, database, infrastructure, support for customization. For details on service grouping, please refer to: [Service Grouping](https://cloudchef.github.io/doc-en/AdminDoc/05ServiceDesign/ServiceGrouping.html)
 +   Order                   	Specify the order in the service catalog, The smaller the value, the higher the order
 +   Service status	          Shows service status in real time, such as: not released
 +   Service deployment lease time (day)	           Lease time, after the lease time, all instances in the deployment will be down and archived

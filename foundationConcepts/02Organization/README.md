@@ -48,7 +48,7 @@ Independent rules, processes, and resources can be configured for each business 
 
 + Associate one or more resource bundles with each business group
 
-+ Associate users with each business group. A user can belong to multiple business groups
++ Associate users with each business group.
 
 + Configure different approval processes, operation permissions, cloud resource usage leases, cloud resource naming specifications, etc.
 

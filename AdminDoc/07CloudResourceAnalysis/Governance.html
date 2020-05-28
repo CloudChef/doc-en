@@ -78,7 +78,7 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../11Integration&Release/" />
+    <link rel="next" href="../13Fund/" />
     
     
     <link rel="prev" href="Billing&Usage.html" />
@@ -275,7 +275,20 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3.2" data-path="../03Infrastructure/ResourceBundleManagement.html">
+        <li class="chapter " data-level="3.3.2" data-path="../03Infrastructure/CloudGateways.html">
+            
+                <a href="../03Infrastructure/CloudGateways.html">
+            
+                    
+                    CloudGateways
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3" data-path="../03Infrastructure/ResourceBundleManagement.html">
             
                 <a href="../03Infrastructure/ResourceBundleManagement.html">
             
@@ -288,7 +301,20 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3.3" data-path="../03Infrastructure/VMTemplates.html">
+        <li class="chapter " data-level="3.3.4" data-path="../03Infrastructure/Image.html">
+            
+                <a href="../03Infrastructure/Image.html">
+            
+                    
+                    Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.5" data-path="../03Infrastructure/VMTemplates.html">
             
                 <a href="../03Infrastructure/VMTemplates.html">
             
@@ -301,7 +327,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3.4" data-path="../03Infrastructure/ComputingSpecifications.html">
+        <li class="chapter " data-level="3.3.6" data-path="../03Infrastructure/ComputingSpecifications.html">
             
                 <a href="../03Infrastructure/ComputingSpecifications.html">
             
@@ -314,38 +340,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3.5" data-path="../03Infrastructure/IPAM.html">
+        <li class="chapter " data-level="3.3.7" data-path="../03Infrastructure/IPAM.html">
             
                 <a href="../03Infrastructure/IPAM.html">
             
                     
                     IPAM
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.3.6" data-path="../03Infrastructure/KeyPair.html">
-            
-                <a href="../03Infrastructure/KeyPair.html">
-            
-                    
-                    KeyPair
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.3.7" data-path="../03Infrastructure/NamingSuffix.html">
-            
-                <a href="../03Infrastructure/NamingSuffix.html">
-            
-                    
-                    NamingSuffix
             
                 </a>
             
@@ -463,6 +463,32 @@
             
         </li>
     
+        <li class="chapter " data-level="3.4.6" data-path="../04Organization/NamingSuffix.html">
+            
+                <a href="../04Organization/NamingSuffix.html">
+            
+                    
+                    NamingSuffix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.7" data-path="../04Organization/ProfileTemplate.html">
+            
+                <a href="../04Organization/ProfileTemplate.html">
+            
+                    
+                    ProfileTemplate
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -560,7 +586,20 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.7" data-path="../05ServiceDesign/ScriptLibrary.html">
+        <li class="chapter " data-level="3.5.7" data-path="../05ServiceDesign/ServiceLevelAgreement.html">
+            
+                <a href="../05ServiceDesign/ServiceLevelAgreement.html">
+            
+                    
+                    ServiceLevelAgreement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.8" data-path="../05ServiceDesign/ScriptLibrary.html">
             
                 <a href="../05ServiceDesign/ScriptLibrary.html">
             
@@ -708,6 +747,19 @@
             
                     
                     Governance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.4" data-path="../13Fund/">
+            
+                <a href="../13Fund/">
+            
+                    
+                    Fund
             
                 </a>
             
@@ -927,11 +979,11 @@
 <h2 id="operation-configuration"><a name="operation-configuration" class="anchor-navigation-ex-anchor" href="#operation-configuration"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Operation configuration:</h2>
 <p>Provides common task configuration for automatic operation triggered by alerts, event configuration, etc. (specific operation configuration steps are similar to pipeline process design task configuration)</p>
 <ul>
-<li>Common requirements scenarios include: After the VM is deployed, you need to register to the springboard; after the VM is deleted, you can log off the springboard; after the alert scenario occurs, you can create a work order process.</li>
+<li>Common requirements scenarios include: After the VM is deployed, you need to register to the springboard; after the VM is deleted, you can log off the springboard; after the alert scenario occurs, you can create a ticket process.</li>
 <li>Implementation ideas: After the event occurs, the alert can be triggered. The configuration operation is the same as the pipeline configuration task.</li>
 <li><p>For example, after the cloud resource is deployed, not only can the e-mail notification occur, but also the operation of the cloud resource. The notification and operation can be configured at the same time.</p>
 <ul>
-<li>Other common usage scenarios include: after the VM is deployed, you need to register to the bastion host; after the VM is deleted, you can unregister the bastion host; after the alert scenario occurs, you can create a work order process </li>
+<li>Other common usage scenarios include: after the VM is deployed, you need to register to the bastion host; after the VM is deleted, you can unregister the bastion host; after the alert scenario occurs, you can create a ticket process </li>
 </ul>
 </li>
 </ul>
@@ -943,7 +995,7 @@
 <li>Quickly locate events based on filter criteria (event type, operational status, start and end time)</li>
 <li>Click on any event to enter the event details page: including the event itself, notification information, and triggered action information. (Event information: What time, for which object, what triggered. Notice: notification sent to who (displayed the role name, username, email address together). Triggered action information: What action was triggered, operation State, execution result and output).</li>
 </ul>
-<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; 2013-2019 CloudChef. All Rights Reserved. <a href="http://www.cloudchef.io/en/" target="_blank">Shanghai CloudChef Information Technology Co., Ltd.</a>  </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> update time&#xFF1A; 2020-01-10 16:41:48 </span> </footer>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; 2016-2020 CloudChef. All Rights Reserved. <a href="http://www.cloudchef.io/en/" target="_blank">Shanghai CloudChef Information Technology Co., Ltd.</a>  </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> update time&#xFF1A; 2020-05-27 17:40:06 </span> </footer>
                                 
                                 </section>
                             
@@ -975,7 +1027,7 @@
                 </a>
                 
                 
-                <a href="../11Integration&Release/" class="navigation navigation-next " aria-label="Next page: Integration&Release">
+                <a href="../13Fund/" class="navigation navigation-next " aria-label="Next page: Fund">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -986,7 +1038,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Governance","level":"3.7.3","depth":2,"next":{"title":"Integration&Release","level":"3.8","depth":1,"path":"AdminDoc/11Integration&Release/README.md","ref":"AdminDoc/11Integration&Release/README.md","articles":[]},"previous":{"title":"Billing&Usage","level":"3.7.2","depth":2,"path":"AdminDoc/07CloudResourceAnalysis/Billing&Usage.md","ref":"AdminDoc/07CloudResourceAnalysis/Billing&Usage.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","-lunr","-search","search-plus","expandable-chapters-small","insert-logo","simple-page-toc","favicon","anchor-navigation-ex","page-footer-ex","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"mode":"float","livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"page-footer-ex":{"copyright":"Copyright © 2013-2019 CloudChef. All Rights Reserved. [Shanghai CloudChef Information Technology Co., Ltd.](http://www.cloudchef.io/en/) ","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"update time："},"showLevel":true,"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"sepia","family":"serif","size":1},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{},"printLog":false,"expandable-chapters-small":{},"multipleH1":true,"associatedWithSummary":true,"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none;","url":"https://cloudchef.github.io/doc-en/picture/logo.png"},"search-plus":{}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CloudChef Document","gitbook":"*","description":"Provide you with a rich and detailed guide and product documentation for the SmartCMP Cloud Management Platform.","theme-default":{"showLevel":false},"extension":null},"file":{"path":"AdminDoc/07CloudResourceAnalysis/Governance.md","mtime":"2020-01-10T08:41:48.817Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-13T08:54:02.113Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Governance","level":"3.7.3","depth":2,"next":{"title":"Fund","level":"3.7.4","depth":2,"path":"AdminDoc/13Fund/README.md","ref":"AdminDoc/13Fund/README.md","articles":[]},"previous":{"title":"Billing&Usage","level":"3.7.2","depth":2,"path":"AdminDoc/07CloudResourceAnalysis/Billing&Usage.md","ref":"AdminDoc/07CloudResourceAnalysis/Billing&Usage.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","-lunr","-search","search-plus","expandable-chapters-small","insert-logo","simple-page-toc","favicon","anchor-navigation-ex","page-footer-ex","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"mode":"float","livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"page-footer-ex":{"copyright":"Copyright © 2016-2020 CloudChef. All Rights Reserved. [Shanghai CloudChef Information Technology Co., Ltd.](http://www.cloudchef.io/en/) ","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"update time："},"showLevel":true,"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"sepia","family":"serif","size":1},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{},"printLog":false,"expandable-chapters-small":{},"multipleH1":true,"associatedWithSummary":true,"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none;","url":"https://cloudchef.github.io/doc-en/picture/logo.png"},"search-plus":{}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CloudChef Document","gitbook":"*","description":"Provide you with a rich and detailed guide and product documentation for the SmartCMP Cloud Management Platform.","theme-default":{"showLevel":false},"extension":null},"file":{"path":"AdminDoc/07CloudResourceAnalysis/Governance.md","mtime":"2020-05-27T09:40:06.682Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-28T08:57:45.023Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

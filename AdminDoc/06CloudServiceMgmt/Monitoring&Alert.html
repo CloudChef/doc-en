@@ -275,7 +275,20 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3.2" data-path="../03Infrastructure/ResourceBundleManagement.html">
+        <li class="chapter " data-level="3.3.2" data-path="../03Infrastructure/CloudGateways.html">
+            
+                <a href="../03Infrastructure/CloudGateways.html">
+            
+                    
+                    CloudGateways
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3" data-path="../03Infrastructure/ResourceBundleManagement.html">
             
                 <a href="../03Infrastructure/ResourceBundleManagement.html">
             
@@ -288,7 +301,20 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3.3" data-path="../03Infrastructure/VMTemplates.html">
+        <li class="chapter " data-level="3.3.4" data-path="../03Infrastructure/Image.html">
+            
+                <a href="../03Infrastructure/Image.html">
+            
+                    
+                    Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.5" data-path="../03Infrastructure/VMTemplates.html">
             
                 <a href="../03Infrastructure/VMTemplates.html">
             
@@ -301,7 +327,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3.4" data-path="../03Infrastructure/ComputingSpecifications.html">
+        <li class="chapter " data-level="3.3.6" data-path="../03Infrastructure/ComputingSpecifications.html">
             
                 <a href="../03Infrastructure/ComputingSpecifications.html">
             
@@ -314,38 +340,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3.5" data-path="../03Infrastructure/IPAM.html">
+        <li class="chapter " data-level="3.3.7" data-path="../03Infrastructure/IPAM.html">
             
                 <a href="../03Infrastructure/IPAM.html">
             
                     
                     IPAM
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.3.6" data-path="../03Infrastructure/KeyPair.html">
-            
-                <a href="../03Infrastructure/KeyPair.html">
-            
-                    
-                    KeyPair
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.3.7" data-path="../03Infrastructure/NamingSuffix.html">
-            
-                <a href="../03Infrastructure/NamingSuffix.html">
-            
-                    
-                    NamingSuffix
             
                 </a>
             
@@ -463,6 +463,32 @@
             
         </li>
     
+        <li class="chapter " data-level="3.4.6" data-path="../04Organization/NamingSuffix.html">
+            
+                <a href="../04Organization/NamingSuffix.html">
+            
+                    
+                    NamingSuffix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.7" data-path="../04Organization/ProfileTemplate.html">
+            
+                <a href="../04Organization/ProfileTemplate.html">
+            
+                    
+                    ProfileTemplate
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -560,7 +586,20 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.7" data-path="../05ServiceDesign/ScriptLibrary.html">
+        <li class="chapter " data-level="3.5.7" data-path="../05ServiceDesign/ServiceLevelAgreement.html">
+            
+                <a href="../05ServiceDesign/ServiceLevelAgreement.html">
+            
+                    
+                    ServiceLevelAgreement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.8" data-path="../05ServiceDesign/ScriptLibrary.html">
             
                 <a href="../05ServiceDesign/ScriptLibrary.html">
             
@@ -708,6 +747,19 @@
             
                     
                     Governance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.4" data-path="../13Fund/">
+            
+                <a href="../13Fund/">
+            
+                    
+                    Fund
             
                 </a>
             
@@ -906,8 +958,14 @@
 <p>Alert provides the user with the virtual machine and any application self-service alert configuration.</p>
 <p>In the left navigation, select &quot;Monitoring &amp; Alert&quot;. There are 5 secondary menus under the Monitoring &amp; Alert, followed by &quot;Alert Policy&quot;, &quot;Alert Rules&quot;, &quot;Triggered Alert&quot;, &quot;Host Monitoring&quot; and &quot;Host Alerts&quot;.</p>
 <h1 id="component-monitoring"><a name="component-monitoring" class="anchor-navigation-ex-anchor" href="#component-monitoring"><i class="fa fa-link" aria-hidden="true"></i></a>1. Component monitoring</h1>
-<p>As a separate page, component monitoring displays application monitoring, and the monitoring agent component is synchronized with the monitoring agent component in the component library. Specific steps for adding a proxy component, please refer to: Component Library </p>
-<p>Click &quot;Monitor &amp; Alert&quot;-&quot;Component Monitoring&quot; in the left navigation bar. The left side displays the tree structure of the Export components, and the right side displays the relevant Exporter (used to describe all Exporter components, each can define the types of components they support.). Click on the NginxExporter displayed on the right to enter the &quot;NginxExporter&quot; tab. The left side of the page displays the NginxExporter associated instance, and the right side displays the related description information of the NginxExporter component.</p>
+<p>After the monitoring data is collected, a unified interface needs to be provided for display. SmartCMP can not only display the monitoring information on the deployment or cloud resource interface, but also display the monitoring information uniformly on a brand new page. As a separate page, component monitoring displays the monitoring of applications, instances, or virtual machines.</p>
+<ul>
+<li>For the specific steps of adding proxy components, please refer to:<a href="http://CMP-PUBLIC-IP/help/AdminDoc/05&#x670D;&#x52A1;&#x5EFA;&#x6A21;/&#x7EC4;&#x4EF6;&#x5E93;.html" target="_blank">Component Library</a> </li>
+<li>Click &quot;Monitoring &amp; Alerts&quot;-&quot;Component Monitoring&quot; on the left navigation bar, the tree structure of the Export component is displayed on the left, and the related Exporter (used to describe all the components of the Exporter. Each component can define its own supported component types.) is displayed on the right.</li>
+<li>For example: Click on the NginxExporter displayed on the right to enter the &quot;NginxExporter&quot; tab, the left side of the page displays the NginxExporter related instance, and the right side displays the relevant description information of the NginxExporter component.</li>
+<li>Instance Exporter provides an abstract component for monitoring different VMs. No matter what kind of virtual machine is monitored, it will be listed in Instance Exporter. Go to the &quot;Instance Exporter&quot; tab, the virtual machine instance associated with the Instance Exporter is displayed on the left of the page, and the monitoring information of the virtual machine is displayed on the right.</li>
+</ul>
+<p><img src="../../picture/Admin/VMmonitor.png" alt="VMmonitor"></p>
 <blockquote>
 <p>&#x300C;Note&#x300D; Component monitoring entitlement management: Every user can see the menu, but the scope of component resources that can be viewed is based on the user&apos;s configured entitlements in advance. For example, the tenant administrator sees the resources he owns and the business group administrator sees all resources in the business group he manages, etc. </p>
 </blockquote>
@@ -1039,7 +1097,7 @@ Support for the expansion of the container: reduce the number of 3 copies, incre
 </li>
 </ol>
 <p>3.Click the &#x201C;Monitoring&#x201D; tab to display the deployment monitoring information: Pods CPU usage (core), Pods memory usage, Pods network traffic, etc.</p>
-<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; 2013-2019 CloudChef. All Rights Reserved. <a href="http://www.cloudchef.io/en/" target="_blank">Shanghai CloudChef Information Technology Co., Ltd.</a>  </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> update time&#xFF1A; 2020-01-10 16:39:32 </span> </footer>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; 2016-2020 CloudChef. All Rights Reserved. <a href="http://www.cloudchef.io/en/" target="_blank">Shanghai CloudChef Information Technology Co., Ltd.</a>  </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> update time&#xFF1A; 2020-05-26 18:01:17 </span> </footer>
                                 
                                 </section>
                             
@@ -1082,7 +1140,7 @@ Support for the expansion of the container: reduce the number of 3 copies, incre
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Monitoring&Alert","level":"3.6.4","depth":2,"next":{"title":"ResourceRecycle","level":"3.6.5","depth":2,"path":"AdminDoc/06CloudServiceMgmt/ResourceRecycle.md","ref":"AdminDoc/06CloudServiceMgmt/ResourceRecycle.md","articles":[]},"previous":{"title":"Deployments","level":"3.6.3","depth":2,"path":"AdminDoc/06CloudServiceMgmt/Deployments.md","ref":"AdminDoc/06CloudServiceMgmt/Deployments.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","-lunr","-search","search-plus","expandable-chapters-small","insert-logo","simple-page-toc","favicon","anchor-navigation-ex","page-footer-ex","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"mode":"float","livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"page-footer-ex":{"copyright":"Copyright © 2013-2019 CloudChef. All Rights Reserved. [Shanghai CloudChef Information Technology Co., Ltd.](http://www.cloudchef.io/en/) ","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"update time："},"showLevel":true,"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"sepia","family":"serif","size":1},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{},"printLog":false,"expandable-chapters-small":{},"multipleH1":true,"associatedWithSummary":true,"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none;","url":"https://cloudchef.github.io/doc-en/picture/logo.png"},"search-plus":{}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CloudChef Document","gitbook":"*","description":"Provide you with a rich and detailed guide and product documentation for the SmartCMP Cloud Management Platform.","theme-default":{"showLevel":false},"extension":null},"file":{"path":"AdminDoc/06CloudServiceMgmt/Monitoring&Alert.md","mtime":"2020-01-10T08:39:32.958Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-13T08:54:02.113Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Monitoring&Alert","level":"3.6.4","depth":2,"next":{"title":"ResourceRecycle","level":"3.6.5","depth":2,"path":"AdminDoc/06CloudServiceMgmt/ResourceRecycle.md","ref":"AdminDoc/06CloudServiceMgmt/ResourceRecycle.md","articles":[]},"previous":{"title":"Deployments","level":"3.6.3","depth":2,"path":"AdminDoc/06CloudServiceMgmt/Deployments.md","ref":"AdminDoc/06CloudServiceMgmt/Deployments.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","-lunr","-search","search-plus","expandable-chapters-small","insert-logo","simple-page-toc","favicon","anchor-navigation-ex","page-footer-ex","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"mode":"float","livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"page-footer-ex":{"copyright":"Copyright © 2016-2020 CloudChef. All Rights Reserved. [Shanghai CloudChef Information Technology Co., Ltd.](http://www.cloudchef.io/en/) ","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"update time："},"showLevel":true,"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"sepia","family":"serif","size":1},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{},"printLog":false,"expandable-chapters-small":{},"multipleH1":true,"associatedWithSummary":true,"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none;","url":"https://cloudchef.github.io/doc-en/picture/logo.png"},"search-plus":{}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CloudChef Document","gitbook":"*","description":"Provide you with a rich and detailed guide and product documentation for the SmartCMP Cloud Management Platform.","theme-default":{"showLevel":false},"extension":null},"file":{"path":"AdminDoc/06CloudServiceMgmt/Monitoring&Alert.md","mtime":"2020-05-26T10:01:17.620Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-28T08:57:45.023Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

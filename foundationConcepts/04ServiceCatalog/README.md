@@ -45,7 +45,7 @@ The design of components adopts the structure of object-oriented design. Object-
 
 
 + 	Operations and attributes are inheritable. Start, stop, restart, delete, and refresh the built-in components of the system. (Take the refresh operation as an example, the operation is configured in system in advance, and the implementation methods, scripts, tasks, and parameters necessary for the operation are used.) The built-in operation can be applied to any resource on the platform. Therefore, when the component Oracle is created, the built-in "start, stop, restart, delete, refresh" operations are automatically inherited. When the component type Software is selected, the created Oracle component has various attributes of the parent Software component and can also be customized to obtain different functions from the parent one. It should be noted that the attribute key value added by the user and the attribute key value in the parent component cannot be the same, otherwise the attribute definition in the parent component will be overwritten. You can also add a script file by creating a new file, which will be used to extend the component. For example: the custom component Oracle's install.sh script will be associated with the "create operation".
-
+ 
 
 + 	Encapsulation hides the implementation details of complex operations and only provides public access to the outside world. The platform has complex operations built-in and works out of the box, reducing differences and difficulty in understanding. For example: "adjust virtual machine configuration" operation (adjust virtual machine calculation specifications and cloud platform specifications), when the cloud platform type is different, the SmartCMP cloud management platform hides the details of the flow of resource operations, only exposing public access interfaces. For example, the "Adjust virtual machine configuration" operation is applied to a virtual machine on the Hyper-V platform and a virtual machine on the OpenStack platform. The specific technical implementation is different, but the user configuration interface displays the same content.
 
@@ -144,27 +144,23 @@ When user request the cloud resource service, after approval (if the approval pr
 
 Service deployment refers to all cloud resources included in the service requested by the user, such as a virtual machine, a database, or a multi-tiered application environment. Users can use all the resources deployed by the service during the configured service lease period and can self-service operations or changes according to the operation entitlement configured by the administrator.
 
-## Service Deployment and Naming Specification for Cloud Resources
+## Naming Policies
 
-You can configure naming specifications for each business group to standardize the service deployment and the names of the cloud resources it contains, including the service deployment name, virtual machine display name, and the Windows or Linux operating system hostname. To ensure the uniqueness of the naming, you can add a naming suffix to it.
+Define the service deployment and cloud resource naming policies through the specification template and configure them globally. All business groups are configured by default. Different business groups can also be individually selected for configuration as needed to override global settings.
 
-The naming suffix can be a sequence of numbers or a random string of custom length. You can specify an initialization sequence number for the sequence of numbers. For example, you can create a naming suffix with a length of 3 and an initialization sequence number of 1. If the specified business group name plus the suffix is the naming specification for the virtual machine name, then names of virtual machines deployed in the Dev business group will be Dev001, Dev002, and so on.
+Use naming policies to standardize the name of the service deployment and the cloud resources, including the service deployment name, instance display name, and Windows or Linux operating system host name (Hostname). To ensure the uniqueness of naming, users can add a naming suffix to the policy.
 
-## Service Deployment and Operation Entitlement for Cloud Resources
+The naming suffix can be a number sequence with a custom length or a random character string with a custom length. User can specify the initialization sequence number for the numeric sequence. For example, user can create a naming suffix with a length of 3 and an initialization sequence number of 1. The instance names deployed by the group will be Dev001, Dev002, and so on.
 
-Operation entitlement refers to a change or operation that is authorized to be performed by a user for service deployment or cloud resources. You can disable or enable certain actions and set up an approval process for enabled actions. There are two types of operation entitlements:
+## Entitlement Profiles 
 
+The entitlement profile defines the operations that users can perform on service deployment and cloud resources. Users can configure the approval process and can apply a set of entitlement profiles to all business groups, or allow different business groups to associate entitlement profiles independently template.
 
-+ Service deployment operations are for service deployment level operations, including extending lease, changing business group, project, owner, etc. to which the service deployment belongs;
+Entitlement refers to the changes or operations authorized that the user may perform on service deployment or cloud resources. You can disable or enable certain operations and set up approval processes for the enabled operations. There are two types of entitlements:
 
-+ Cloud resource operations are for virtual machines or other cloud resources, including powering on/off, remote connections, disk additions, migrations, and more.
++ Deployment’s entitlement refers to operations on the service deployment level, including extending the lease period of the service deployment, changing the business group, project, owner, etc. 
++ Cloud resource’s entitlement refers to operations on instances or other cloud resources, including power on / off, remote connection, disk addition, migration, etc.
 
-
-The operation entitlement can be set separately in the business group and service configuration:
-
-
-  + The operation entitlement configured for each business group will be valid for all service deployments and cloud resources of the business group;
-
-  + Each service inherits the operation entitlement of the business group by default. You can also configure an operation entitlement for the service separately, overriding those in the business group.
-  
-
+In the entitlement profiles interface, multiple sets of entitlement profiles that meet the usage scenario can be created:
++ In the system configuration interface, configure an entitlement profile for all business groups, and all business groups will be configured by default.
++ The entitlement profile configured separately for each business group will take effect for all service deployment and cloud resources for that business group.

@@ -1,20 +1,20 @@
 **User Quick Start Guide**
 
-SmartCMP mainly has two service scenarios, one is the cloud resource blueprint service scenario; the other is the work order service scenario. 
+SmartCMP mainly has two service scenarios, one is the cloud resource blueprint service scenario; the other is the ticket service scenario. 
 
 +	Cloud resource blueprint service scenario
 The Cloud Resource Blueprint Service is based on blueprint modeling to define standard service frameworks and components, providing a rich set of out-of-the-box software components to visualize blueprints for automated deployment.
 For example, configuring a vSphere single-node virtual machine service is a typical scenario for a cloud resource blueprint service.
 
 
-+	Work order service scenario
-The user applies for a service through the service catalog, and the service group receives and performs the work order processing operation. 
-There are two types of work order services:
++	Ticket service scenario
+The user applies for a service through the service catalog, and the service group receives and performs the ticket processing operation. 
+There are two types of ticket services:
 1.	Apply for non-standardized resources (for example, apply for a cloud resource blueprint service to uninstall a service deployment.) 
-2. Services that require IT manual intervention (for example, manual work order service for resetting passwords.)
+2. Services that require IT manual intervention (for example, manual ticket service for resetting passwords.)
 
 
->「Note」For more guidance on cloud resource blueprint service and manual work order service, please refer to:[Cloud Resource Guidelines](https://cloudchef.github.io/doc-en/UserDoc/03CloudResourceGuidelines/)和[Request Service](https://cloudchef.github.io/doc-en/UserDoc/04RequestService/)
+>「Note」For more guidance on cloud resource blueprint service and manual ticket service, please refer to:[Cloud Resource Guidelines](https://cloudchef.github.io/doc-en/UserDoc/03CloudResourceGuidelines/)和[Request Service](https://cloudchef.github.io/doc-en/UserDoc/04RequestService/)
 
 
 This chapter helps users get started with service request and self-service.
@@ -28,7 +28,7 @@ The next section will explain how to request service.
 #Log in
 
 
-Enter SmartCMP IP in browser, such as: http://cmp.smartcmp.online:1688/#/login
+Enter SmartCMP IP in browser, such as: http://SmartCMP-Public-IP/#/login
 
 and enter username & password
 

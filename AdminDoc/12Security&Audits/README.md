@@ -6,22 +6,31 @@
 
 # Bastion Host{#Bastion Host}
 
-SmartCMP supports accessing virtual machines through bastion hosts and scheduling various bastion hosts through a unified HTTP request.
+SmartCMP supports accessing virtual machines through bastion hosts and scheduling various bastion hosts through a unified HTTP request. The platform not only supports the use of embedded bastion hosts, but can also be connected to third-party bastion hosts.
 
 Core usage scenarios: 
 
-Permission management: Integrate the access control of the bastion host and the platform (the platform and the bastion host are connected to the permission system, set user permissions, and set whether users can connect to the virtual machine through SSH or RDP. 
++ Permission management: Integrate the access control of the bastion host and the platform (the platform and the bastion host are connected to the permission system, set user permissions, and set whether users can connect to the virtual machine through SSH or RDP. 
 
-User management: all users accessing the virtual machine need to go through the bastion host. 
++ User management: all users accessing the virtual machine need to go through the bastion host. 
 
-Operations: after the virtual machine is created, register the virtual machine to the bastion host; after the virtual machine is deleted, log out the virtual machine from the bastion host; after the virtual machine changes, update the bastion host. For example when a virtual machine’s owner is changed, the registration information of the virtual machine in the bastion host is modified synchronously.
++ Operations: after the virtual machine is created, register the virtual machine to the bastion host; after the virtual machine is deleted, log out the virtual machine from the bastion host; after the virtual machine changes, update the bastion host. For example when a virtual machine’s owner is changed, the registration information of the virtual machine in the bastion host is modified synchronously.
+
++ Session management and video playback: The platform also supports the bastion host session management function. When the user performs operations on the remote instance through the bastion host, a real-time session link will be formed, and the tenant administrator can view the current ongoing session. If an exception is found, the administrator can manually terminate one or more sessions by clicking terminate to disconnect the corresponding user's session. User can also view the history of all the sessions, learn the details of each historical session, and click playback to view the recording.
 
 Specific configuration steps:
 
-+	The specific steps of bastion host entrance connection to GuacaMole (that is, Apache Guacamole): click on the left navigation bar "Security Audit"-"Bastion Host", click add, fill in the bastion host information, name (virtual machine name), description , Guacd address (that is, the URL link of the bastion host), Guacd port (that is, the access port of the bastion host), SmartCMP uses Cloudchef-Integration to verify that the login information is correct. 
-+	Bind the bastion host to the resource bundle: Click the "Infrastructure"-"Resource Bundle Management" on the left navigation bar, and specify one of the bastion hosts that have been connected. For example: when adding a vSphere resource bundle, bind the bastion host Guacd, the virtual machine deployed using the vSphere resource bundle will be automatically registered to the bastion host, and the virtual machine deployed using the vSphere resource bundle will be automatically unregistered from the bastion host when it is uninstalled. 
-+	Use of the bastion host. After the vSphere resource bundle is bound to the bastion host, use the vSphere resource bundle to successfully deploy the instance. Click the left navigation bar "Deployments"-"Instance"-"Overview" tab, select Remote protocol types, including: based on cloud platform, RDP or VNC (choose based on RDP or VNC, you need to select the remote protocol port). After the selection is completed, click "Remote Terminal" and you can directly pass "RDP or VNC". The instance is configured to open the remote terminal on the cloud platform. You can modify the parameters of the protocol information through the remote terminal, for example, modify the user name and password of the virtual machine.
++ Specific steps for accessing Guacamole (ie Apache Guacamole) bastion host: Click "Backup & Security"-"Guacamole" on the left navigation bar, click Add, fill in the bastion host information, name (virtual machine name), description, Guacd Address (that is, the URL link of the bastion host) and Guacd port (that is, the access port of the bastion host). SmartCMP uses Cloudchef-Integration to verify if the login information is correct.
 
+> Connect to third-party bastion hosts, for example: Qizhi bastion hosts, access through the "bastion host entrance". "Guacamole bastion host" is the embedded bastion host management interface of SmartCMP.
+
++	Bind the bastion host to the resource bundle: Click the "Infrastructure"-"Resource Bundle Management" on the left navigation bar, and specify one of the bastion hosts that have been connected. For example: when adding a vSphere resource bundle, bind the bastion host Guacd, the virtual machine deployed using the vSphere resource bundle will be automatically registered to the bastion host, and the virtual machine deployed using the vSphere resource bundle will be automatically unregistered from the bastion host when it is uninstalled. 
+
++	Use of the bastion host. After the vSphere resource bundle is bound to the bastion host, use the vSphere resource bundle to successfully deploy the instance. Click the left navigation bar "Deployments"-"Instance"-"Overview" tab, select Remote protocol types, including: based on cloud platform, RDP or VNC (choose based on RDP or VNC, you need to select the remote protocol port). After the selection is completed, click "Remote Terminal" and you can directly pass "RDP or VNC". The instance is configured to open the remote terminal on the cloud platform. You can modify the parameters of the protocol information through the remote terminal, for example, modify the user name and password of the virtual machine.
+ 
++ Every time the operation personnel logs in to the virtual machine through Web SSH for operation, system will automatically use the bastion host's Web SSH service, and each connection will generate a session record of operation. Audit personnel may click on the "Backup & Security"-"Guacamole"-active session on the left navigation bar to check if there's any illegal operation, if found, they can manually click the "terminate" button to immediately terminate the session.
+
++ Click "Backup & Security"-"Guacamole"-Session Management on the left navigation bar to view the detailed information of the session, including: host name, IP address, protocol, Guacd name, user name, start time, duration and operation recording. Click Play to play the operation video online.
 
 
 # Backup system{#Backup system}
@@ -41,7 +50,7 @@ Core usage scenarios:
 
 Specific configuration steps: 
 
-+	Backup management portal configuration: Click "Security Audit"-"Backup Management Platform" on the left navigation bar, click Add, fill in Veeam information, name (name of Veeam system platform), description, Veeam address (i.e. URL link of Veeam platform) , Username and password (i.e. login username and password for Veeam platform) 
++	Backup management portal configuration: Click "Backup & Security"-"Backup Management Platform" on the left navigation bar, click Add, fill in Veeam information, name (name of Veeam system platform), description, Veeam address (i.e. URL link of Veeam platform) , Username and password (i.e. login username and password for Veeam platform) 
 
 +	Bind to the resource bundle: Click the "Infrastructure"-"Resource bundle Management" cloud platform resource information tab on the left navigation bar to specify the backup management platform that has been connected. For example, when adding a vSphere resource bundle, bind the backup management platform Veeam, and the virtual machines deployed using the vSphere resource bundle will be automatically associated with Veeam, and the instance will be managed through the backup management platform. 
 

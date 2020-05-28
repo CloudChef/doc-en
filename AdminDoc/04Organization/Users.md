@@ -1,18 +1,46 @@
 **Users**
 
-In the left navigation, select "Organization" - "Users". This page displays all users under the current tenant, and displays the user login name, username, user e-mail address, login method, business group, organizational unit, user status, creation time, and time and so on. Users can add, edit, reset passwords and delete operations. May locate user quickly by search.
+In the left navigation, select "Organization" - "Users". This page displays all users under the current tenant, and displays the user login name, username, user e-mail address, login method, business group, organizational unit, user status, creation time, and time and so on. 
+
++ Users can add, edit, reset passwords and delete operations. May locate user quickly by search.
++ Each user can manage their own credentials. In order to improve the management of keys and user passwords, put common passwords on the platform, and manage them through a unified interface, so that users do not need to remember user names and passwords when they need identity verification.
++ When tenant administrators and IaaS administrators create keys, they can allow sharing, and the created keys are open for tenant members to use. But for tenant members, each business group member can only use the keys created and shared by business group members.
++ User credentials can be keys or passwords, keys can be created or imported with one click. Users can upload their own public keys.
++ Users can also upload files when needed.
 
 # Add Users
 
-1.  In the left navigation, select "Organization" - "Users", click "Add", select the login type: Local / According to the system configuration, enter the Create User Basic Information interface (if the system is configured with LDAP login mode, it will also be optional)
++  In the left navigation, select "Organization" - "Users", click "Add", select the login type: Local / According to the system configuration, enter the Create User Basic Information interface (if the system is configured with LDAP login mode, it will also be optional)
 
-2.  Basic Information: Enter the required fields such as username, login name, email address and password, mobile phone number, QQ number, contact name, expiration time (automatically disable when the specified expiration time reaches), etc. 
++  Basic Information: Enter the required fields such as username, login name, email address and password, mobile phone number, QQ number, contact name, expiration time (automatically disable when the specified expiration time reaches), etc. 
 
-3.  Roles: The default user is a tenant member. The system has software architect, infrastructure administrator, tenant administrator and other roles by default. You can also customize the role and assign corresponding permissions to the role. For details, refer to Roles. When a role is selected, the entity object and scope of the role corresponding to the role are displayed. 
++  Roles: The default user is a tenant member. The system has software architect, infrastructure administrator, tenant administrator and other roles by default. You can also customize the role and assign corresponding permissions to the role. For details, refer to Roles. When a role is selected, the entity object and scope of the role corresponding to the role are displayed. 
 
-4.  Associated Business Group page: Select the business group and associate the business group with the user. For details, see [Add Business Group](https://cloudchef.github.io/doc-en/AdminDoc/04Organization/BusinessGroup.html)
++  Associated Business Group page: Select the business group and associate the business group with the user. For details, see [Add Business Group](https://cloudchef.github.io/doc-en/AdminDoc/04Organization/BusinessGroup.html)
 
-5.  Click “Save” and the user is created successfully.
+
+
+# My Credentials
+
+Users can create and manage their own credentials. Credentials include two types: keys or passwords. Users save frequently used credentials at a unified entrance. If identity verification is required when users request services or perform change operations, saved credentials can be used automatically. Among them, only tenant administrators and IaaS administrators can create shared credentials for all users.
+
+
+## Create Credentials
++ Steps to create and use key type credentials:
+
+   + On the "My Credentials" page, enter the key name (only numbers or letters), select the algorithm (RSA) and length, which currently supports three key lengths of 1024, 2048 and 4096.
+
+   + Import key. Users can import private key and public key into the system for later use (for example, the corresponding public key has been configured in the virtual machine image). Click "Import Key", enter the key name, and fill in the private key.
+
+   + Use key. In the virtual machine template, if selecting key pair as verification type, users can only select the shared key type credentials (newly generated or imported key) that already exist in the system.
+
++ Steps to create and use password type credentials:
+   + When adding (password), fill in the user name, password, confirm password (the password entered before and after must be consistent).
+   
+   + During service configuration, user can be allowed to modify the password created by the administrator, and system also supports users to choose their own credentials or manually enter the user name and password when requesting the service.
+
++ Application Scenario: In the operation interface of service deployment, during software installation, after selecting the node, users need to verify the user identity, the operator can select the credential created by himself or the shared credential in the drop-down box, or manually select the username and password.
+
 
 # Edit Users
 

@@ -1,9 +1,9 @@
 **Service Group**
 
 
-The service group is a collection of service personnel who process work order tasks during the work order service management process and supports tenant administrators to specify one or more users to be members of the service group. After the user applies for the manual work order service that needs manual intervention through the service catalog, according to the pre-configured service process, the corresponding service group will receive the work order for processing. 
+The service group is a collection of service personnel who process ticket tasks during the ticket service management process and supports tenant administrators to specify one or more users to be members of the service group. After the user applies for the manual ticket service that needs manual intervention through the service catalog, according to the pre-configured service process, the corresponding service group will receive the ticket for processing. 
 
-After receiving the work order request, the designated personnel in the service group can perform the transfer or offline processing. After the task is completed, the status of the work order is updated, and the system will automatically notify the user. The user can actively pay attention to the processing process in real time.
+After receiving the ticket request, the designated personnel in the service group can perform the transfer or offline processing. After the task is completed, the status of the ticket is updated, and the system will automatically notify the user. The user can actively pay attention to the processing process in real time.
 
 The functional points involved in the service group are:
 
@@ -11,9 +11,9 @@ The functional points involved in the service group are:
 
 -   Tenant administrators can customize associated users and disassociated users
 
--   After the user applies for the work order, the corresponding service group will receive the work order for processing.
+-   After the user applies for the ticket, the corresponding service group will receive the ticket for processing.
 
--   Workers who process work order tasks can assign work order tasks to each other, work together to process work order tasks, and can also perform offline processing. After the processing is completed, the work order status is updated and the work order enters the processed status. 
+-   Workers who process ticket tasks can assign ticket tasks to each other, work together to process ticket tasks, and can also perform offline processing. After the processing is completed, the ticket status is updated and the ticket enters the processed status. 
 
 # Add a Service Group
 

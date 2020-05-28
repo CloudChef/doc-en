@@ -26,6 +26,9 @@ VMware NSX  |NSX Management Controller
 Cisco ACI  |ACI Management Controller 
 F5  |F5 Management Controller    
 
+# Cloud Gateways
+
+The enterprise's infrastructure and network environment are relatively complex. There are scenarios such as isolation between multiple data centers, virtual network environments, and hybrid cloud architecture. Based on this, SmartCMP uses a distributed architecture and connects to different network environments with the help of cloud gateways to monitor and manage the resources in each VPC, data center, or cloud environment. Users only need to create and manage a cloud gateway for each data center, VPC, or remote site for connection and communication.
 
 
 # Resource Bundle
@@ -91,12 +94,6 @@ Through the abstraction of the operating system and computing specifications, yo
 You can create and manage IP pools to automate the allocation of IP addresses when deploying cloud resources. IP pools can support multi-cloud heterogeneous environments, for example creating an IP pool and assigning it to vSphere and OpenStack platforms at the same time.
 
 With IP address management, you can view the utilization of IP addresses, history logs, and manually occupy and release IP addresses.
-
-
-# Key Pair
-
-Key pairs are login credentials required by users to access virtual machines of different cloud platforms. Infrastructure administrators and tenant administrators can manage key pairs, including creating, importing, downloading, and deleting.
-
 
 
 

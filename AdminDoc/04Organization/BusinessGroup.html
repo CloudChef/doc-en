@@ -275,7 +275,20 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3.2" data-path="../03Infrastructure/ResourceBundleManagement.html">
+        <li class="chapter " data-level="3.3.2" data-path="../03Infrastructure/CloudGateways.html">
+            
+                <a href="../03Infrastructure/CloudGateways.html">
+            
+                    
+                    CloudGateways
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3" data-path="../03Infrastructure/ResourceBundleManagement.html">
             
                 <a href="../03Infrastructure/ResourceBundleManagement.html">
             
@@ -288,7 +301,20 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3.3" data-path="../03Infrastructure/VMTemplates.html">
+        <li class="chapter " data-level="3.3.4" data-path="../03Infrastructure/Image.html">
+            
+                <a href="../03Infrastructure/Image.html">
+            
+                    
+                    Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.5" data-path="../03Infrastructure/VMTemplates.html">
             
                 <a href="../03Infrastructure/VMTemplates.html">
             
@@ -301,7 +327,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3.4" data-path="../03Infrastructure/ComputingSpecifications.html">
+        <li class="chapter " data-level="3.3.6" data-path="../03Infrastructure/ComputingSpecifications.html">
             
                 <a href="../03Infrastructure/ComputingSpecifications.html">
             
@@ -314,38 +340,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3.5" data-path="../03Infrastructure/IPAM.html">
+        <li class="chapter " data-level="3.3.7" data-path="../03Infrastructure/IPAM.html">
             
                 <a href="../03Infrastructure/IPAM.html">
             
                     
                     IPAM
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.3.6" data-path="../03Infrastructure/KeyPair.html">
-            
-                <a href="../03Infrastructure/KeyPair.html">
-            
-                    
-                    KeyPair
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.3.7" data-path="../03Infrastructure/NamingSuffix.html">
-            
-                <a href="../03Infrastructure/NamingSuffix.html">
-            
-                    
-                    NamingSuffix
             
                 </a>
             
@@ -463,6 +463,32 @@
             
         </li>
     
+        <li class="chapter " data-level="3.4.6" data-path="NamingSuffix.html">
+            
+                <a href="NamingSuffix.html">
+            
+                    
+                    NamingSuffix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.7" data-path="ProfileTemplate.html">
+            
+                <a href="ProfileTemplate.html">
+            
+                    
+                    ProfileTemplate
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -560,7 +586,20 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.7" data-path="../05ServiceDesign/ScriptLibrary.html">
+        <li class="chapter " data-level="3.5.7" data-path="../05ServiceDesign/ServiceLevelAgreement.html">
+            
+                <a href="../05ServiceDesign/ServiceLevelAgreement.html">
+            
+                    
+                    ServiceLevelAgreement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.8" data-path="../05ServiceDesign/ScriptLibrary.html">
             
                 <a href="../05ServiceDesign/ScriptLibrary.html">
             
@@ -708,6 +747,19 @@
             
                     
                     Governance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.4" data-path="../13Fund/">
+            
+                <a href="../13Fund/">
+            
+                    
+                    Fund
             
                 </a>
             
@@ -929,63 +981,15 @@
 <p>Remove user: If there is already a user in the business group, select a user in the list and click &#x201C;Remove User&#x201D; to cancel the association between the user and the business group. The user will not be able to view and use the resources of the business group.</p>
 <p>Associated role: Select a user in the list interface, click on &#x201C;Associate Role&#x201D;, check &#x201C;Business Group Administrator&#x201D;, and click &#x201C;Submit&#x201D; to give the user the role of the business group administrator.</p>
 <ul>
-<li>Rules:</li>
+<li>Rule:</li>
 </ul>
-<p>Service deployment name naming rules: You can set the business group service deployment naming rules. When a service group member applies for a service, the service deployment name is automatically generated according to the rules. Existing fields: business group name, project name, owner name, timestamp (yyyyMMddHHmmss), service configuration name, project abbreviation, business group abbreviation</p>
-<p>VM name naming rules: The virtual machine display name in the SmartCMP or vCenter/OpenStack management interface. Existing fields: IP address, service group name, project name, owner name, deployment name, virtual machine blueprint node name, OS host name, project abbreviation, business group abbreviation</p>
-<p>Windows hostname naming rules: Windows virtual machine hostname. Existing fields: business group name, project name, owner name, deployment name, virtual machine blueprint node name, project abbreviation, business group abbreviation</p>
-<p>Linux hostname naming rules: Linux virtual machine hostname. Existing fields: business group name, project name, owner name, deployment name, virtual machine blueprint node name, project abbreviation, business group abbreviation  </p>
-<blockquote>
-<p>&#x300C;Note&#x300D;Virtual machine hostname does not support special symbols, otherwise deploying virtual machine may fail. Windows host name naming rules generated by the Windows host name more than 15 characters will automatically intercept the field (15-suffix length). There are suffixes in the naming rules, you can choose the &quot;naming suffix&quot; that is already in the &quot;infrastructure&quot;.</p>
-</blockquote>
-<p>Public network IP name naming rules: business group name, project name, owner name, project short name, business group short name, instance name.</p>
+<p>Naming Policies: Configure the naming policies for service deployment, instances, and cloud resources. Click the drop-down list to select the added naming policies. Leave blank to use the default template in system settings.</p>
 <p>Specification: The configuration specification of business group requesting resources in the service catalog and requesting the maximum CPU and memory of instance, leaving blank to indicate no limit.</p>
 <ul>
-<li>Cloud Resource Operation Entitlement</li>
+<li>Entitlement Profiles
+The &quot;Entitlement Profiles&quot; tab can be configured with an entitlement profile that specifies the operations that users can perform on service deployment and cloud resources.</li>
 </ul>
-<p>There are two methods for setting entitlements for cloud resource related operations. One is setting in the business group --- Cloud Resource Ops Entitlement; the other is setting in the Service Configuration.</p>
-<p>The cloud resource operation entitlement in the service configuration will inherit the business group configuration. You can enable or disable the operations and modify the approval process within this range. Operations disabled in the business group cannot be enabled at the service configuration. For details, refer to: <a href="https://cloudchef.github.io/doc-en/AdminDoc/05ServiceDesign/Workflow.html#Service%20Deployment%20Operation%20Entitlement%20.afff6" target="_blank">Add a service deployment operation entitlement to a business group</a></p>
-<p>Specific steps:</p>
-<ol>
-<li><p>&quot;Organization Structure&quot;-&quot;Business Group&quot;, select the &quot;Cloud Resource Ops Entitlement&quot; tab, which will list all the enabled cloud resource operations for the business group. </p>
-</li>
-<li><p>After the configuration is completed and the service request is successfully deployed, you can enter the instance details page in &quot;Deployments&quot;-&quot;Instances&quot; to perform the corresponding operations on the virtual machine.</p>
-</li>
-</ol>
-<p>Add cloud resource operation entitlement in business group</p>
-<p>Operation entitlements for cloud resources can be added at the business group level.</p>
-<ol>
-<li><p>&quot;Organization Structure&quot;-&quot;Business Group&quot;, select &quot;Cloud Resource Ops Entitlement&quot; tab</p>
-</li>
-<li><p>Click &quot;Add&quot;, the &quot;Add Operation Entitlement&quot; page appears, which supports adding custom operations</p>
-</li>
-<li><p>The first column on the left side of the page is the operation list of cloud resources (including virtual machines, cloud disks, container services, network resources, etc.), the second column is the role list, the third column is the activation status list, and the rightmost column is approval template list </p>
-</li>
-<li><p>Select an operation in the virtual machine operation list, such as enable, stop, suspend, etc. In the role list, select the role that can perform this operation. In the activation status list, you can select not enable (cannot perform the virtual machine operation), enable (can perform the virtual machine operation), or enable and approve (can perform this virtual machine operation while need to select an approval template in the approval template list)</p>
-</li>
-<li><p>&quot;Approval template&quot;: select the default template (business group administrator approval template or tenant administrator approval template)</p>
-</li>
-<li><p>Click &quot;Save&quot;</p>
-</li>
-</ol>
-<ul>
-<li>Service Deployment Operation Entitlement</li>
-</ul>
-<p>The service deployment operation entitlement specifies the operations that can be performed after the service is successfully deployed and the approval process for the operation.</p>
-<p>On the &quot;Deployments&quot;-&quot;M Deployments&quot; page, select a service deployment. The top of the list page will show the operations that can be performed by the service deployment.</p>
-<p>Add a service deployment operation entitlement to a business group</p>
-<ol>
-<li><p>&quot;Organization Structure&quot;-&quot;Business Group&quot;, click on the business group name to enter the overview page, and select the &quot;Service Deployment Ops Entitlement&quot; tab</p>
-</li>
-<li><p>Click &quot;Add&quot;, &quot;Add Operation Entitlement&quot; page appears</p>
-</li>
-<li><p>The first column on the left side of the page is the operation list, the second column is the role list, the third column is the activation status list, and the rightmost column is the approval template list.</p>
-</li>
-<li><p>Select an operation in the operation list, such as changing owner, starting service deployment, stopping service deployment, etc. Select the role that can perform this operation in the role list. In the enabled status list, you can check whether to enable (cannot perform the operation), enable (can perform the operation), or enable and approve (can perform the operation while need to select an approval template in the approval template list)</p>
-</li>
-<li><p>Click &quot;Save&quot; to successfully add the service deployment operation permission to the business group</p>
-</li>
-</ol>
+<p>Click the drop-down list to select the added entitlement profiles. Leave blank to use the default template in the system settings. Once configured, the default template configuration will be overwritten.</p>
 <ul>
 <li>Resource Quota</li>
 </ul>
@@ -1021,7 +1025,7 @@
 <p>&#x300C;Note&#x300D;When there are multiple users with different quotas in the business group, one user owing money does not affect other users&apos; requests for resources. The instances belonging to that user are shut down which does not affect the status of other users&apos;.</p>
 </blockquote>
 <ul>
-<li>Personal budget renewal: Submit the renewal work order. The administrator can modify the quota for each user on the &quot;User&quot; tab. Specific operation steps: Select &quot;User&quot;-&quot;Budget Configuration&quot; and modify the user&apos;s personal budget.</li>
+<li>Personal budget renewal: Submit the renewal ticket. The administrator can modify the quota for each user on the &quot;User&quot; tab. Specific operation steps: Select &quot;User&quot;-&quot;Budget Configuration&quot; and modify the user&apos;s personal budget.</li>
 </ul>
 <p>Click Save to view the current business group.</p>
 <h1 id="view-current-business-group"><a name="view-current-business-group" class="anchor-navigation-ex-anchor" href="#view-current-business-group"><i class="fa fa-link" aria-hidden="true"></i></a>2. View Current Business Group</h1>
@@ -1032,7 +1036,10 @@
 <p>In the UI of adding a business group, you can select a higher-level business group, so that your current business group can be added to the upper-level business group to implement a cascaded organization. (Can only add one superior business group) The cascaded business group can realize the hierarchical relationship of the organization. You can connect to any organizational structure of any company through the cascaded business group.</p>
 <p>The cascaded business group has the following characteristics:</p>
 <ul>
-<li><p>The user associated with the child business group must be the associated user of the parent business group</p>
+<li><p>The users associated with the child business group do not necessarily have to be associated with the parent business group. The tenant administrator may check &quot;When you add a user to a child business group, add this user to the parent business group as well.&quot; in &quot;System&quot;-&quot;Business Groups&quot;, that is: when you add users into the child business group, the user will be automatically added to the parent business group
+Uncheck this option, when the user does not exist in the parent business group, the child business group can also directly add the associated user, and it will not be automatically added to the parent business group</p>
+</li>
+<li><p>The parent business group administrator will automatically become the administrator of all child business groups (this rule has nothing to do with system configuration)</p>
 </li>
 <li><p>The resource bundles associated with each level of business group are independent of each other</p>
 </li>
@@ -1052,7 +1059,7 @@
 <blockquote>
 <p>&#x300C;Important&#x300D;Deleting business group will delete the script library, naming suffix, key pair, etc. under the business group and remove all users from the business group. Before deleting a business group, ensure that all service deployments under the business group have been uninstalled successfully, and all resource bundles under the business group are removed, and all released and unpublished services are deleted.</p>
 </blockquote>
-<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; 2013-2019 CloudChef. All Rights Reserved. <a href="http://www.cloudchef.io/en/" target="_blank">Shanghai CloudChef Information Technology Co., Ltd.</a>  </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> update time&#xFF1A; 2020-01-09 12:02:04 </span> </footer>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; 2016-2020 CloudChef. All Rights Reserved. <a href="http://www.cloudchef.io/en/" target="_blank">Shanghai CloudChef Information Technology Co., Ltd.</a>  </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> update time&#xFF1A; 2020-05-27 17:37:43 </span> </footer>
                                 
                                 </section>
                             
@@ -1095,7 +1102,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"BusinessGroup","level":"3.4.1","depth":2,"next":{"title":"Project","level":"3.4.2","depth":2,"path":"AdminDoc/04Organization/Project.md","ref":"AdminDoc/04Organization/Project.md","articles":[]},"previous":{"title":"Organization","level":"3.4","depth":1,"path":"AdminDoc/04Organization/README.md","ref":"AdminDoc/04Organization/README.md","articles":[{"title":"BusinessGroup","level":"3.4.1","depth":2,"path":"AdminDoc/04Organization/BusinessGroup.md","ref":"AdminDoc/04Organization/BusinessGroup.md","articles":[]},{"title":"Project","level":"3.4.2","depth":2,"path":"AdminDoc/04Organization/Project.md","ref":"AdminDoc/04Organization/Project.md","articles":[]},{"title":"Users","level":"3.4.3","depth":2,"path":"AdminDoc/04Organization/Users.md","ref":"AdminDoc/04Organization/Users.md","articles":[]},{"title":"Roles","level":"3.4.4","depth":2,"path":"AdminDoc/04Organization/Roles.md","ref":"AdminDoc/04Organization/Roles.md","articles":[]},{"title":"ServiceGroup","level":"3.4.5","depth":2,"path":"AdminDoc/04Organization/ServiceGroup.md","ref":"AdminDoc/04Organization/ServiceGroup.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["splitter","-lunr","-search","search-plus","expandable-chapters-small","insert-logo","simple-page-toc","favicon","anchor-navigation-ex","page-footer-ex","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"mode":"float","livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"page-footer-ex":{"copyright":"Copyright © 2013-2019 CloudChef. All Rights Reserved. [Shanghai CloudChef Information Technology Co., Ltd.](http://www.cloudchef.io/en/) ","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"update time："},"showLevel":true,"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"sepia","family":"serif","size":1},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{},"printLog":false,"expandable-chapters-small":{},"multipleH1":true,"associatedWithSummary":true,"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none;","url":"https://cloudchef.github.io/doc-en/picture/logo.png"},"search-plus":{}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CloudChef Document","gitbook":"*","description":"Provide you with a rich and detailed guide and product documentation for the SmartCMP Cloud Management Platform.","theme-default":{"showLevel":false},"extension":null},"file":{"path":"AdminDoc/04Organization/BusinessGroup.md","mtime":"2020-01-09T04:02:04.334Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-13T08:54:02.113Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"BusinessGroup","level":"3.4.1","depth":2,"next":{"title":"Project","level":"3.4.2","depth":2,"path":"AdminDoc/04Organization/Project.md","ref":"AdminDoc/04Organization/Project.md","articles":[]},"previous":{"title":"Organization","level":"3.4","depth":1,"path":"AdminDoc/04Organization/README.md","ref":"AdminDoc/04Organization/README.md","articles":[{"title":"BusinessGroup","level":"3.4.1","depth":2,"path":"AdminDoc/04Organization/BusinessGroup.md","ref":"AdminDoc/04Organization/BusinessGroup.md","articles":[]},{"title":"Project","level":"3.4.2","depth":2,"path":"AdminDoc/04Organization/Project.md","ref":"AdminDoc/04Organization/Project.md","articles":[]},{"title":"Users","level":"3.4.3","depth":2,"path":"AdminDoc/04Organization/Users.md","ref":"AdminDoc/04Organization/Users.md","articles":[]},{"title":"Roles","level":"3.4.4","depth":2,"path":"AdminDoc/04Organization/Roles.md","ref":"AdminDoc/04Organization/Roles.md","articles":[]},{"title":"ServiceGroup","level":"3.4.5","depth":2,"path":"AdminDoc/04Organization/ServiceGroup.md","ref":"AdminDoc/04Organization/ServiceGroup.md","articles":[]},{"title":"NamingSuffix","level":"3.4.6","depth":2,"path":"AdminDoc/04Organization/NamingSuffix.md","ref":"AdminDoc/04Organization/NamingSuffix.md","articles":[]},{"title":"ProfileTemplate","level":"3.4.7","depth":2,"path":"AdminDoc/04Organization/ProfileTemplate.md","ref":"AdminDoc/04Organization/ProfileTemplate.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["splitter","-lunr","-search","search-plus","expandable-chapters-small","insert-logo","simple-page-toc","favicon","anchor-navigation-ex","page-footer-ex","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"mode":"float","livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"page-footer-ex":{"copyright":"Copyright © 2016-2020 CloudChef. All Rights Reserved. [Shanghai CloudChef Information Technology Co., Ltd.](http://www.cloudchef.io/en/) ","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"update time："},"showLevel":true,"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"sepia","family":"serif","size":1},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{},"printLog":false,"expandable-chapters-small":{},"multipleH1":true,"associatedWithSummary":true,"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none;","url":"https://cloudchef.github.io/doc-en/picture/logo.png"},"search-plus":{}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CloudChef Document","gitbook":"*","description":"Provide you with a rich and detailed guide and product documentation for the SmartCMP Cloud Management Platform.","theme-default":{"showLevel":false},"extension":null},"file":{"path":"AdminDoc/04Organization/BusinessGroup.md","mtime":"2020-05-27T09:37:43.873Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-28T08:57:45.023Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

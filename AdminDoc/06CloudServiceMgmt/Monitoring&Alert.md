@@ -7,9 +7,15 @@ In the left navigation, select "Monitoring & Alert". There are 5 secondary menus
 
 # Component monitoring
 
-As a separate page, component monitoring displays application monitoring, and the monitoring agent component is synchronized with the monitoring agent component in the component library. Specific steps for adding a proxy component, please refer to: Component Library 
+After the monitoring data is collected, a unified interface needs to be provided for display. SmartCMP can not only display the monitoring information on the deployment or cloud resource interface, but also display the monitoring information uniformly on a brand new page. As a separate page, component monitoring displays the monitoring of applications, instances, or virtual machines.
 
-Click "Monitor & Alert"-"Component Monitoring" in the left navigation bar. The left side displays the tree structure of the Export components, and the right side displays the relevant Exporter (used to describe all Exporter components, each can define the types of components they support.). Click on the NginxExporter displayed on the right to enter the "NginxExporter" tab. The left side of the page displays the NginxExporter associated instance, and the right side displays the related description information of the NginxExporter component.
++ For the specific steps of adding proxy components, please refer to:[Component Library](http://CMP-PUBLIC-IP/help/AdminDoc/05服务建模/组件库.html) 
++ Click "Monitoring & Alerts"-"Component Monitoring" on the left navigation bar, the tree structure of the Export component is displayed on the left, and the related Exporter (used to describe all the components of the Exporter. Each component can define its own supported component types.) is displayed on the right.
++ For example: Click on the NginxExporter displayed on the right to enter the "NginxExporter" tab, the left side of the page displays the NginxExporter related instance, and the right side displays the relevant description information of the NginxExporter component.
++ Instance Exporter provides an abstract component for monitoring different VMs. No matter what kind of virtual machine is monitored, it will be listed in Instance Exporter. Go to the "Instance Exporter" tab, the virtual machine instance associated with the Instance Exporter is displayed on the left of the page, and the monitoring information of the virtual machine is displayed on the right.
+
+![VMmonitor](../../picture/Admin/VMmonitor.png)
+
 
 >「Note」 Component monitoring entitlement management: Every user can see the menu, but the scope of component resources that can be viewed is based on the user's configured entitlements in advance. For example, the tenant administrator sees the resources he owns and the business group administrator sees all resources in the business group he manages, etc. 
 

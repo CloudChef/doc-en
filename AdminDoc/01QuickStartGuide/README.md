@@ -1,18 +1,19 @@
 
 **Admin Quick Start Guide**
 
-SmartCMP mainly has two service scenarios, one is the cloud resource blueprint service scenario; the other is the work order service scenario. 
+
+SmartCMP mainly has two service scenarios, one is the cloud resource blueprint service scenario; the other is the ticket service scenario. 
 +	Cloud resource blueprint service scenario
 The Cloud Resource Blueprint Service is based on blueprint modeling to define standard service frameworks and components, providing a rich set of out-of-the-box software components to visualize blueprints for automated deployment.
 For example, configuring a vSphere single-node virtual machine service is a typical scenario for a cloud resource blueprint service.
 After the blueprint is modeled by the administrator, the service configuration can specify the resources and parameters that the user can apply for, and form a standard service based on the blueprint. After the release, the user can apply for self-service and automate the delivery.
 
-+	Work order service scenario
-There are two types of work order services:
-1. Apply for non-standardized resources (for example, apply for a cloud resource blueprint service to uninstall a service deployment. This action is a typical service scenario for work order services) 
-2. Services that require IT manual intervention (for example, manual work order service for resetting passwords. This action is also a typical service scenario for work order services)
++	Ticket service scenario
+There are two types of ticket services:
+1. Apply for non-standardized resources (for example, apply for a cloud resource blueprint service to uninstall a service deployment. This action is a typical service scenario for ticket services) 
+2. Services that require IT manual intervention (for example, manual ticket service for resetting passwords. This action is also a typical service scenario for ticket services)
 
->「Note」Please refer to [Quick Configuration of Cloud Resource Blueprint Services](#QuickConfigurationofCloudResourceBlueprintServices) for more cloud resource blueprint services. For detailed work order service please go to [Request service Management](https://cloudchef.github.io/doc-en/AdminDoc/08RequestServiceMgmt/)
+>「Note」Please refer to [Quick Configuration of Cloud Resource Blueprint Services](#QuickConfigurationofCloudResourceBlueprintServices) for more cloud resource blueprint services. For detailed ticket service please go to [Request service Management](https://cloudchef.github.io/doc-en/AdminDoc/08RequestServiceMgmt/)
 
 
 When using the system release service for the first time, you need to do the following to configure the system:
@@ -40,7 +41,7 @@ The next chapter will explain how the administrator configures the first cloud r
 # Log in
 
 
-+ Enter SmartCMP IP in browser, such as: http://cmp.smartcmp.online:1688/#/login
++ Enter SmartCMP IP in browser, such as: http：//SmartCMP-Public-IP/#/login
 + Enter username & password.
 
 # Configure cloud platform portal
@@ -697,14 +698,14 @@ Select "Deployments" - " Resources", you will see the following categories: stor
  + Software: Software
 
 
-# Work Order Service
+# Ticket Service
 
 
-SmartCMP supports tenant and system administrators to define and publish standard work order services and supports user self-service request and tracking. This chapter will show you how to create your first work order, publish and apply for a service.
+SmartCMP supports tenant and system administrators to define and publish standard ticket services and supports user self-service request and tracking. This chapter will show you how to create your first ticket, publish and apply for a service.
 
 ## Define Service Group
 
-Service group is a collection of service personnel who process work order tasks during the work order service management process. Support the tenant administrator to customize the associated users.
+Service group is a collection of service personnel who process ticket tasks during the ticket service management process. Support the tenant administrator to customize the associated users.
 
 Brief steps to create a service team:
 
@@ -724,13 +725,13 @@ Brief steps to configure the service:
 
 1.  Select "Service Design" - "Catalog Config" and click "Add"
 
-2.  Fill in the service name, service description (optional), select the business group, and when the service type is manual work order service, add a service process and click “Submit” to enter the service configuration “Overview” page 
+2.  Fill in the service name, service description (optional), select the business group, and when the service type is manual ticket service, add a service process and click “Submit” to enter the service configuration “Overview” page 
 
 3.  Fill in the following information on the “Basic Information” tab: Name, Description, Logo Image, Service Group and Order as well as specifying the handler to process the ticket task, configuring the role type of the handler and the specific handler. 
 
 4.  Click the Save button, the service will be saved without publishing, click the Save and Publish button, and the service will be published to the Service Catalog page.
 
->「Note」Please use the tenant administrator role to log in to the SmartCMP platform. To modify the configuration and release settings, or to create a new configuration and release, refer to the detailed steps in [Manual Work Order Service Configuration](https://cloudchef.github.io/doc-en/AdminDoc/08RequestServiceMgmt/). To modify the configuration of a service process or create a new service process configuration, please refer to [Service Process Mgmt.](https://cloudchef.github.io/doc-en/AdminDoc/08RequestServiceMgmt/).
+>「Note」Please use the tenant administrator role to log in to the SmartCMP platform. To modify the configuration and release settings, or to create a new configuration and release, refer to the detailed steps in [Manual Ticket Service Configuration](https://cloudchef.github.io/doc-en/AdminDoc/08RequestServiceMgmt/). To modify the configuration of a service process or create a new service process configuration, please refer to [Service Process Mgmt.](https://cloudchef.github.io/doc-en/AdminDoc/08RequestServiceMgmt/).
 
 ## Process and Track Request
 
@@ -738,7 +739,7 @@ Brief steps for processing and tracking requests：
 
 1.  Click " Requests" - "Pending Requests", which displays the basic information of the ongoing request: request number, request type, title, business group, project, request status, request time, completion time.
 
-2.  Select a pending service request, click the “Request Number” link, and jump to the request details page to view the basic information of the request, work order information, processing records, process steps, service processing information, and so on. 
+2.  Select a pending service request, click the “Request Number” link, and jump to the request details page to view the basic information of the request, ticket information, processing records, process steps, service processing information, and so on. 
 
 3.  Processing methods are defined as two types, direct processing and transfer processing. Select the direct processing method, click on the direct processing, fill in the processing result description then click submit.
 

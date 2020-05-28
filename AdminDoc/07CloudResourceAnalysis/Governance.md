@@ -26,11 +26,11 @@ Click on the left menu bar "Governance" - "Event", you will see the event config
 ## Operation configuration:
 
 Provides common task configuration for automatic operation triggered by alerts, event configuration, etc. (specific operation configuration steps are similar to pipeline process design task configuration)
-+ Common requirements scenarios include: After the VM is deployed, you need to register to the springboard; after the VM is deleted, you can log off the springboard; after the alert scenario occurs, you can create a work order process.
++ Common requirements scenarios include: After the VM is deployed, you need to register to the springboard; after the VM is deleted, you can log off the springboard; after the alert scenario occurs, you can create a ticket process.
 + Implementation ideas: After the event occurs, the alert can be triggered. The configuration operation is the same as the pipeline configuration task.
 + For example, after the cloud resource is deployed, not only can the e-mail notification occur, but also the operation of the cloud resource. The notification and operation can be configured at the same time.
 
- + Other common usage scenarios include: after the VM is deployed, you need to register to the bastion host; after the VM is deleted, you can unregister the bastion host; after the alert scenario occurs, you can create a work order process 
+ + Other common usage scenarios include: after the VM is deployed, you need to register to the bastion host; after the VM is deleted, you can unregister the bastion host; after the alert scenario occurs, you can create a ticket process 
 
 
 # Event History

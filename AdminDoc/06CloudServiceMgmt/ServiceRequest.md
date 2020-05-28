@@ -23,7 +23,7 @@ On the pending page, the approver configured by the administrator in the approva
 
 1. In the left navigation bar, click "Request" - "Pending Approval". Pending Approval page displays the pending approvals for all the approval requests you initiated. It displays the basic information of the approval request: request number, request type, service deployment, name, applicant, business group, project, request status, request time.
 
-2. Select a request, click the “Request Number” link, and go to the My Request Details page to view the approver of the request, approval status, basic information, work order information, service deployment information, component parameters, IP address, deployment. Resource occupancy information overview, service request, resource request basis, and so on.
+2. Select a request, click the “Request Number” link, and go to the My Request Details page to view the approver of the request, approval status, basic information, ticket information, service deployment information, component parameters, IP address, deployment. Resource occupancy information overview, service request, resource request basis, and so on.
 
 3. Basic information includes request number, request time, request type, applicant, business group, project, and so on.
 
@@ -49,7 +49,7 @@ Tenant administrators can view the details of all applications as follows:
 
 3. Basic information includes request number, request time, request type, applicant, contact information, email address, business group, project, etc.
 
-4. Work order information includes title, description, priority, and urgency.
+4. Ticket information includes title, description, priority, and urgency.
 
 5. Approval information includes approver, approval status, service deployment name, service request, and resource request basis.
 
