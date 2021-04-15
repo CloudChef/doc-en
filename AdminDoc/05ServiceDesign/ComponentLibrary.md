@@ -1,5 +1,6 @@
 **Components Library**
 
+
 The cloud component of the SmartCMP cloud management platform has the core capability of providing any resources as a service. It not only has rich component resources and common operations built in, but also has a highly scalable capability. It can flexibly customize component resources and configure operations. The definition of components adopts an object-oriented design method, uses a unified data structure for modeling, and standardizes configuration properties. Software architects can also create reusable software components as needed and use operation scripts to accurately specify the deployment operation process. Platform supports rewriting these operation scripts at any time, releases them in real time, and synchronously updates installed software components. By defining attributes and passing attributes as parameters to action scripts, software components can be deployed in different environments without modifying the script. Support to use Ansible, Terraform, Shell, Python, Json, Ruby and other languages to customize software components, and customize the life cycle operations of software components (including creation, configuration, start, stop, delete, backup, inspection, etc.). System has built-in create, configure and start operations, call stop and delete operations when removed, and support flexible custom operations to achieve full lifecycle management of software and applications. 
 
 Components in SmartCMP consist of attributes and interfaces. Software components are composed of scripts, attributes, metadata, and lifecycle management. Flexible software components can be associated with mainstream product libraries. The specific concepts are as follows:
@@ -199,9 +200,16 @@ And the specific parameter configuration (timeout time and maximum number of ret
 
 >「Note」The Linux virtual machine of the vSphere cloud platform. The added operations are supported on the "Deployments"-"Instance" page. For details, please refer to:  [Cloud Resource Operation Entitlement](https://cloudchef.github.io/doc-en/AdminDoc/05ServiceDesign/Workflow.html#Cloud%20Resource%20Operation%20Entitlement%20.afff6)
 
+![操作-脚本列表](../../picture/Admin/操作-脚本列表.png)
+
+![操作-基本信息](../../picture/Admin/操作-基本信息.png)
 
 
 Software component form configuration: In the software component, parameters and forms can be configured for the "create" action and other custom actions, where the form is dynamically generated based on attributes. The content of the completed form is configured (supports JSON format), and the preview of the form can also be displayed directly to meet various needs.
+
+![表单配置-参数](../../picture/Admin/表单配置-参数.png)
+
+![表单配置-表单](../../picture/Admin/表单配置-表单.png)
 
 
 Support for secondary update operation. The system has provided the implementation of this operation. If you need to override, you can enable the option "Override system action". In the "Action" view, click any action to enter the basic information tab page. When the selected primary key name matches the existing built-in action of the system, the option and prompt to overwrite the operating system will appear. Select "Overwrite system action" and later information such as implementation configuration, execution configuration, and form configuration will appear.

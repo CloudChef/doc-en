@@ -703,6 +703,8 @@ Select "Deployments" - " Resources", you will see the following categories: stor
 
 SmartCMP supports tenant and system administrators to define and publish standard ticket services and supports user self-service request and tracking. This chapter will show you how to create your first ticket, publish and apply for a service.
 
+Tenant administrators can customize and publish standard ticket services, and users can apply for self-service through the service catalog and track ticket processing status through service requests.
+
 ## Define Service Group
 
 Service group is a collection of service personnel who process ticket tasks during the ticket service management process. Support the tenant administrator to customize the associated users.

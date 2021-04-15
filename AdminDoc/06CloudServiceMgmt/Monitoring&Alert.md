@@ -5,11 +5,31 @@ Alert provides the user with the virtual machine and any application self-servic
 
 In the left navigation, select "Monitoring & Alert". There are 5 secondary menus under the Monitoring & Alert, followed by "Alert Policy", "Alert Rules", "Triggered Alert", "Host Monitoring" and "Host Alerts".
 
-# Component monitoring
+# Host Map
+
+The host map can display the health status of the instance and container and display different colors according to the status of the performance indicator. If the instance or container is not configured for monitoring, it is grayed out by default. Light green to dark green to red, the darker the color, the more resources are used.
+
+-   Move the mouse to the instance to display the instance name
+
+-   Click to show details
+
+-   Basic information: IP address, operating system, number of vCPUs, memory, total disk space
+
+-   Organizational information: business groups, projects, owners
+
+-   Performance monitoring metrics: memory usage, CPU usage, disk usage
+
+>「Note」Will not display performance monitoring indicators if monitoring is not installed.
+
+-   Displayed content can be filtered according to your needs, such as all or installed monitoring or not installed monitoring, filtering by cloud platform, business group, project screening, label, etc.
+
+
+
+# Component Monitoring
 
 After the monitoring data is collected, a unified interface needs to be provided for display. SmartCMP can not only display the monitoring information on the deployment or cloud resource interface, but also display the monitoring information uniformly on a brand new page. As a separate page, component monitoring displays the monitoring of applications, instances, or virtual machines.
 
-+ For the specific steps of adding proxy components, please refer to:[Component Library](http://CMP-PUBLIC-IP/help/AdminDoc/05服务建模/组件库.html) 
++ For the specific steps of adding proxy components, please refer to:[Component Library](http://CMP-PUBLIC-IP/help/AdminDoc/05ServiceDesign/ComponentLibrary.html) 
 + Click "Monitoring & Alerts"-"Component Monitoring" on the left navigation bar, the tree structure of the Export component is displayed on the left, and the related Exporter (used to describe all the components of the Exporter. Each component can define its own supported component types.) is displayed on the right.
 + For example: Click on the NginxExporter displayed on the right to enter the "NginxExporter" tab, the left side of the page displays the NginxExporter related instance, and the right side displays the relevant description information of the NginxExporter component.
 + Instance Exporter provides an abstract component for monitoring different VMs. No matter what kind of virtual machine is monitored, it will be listed in Instance Exporter. Go to the "Instance Exporter" tab, the virtual machine instance associated with the Instance Exporter is displayed on the left of the page, and the monitoring information of the virtual machine is displayed on the right.

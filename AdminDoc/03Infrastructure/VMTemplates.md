@@ -1,14 +1,11 @@
 **VM Templates**
 
-The platform supports the creation of virtual machine templates. One operating system can correspond to multiple virtual machine templates. A virtual machine template is associated with a template or image in the cloud platform
+The virtual machine template is the abstraction and standardization of the operating system. A template is a virtual machine encapsulated in a file, and a new VM can be quickly deployed through the template. Each template contains installation metadata, which is the setup information required to create a new instance with a specific operating system, optimal storage, CPU, memory, and virtual network configuration.
 
--   Templates in vSphere vCenter
+The platform supports the creation of virtual machine templates. One operating system can correspond to multiple virtual machine templates. 
++ A virtual machine template is associated with a template or image in the cloud platform, such as templates in vSphere vCenter, images on the OpenStack platform and operating system (OS) images for each area of the public cloud platform.
 
--   Images on the OpenStack platform
-
--   Operating system (OS) images for each area of the public cloud platform
-
-The installation mode and account information of the two SmartCMP agents can be configured in the VM template. The two agents are monitoring agents and automation agents.
++ The installation mode and account information of the two SmartCMP agents can be configured in the VM template. The two agents are monitoring agents and automation agents.
 
 Some of the automation features of SmartCMP rely on automation agents such as:
 
@@ -36,7 +33,7 @@ Here we define two virtual machine templates: Windows 2012 R2 and CentOS 7.
 
 ### Add a vSphere VM Template{#Add a vSphere VM Template}
 
-1.  ①	On the VM template list page, click Add. Enter the VM template name, select a vSphere cloud platform, and configure the following:
+1.  On the VM template list page, click Add. Enter the VM template name, select a vSphere cloud platform, and configure the following:
 
 Clone mode: "Full clone" or "Linked clone"
 

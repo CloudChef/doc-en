@@ -27,6 +27,8 @@ Main function point:
 
 -   Support for setting fields that can be modified by each level of approver.
 
+## Configure Workflow
+
 There are two ways to configure the SmartCMP configuration workflow:
 
 1.  First, the business group administrator or tenant administrator adds the approval workflow A to the business group configuration.
@@ -35,7 +37,7 @@ There are two ways to configure the SmartCMP configuration workflow:
 
 3.  When the two configuration methods are used at the same time, the approval workflow conflicts. The approval workflow B in the service configuration takes precedence over the approval workflow A in the business group configuration.
 
-Add an approval workflow to a business group
+### Add a Workflow to a Business Group
 
 You can add an approval workflow to a business group. After the configuration is successful, when a business group member applies for service deployment, it needs to be controlled through the workflow in the approval template.
 
@@ -45,7 +47,7 @@ You can add an approval workflow to a business group. After the configuration is
 
 3.  After saving, the members of the business group will enter the approval workflow when applying for services
 
-Add an approval workflow to the service configuration
+### Add a Workflow in Service Configuration
 
 After the service catalog is successfully applied, if the service is configured with the approval workflow in advance, the service will enter the approval queue and obtain the approval comments of the relevant members in the approval template. Deployment can be performed only after the approval is passed.
 
@@ -130,91 +132,29 @@ The built-in approval workflow cannot be modified or deleted. It only supports v
 
 -   Approval Template Workflow: Built-in Cloud Service Deployment Approval Workflow
 
-## Cloud Resource Operation Entitlement {#Cloud Resource Operation Entitlement .afff6}
 
-There are two ways to set permissions for cloud resource related operations. One is set in the business group - cloud resource operation entitlement; the second is set in the service configuration.
-
-The cloud resource operation entitlement in the service configuration inherits the business group configuration, and the operation item enablement and approval workflow can be changed within this scope. Operations that are not enabled in the business group cannot be enabled at the service configuration.
-
-Specific operation method:
-
-1.  “Organization” - “Business Group”, select the “Cloud Resource Ops Entitlement” tab, which will list all enabled cloud resource operations of the business group.
-
-2.  After the configuration is complete and the request service is deployed successfully, you can enter the instances details page in My Deployment - Instances to perform the operations on the virtual machine.
-
-Add a cloud resource operation entitlement to a business group
-
-Operational entitlement for cloud resources can be added at the business group level.
-
-1.  "Organization" - "Business Group", select the "Cloud Resource Ops Entitlement" tab
-
-2.  Click “Add” and the “Add Operation Entitlement” page appears
-
-3.  The first column on the left side of the page lists the operations of cloud resources (including virtual machines, cloud drives, container services, network resources, etc.), the second column is the role list, the third column is the activation status list, and the rightmost column is the approval template list.
-
-4.  Check an operation in the virtual machine operation list, such as enable, stop, suspend, etc. In the role list, select the role that can do this. In the Enable status list, you can check Do not enable (cannot perform this virtual machine operation), enable (can perform this virtual machine operation) or enable and approve (This virtual machine operation requires an approval template to be selected in the approval template list so that the operation can be performed).
-
-5.  Approval Template: Select the default template (Business Group Administrator Approval Template or Tenant Administrator Approval Template)
-
-6.  Click "Save"
-
->「Note」When you add an operation entitlement, you can select multiple actions, multiple roles, and set the same enable and approve rules. After saving, you can modify or delete each added setting, or continue adding new operating entitlement rule settings.。
-
-Add a cloud resource operation entitlement to the service configuration
-
-1.  Click Service Design - Catalog Config in the left navigation bar, click the service deployment name or select a service, and click Edit to enter the Service Deployment Basic Information page.
-
-2.  Click the “Components” tab and click the Server or Windows Server node to enter the node detailed settings interface.
-
-3.  Click the Ops Entitlement tab, where you can configure the actions in the cloud resource and configure the required approval workflow. For each operation, different enable and approval workflowes can be configured for different roles.
-
->「Note」Cloud resource ops entitlement list is inherited from the business group cloud resource operation entitlement. If you select "Inherited Business group Configuration", you can delete the entitlement within this range.
-
-4.  If you select "Inherited Business group Configuration", the configuration is the same as the cloud resource operation in the business group. For details, see “Add a Cloud Resource Ops Entitlement to the Business group”.
-
-5.  If you do not check "Inherit Business Group Configuration", click Edit  after each operation, select the activation status and approval template and click "Save".
-
-## Service Deployment Operation Entitlement {#Service Deployment Operation Entitlement .afff6}
-
-The service deployment operation entitlement specifies the operations that can be performed after the service is successfully deployed, and the approval workflow for the operation.
-
-On the Deployment - My Deployment page, select a service deployment and the top of the list page will show what the service deployment can do.
-
-Add a service deployment operation entitlement to a business group
-
-1.  “Organization” - “Business Group”, click the name of the business group, go to the overview page, and select the “Service Deployment Ops Entitlement” tab.
-
-2.  Click “Add” and the “Add Operation Entitlement” page appears.
-
-3.  The first column on the left side of the page is the operation list, the second column is the role list, the third column is the activation status list, and the rightmost column is the approval template list.
-
-4.  Check an action in the action list, such as changing the owner, starting service deployment, stopping service deployment, and so on. In the role list, select the role that can do this. In the Enable status list, you can check Do not enable (do not do this), enable (can do this) or enable and approve (Need to select an approval template in the list of approval templates to do this).
-
-5.  Click Save to successfully add a service deployment entitlement to the business group.
-
-Add a service deployment entitlement in the service configuration
-
-The Service Deployment Operational Entitlement stipulates that the operations in the Service Deployment Management can be enabled after the service is successfully deployed, and the required approval workflow is configured. For each operation, different enablement rules and approval workflows can be configured for different roles.
-
-1.  Click Service Design - Catalog Config on the left navigation bar and click the service deployment name to enter the Service Deployment Basic Information page.
-
-2.  Click the Service Deployment Operation Entitlement tab, where you can configure the actions in the service deployment and configure the required approval workflow. For each operation, different enable and approval workflows can be configured for different roles.
-
->「Note」The service deployment operation permission list is inherited by the business group service deployment operation entitlement. You can delete the entitlement within this range without checking "Inherited Business group Configuration".
-
-1.  If "Inherited Business Group Configuration" is checked, it is the same as the service deployment operation configuration in the business group.
-
-2.  If you do not check "Inherit Business Group Configuration", click Edit  after each operation, select the activation status and approval template, click , and finally click "Save". 
-
-# Manual Ticket Service Workflow Management
+# Ticket Service Workflow Management
 
 The manual ticket service workflow defines the specific processing steps, service teams, service personnel, and transfer methods of the ticket tasks.
 
-## Built-in manual Ticket service workflow {#Built-in manual ticket service workflow .afff6}
+After the service group is established, the ticket is created through the service configuration, and the ticket is published to the service catalog to complete the release of the service card and the management of the service catalog. The following sections will detail the steps to configure the manual ticket service process, configure the manual ticket service, and publish the manual ticket service.
 
-The built-in manual ticket service workflow of the platform includes standard manual tickets, standard event management workflows, application service workflows, and supports tenant administrators to customize service workflows.
+## Custom Add Manual Ticket Service Process
 
-The built-in manual ticket workflow cannot be modified or deleted. It only supports viewing and use. The user-defined manual ticket service workflow supports modification and deletion.
+In the left navigation bar, click "Service Design" - "Workflow", click Add, enter the name (manual ticket service process), description, select category (manual ticket service), upload process configuration file.
+
+## Built-in manual Ticket service process
+
+The manual ticket service process built into the platform includes standard manual tickets, standard event management processes, and automated service processes.
+
++ Standard event management process to solve problems related to IT resources, such as: unexpected server shutdown, network interruption, etc., network IP address conflicts, and so on. The process type belongs to the manual ticket service.
++ Standard manual tickets: Services that require IT manual intervention, such as manual ticket services that require a password reset.
++ Automated service process: The user applies for the manual ticket service. After the service is approved, the user can automatically create the resources requested, for example, create a project, create an IP pool, and so on.
+
+>「Note」The manual ticket service process built in does not support modification and deletion. It only supports viewing and use. The manual ticket service process added by the user supports modification and deletion.
+
+
+# Incident
 
 The standard event workflow Incident Report is used to solve problems related to IT resources, such as server down, network IP address conflicts, and so on. The workflow type belongs to the manual ticket service.
 
@@ -241,20 +181,15 @@ After the second-line support process receives the event, the operations that ca
 
 2.  The email notifies the user that the problem has been solved. After the user who initiated the manual ticket service application receives the problem-solving email, the user performs the service shutdown operation, and the ticket status changes to “processed”; if the user chooses to re-process the ticket , then return to the handler of the previous level. (When the email informs the user in the previous step, whoever processed it is returned to whom, the second-line processing returns to the second line, and the first line returns to the first line), and the ticket status changes to "Processing".
 
-# Cloud Resource Blueprint Service Workflow
 
-## Built-in standard cloud service deployment workflow {#Built-in standard cloud service deployment workflow .afff6}
+# Cloud Resource Blueprint Service Workflow{#Built-in standard cloud service deployment workflow .afff6}
 
-Define the workflow of cloud resource automation deployment, which belongs to the cloud resource blueprint service workflow built into the system.
-
-# Custom Add Workflow
-
+Built-in standard cloud service deployment workflow: Define the workflow of cloud resource automation deployment, which belongs to the cloud resource blueprint service workflow built into the system.
 
 To meet the service process requirements of different service items, the platform has built-in multiple service processes and custom added service processes. System administrators and tenant administrators can access the Configuration Management - Workflow page to add, view, workflow design, enable, disable, edit, and delete workflow templates. The following describes the specific steps.
 
 >「Note」: Built-in service workflow does not support editing, workflow design, enable, disable, delete operations
 
-## Custom Add Workflow
 
 1.  Click "Service Design" - "Workflow" in the left navigation bar, click the "Add" button.
 
@@ -265,6 +200,12 @@ To meet the service process requirements of different service items, the platfor
 
 ![Workflow](../../picture/Admin/Workflow03.png)
 3.  Click the Save button to create a custom service workflow.
+
+# Standard Task Execution
+Built-in incident execution process: Define the process of automated task execution. Specific task types include: service provision tasks, cloud resource tasks, Jenkins tasks, script tasks, wait tasks, etc. Through service configuration, the specific type of service is configured, and the standard task execution process is bound. After the configuration is completed, it will be published to the service catalog, and a task can be executed directly by applying for a service.
+
+
+![标准任务执行流程](../../picture/Admin/flowable04.png)
 
 ## Edit and Delete Service Workflows
 

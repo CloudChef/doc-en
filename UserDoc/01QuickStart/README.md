@@ -151,9 +151,9 @@ Select "Deployments" - " Resources", you will see the following categories: stor
 
 The host map can display the health status of the instance and container and display different colors according to the status of the performance indicator. If the instance or container is not configured for monitoring, it is grayed out by default. The darker the color, the more resources are used。
 
-1.  ①	Move the mouse to the instance to display the instance name
+1.  Move the mouse to the instance to display the instance name
 
-2.  ②	Click to show detail:
+2.  Click to show detail:
 
 -   Basic information: IP address, operating system, number of vCPUs, memory, total disk space
 
@@ -178,3 +178,18 @@ Specific steps:
 2.  Click “Restore” on the recycle bin list page to restore the resource.
 
 3.  Support setting resources to default retention time in the recycle bin and resources will be automatically deleted after expiration.
+
+
+# Two-factor Authentication
+
+The platform supports enabling two-factor authentication for user login and operations. After two-factor authentication is enabled, an authentication step to verify dynamic information will be added to the original static password verification.
+
+The administrator can set to enable two-factor authentication for user login and operations:
+
++ When log-in is enabled with two-factor authentication, on the login interface, after the user enters a static password and clicks to log in, a pop-up box will prompt "Two-factor authentication is enabled, and verification code is required". The user can obtain the dynamic verification code through the configured authentication method to complete the two-factor authentication, as shown in the figure below.
+
+![登录双因素](../../picture/Admin/登录双因素2.png)
+
++ When two-factor authentication is enabled for operations, taking the installation of software as an example, the user needs to click to obtain the verification code according to the prompts, and complete the two-factor authentication through the configured authentication method.
+
+![运维双因素](../../picture/Admin/运维双因素2.png)

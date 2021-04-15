@@ -1,4 +1,27 @@
 **Service Catalog**
+
+# Functions
+
+The main function of the service catalog is to provide users with a unified cloud service portal. The request, operation, change, monitoring and recycling of cloud resources are all service-oriented, and enterprise-level processes, permissions and quota control are provided.
++ Provides the ability to request any cloud service on one page, so that users can easily access various types of Alibaba Cloud services, VMware cloud resource services, container cloud services, ticket services, mail service and so on in the form of a service catalog. For example: Tomcat, MySQL cluster, J2EE three-tier application, etc. The example is as follows:
+
+![服务目录](../../picture/Admin/服务目录.png)
+
++ Among them, ticket services are non-standardized services that require manual intervention and support, including service requests, event handling when cloud resources have problems, such as users who forget their passwords and need to reset them, or submit a request to open an email or account .
++ The service catalog are all configured through the blueprint of the cloud management platform and then the corresponding parameter configuration. Services can be deployed in private clouds or public clouds. They can also be applied to more and more hybrid cloud deployments. For example, front-end applications are deployed on Alibaba Cloud and databases are deployed on private clouds.
++ In the service catalog, you can also define service groups and place these services into categories to facilitate service management and search.
++ Moreover, the service catalog can be diverse, and the services that different users can access can be set to create a user-oriented, personalized, and unified service portal with multiple cloud service types.
+
++ When requesting a service, whether Alibaba Cloud services or VMware resources, the cloud platform provides a unified public cloud service experience, lowering the threshold for users to use, and displaying different configurations of each service according to resource usage and price The overall service cost. As shown below:
+
+![类公有云的体验01](../../picture/Admin/类公有云的体验01.png)
+
+![类公有云的体验02](../../picture/Admin/类公有云的体验02.png)
+
+
+
+
+
 # Service Catalog Display
 After the service configuration is published successfully, you will see the published service card in the service catalog interface. The interface display of the service catalog supports two methods:
 1.	Tab page display: Group display according to the tab page, you can quickly locate the service you need to apply for through the service group label, business group or search box. 
@@ -16,7 +39,7 @@ Take "Deploy a virtual machine on vSphere cloud platform" as an example:
 1. Click "Service Catalog" on the left navigation bar, select a "vSphere VM" service, and click to enter the service application page 
 2. Related parameters on the service request page:
 
-
+ 
 Organization Information
 
  +	Business group If the service is all business groups, that is, shared services, you need to select a business group (the business group must have related resource bundles, otherwise applications will not be allowed); if the service has already been assigned a business group during service configuration, you do not need to fill this. 

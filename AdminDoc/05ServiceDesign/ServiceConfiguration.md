@@ -918,6 +918,59 @@ OpenStack Server and Network components configuration reference: [Create OpenSta
 
 5. Click “Save” to return to the component list interface. Click "Verify". After the verification is successful, "Save and Publish" the service. The F5 service is configured and published successfully.
 
+# Manual Ticket Service Configuration{#Manual Ticket Service Configuration}
+
+
+Administrators can publish a designed ticket as a service, and post the service to the service catalog after integrating it with the internal processes. The main functions of the service items are:
+
+The service is associated with the designated service group. The service request is handled by the user associated with the team, that is, the designated service group. The release services of the ticket to the different department are associated with the process configuration. The platform supports the administrator to customize the service process, and supports the use of the built-in service process. 
+
+## Add Ticket Service Configuration {#Add Manual Ticket Service Configuration .afff6}
+
+
+You can add a manual request service configuration by following the steps below:
+
+1. In the left navigation bar, select "Service Design" - "Catalog Config" and click "Add".
+
+ + Fill in the service name, service description (optional), select the business group, and when the service type is manual ticket service, add a service process and click “Submit” to enter the service configuration “Basic Information” page.
+
+ + Fill in the following information on the "Basic Information" tab: name, description, logo image, service group, order
+
+ + Specify the approval process on the Approval Configuration page, for example, to apply for a manual ticket for creating a new project. You can specify the approval process approved by the tenant administrator.
+
+ + On the "Workflow" page, specify the appropriate person to complete the task in the service processing stage. Applicant is required to confirm whether the problem has been resolved during the shutdown stage of the task and configure the details of the processor. The processor configuration includes the following types:
+    - Service team, select the specific service team name, the internal ticket distribution method is member claim or random assignment
+    - Role, select a type of role, such as all tenant administrators, the internal ticket distribution method is member claim or random assignment
+    - Users, specify specific users to process tickets
+    - Applicants, designate specific applicants to process tickets
+
+ + Specify the form you created on the Form Configuration page, for example, to request a manual ticket to create a new project, you can choose to create a form for the project.
+
+2. Click the Save button, the service will be saved without publishing, click the Save and Publish button, and the service will be published to the Service Catalog page.
+
+## Edit and Delete Manual Request Service Configuration {#Edit and Delete Manual Request Service Configuration .afff6}
+
+In the left navigation bar, click "Service Design" - "Catalog Config", select a service configuration, click the "Edit" button, enter the content to be modified, and click "Save".
+
+In the left navigation bar, click "Service Design" - "Catalog Config", select a service configuration, and click the "Delete" button to prompt the deletion of the service configuration.
+
+## Publish/Unpublish Manual Ticket Service Configuration {#Publish/Unpublish Manual Ticket Service Configuration .afff6}
+
+In the left navigation bar, click "Service Design" - "Catalog Config", select a service configuration, and click the "Publish" button to prompt the release.
+
+In the left navigation bar, click "Service Design" - "Catalog Config", select a service configuration, and click the "Unpublish" button to prompt the unpublishing service configuration. 
+
+# Configure Standard Tasks
+In the left navigation, click "Service Design"-"Catalog Design", click "Add" in the upper left corner to enter the new service configuration interface, fill in the service name, service description (optional), select the business group, and select the service type to perform the task Service, Process Select the standard task service process, and click "Submit".
+
+"Tasks": Click the Add button, which is consistent with the interface of the pipeline to add tasks. For details, please refer to: [Tasks Configuration](http://CMP-PUBLIC-IP/help/AdminDoc/11Jobs/#TasksConfiguration)
+
+"Approval": select the approval process, such as business group administrator approval, tenant management approval, parallel approval and other custom approval processes.
+
+"Form": Customize binding forms according to your needs, such as uploading attachments, creating IP pools, creating projects, adding AD users and other custom forms.
+
+"Workflow": You can select the workflow type, view workflow information, flowchart, and steps.
+
 # Edit Service Configuration
 
 In the navigation on the left, choose Service desgin - Catalog Config. On the Service Configuration List screen, click the service configuration name and go to the Overview page. You can edit the corresponding parameters and click Save.

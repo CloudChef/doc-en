@@ -3,7 +3,7 @@
 
 
 **Resource Bundle Management**
-
+ 
 
 The infrastructure administrator manages the private cloud, the public cloud, the hybrid cloud, the container, the physical machine, and the mainstream network resources, and pools various resources to form a resource bundle.
 
@@ -12,13 +12,12 @@ The administrator allocates the resource bundle to the business group to impleme
 
 # Add a Resource Bundle
 
-After the cloud platform is successfully added, the cloud platform resources are divided into one or more resource bundles, and the corresponding resource quotas are allocated to different business groups. The relationship between resource bundles and business groups is divided into three types:
++ After the cloud platform is successfully added, the cloud platform resources are divided into one or more resource bundles, and the corresponding resource quotas are allocated to different business groups. 
 
-1.  Resource bundle is only assigned to a unique business group
-
-2.  Resource bundle is assigned to all business groups, and the newly added business group automatically associates the resource bundle
-
-3.  Resource bundles are shared to multiple business groups
+    The relationship between resource bundles and business groups is divided into three types:
+    - Resource bundle is only assigned to a unique business group
+    - Resource bundle is assigned to all business groups, and the newly added business group automatically associates the resource bundle
+    - Resource bundles are shared to multiple business groups
 
 +  Support resource bundle replication. Usage scenarios: When an administrator configures multiple clusters for vCenter, each business group needs to configure these clusters as resource bundles, allowing administrators to quickly create resource bundles with the same or similar configuration. Specific operation steps: In the left navigation, select "Infrastructure" and select "Resource Bundle Management". In the list of resource bundles, select a resource bundle and click the copy button (When multiple resource bundles are selected, the copy button will not work.) to generate a new resource bundle creation page. The name of the copied resource is automatically changed to "<original resource bundle name> -1" (for example, the original resource bundle name is vSphereDemo, and the copied one is vSphereDemo-1). All configurations are the same as the original resource bundle. The administrator can modify the related parameters of the original resource bundle, including the assigned business group and the sharing mode. 
 
@@ -350,6 +349,18 @@ You can add an Azure resource bundle by following the steps below:
 5.  Storage Resources: Select a storage account.
 
 6.  Click the “Save” button to successfully create an Azure resource bundle.
+
+
+# Resource Bundle Selection Strategy
+
+In the service configuration, to configure the instance node, you need to pay attention to the resource bundle selection strategy. The platform mainly provides the following strategies:
++ Manually Specify One: Manually designate the resource bundle. If the resource bundle selection strategy selects "Manually Specify One", the resource tag is supported to narrow the selection range, and the "resource bundle" option will appear. Select the resource bundle in the drop-down box and specify the resource bundle. You can choose to check "Allow Change" and "In Approval Only".
++ Use the largest remaining capacity: the platform automatically selects the currently selectable resource bundle according to the strategy, with the smallest resource usage and the largest remaining capacity.
++ Use the lowest cost: The platform supports the setting of resource billing rules, and selects the currently selectable resource bundle according to the strategy, with the lowest cost.
++ Evenly distribute: When the service is deployed, resources are evenly distributed to different resource bundles. (The premise of even distribution is that the selected resource bundle has sufficient resources.)
+
+>「Note」Resource tag comes from the administrator's configuration in "Infrastructure"-"Resource Tags". For specific configuration reference, please refer to: [Resource Tags](http://CMP-PUBLIC-IP/help/AdminDoc/03Infrastructure/ResourceTag.html). According to the tag, select the resource bundle that matches the tag to deploy the application to a specific resource bundle.
+
 
 # View the Current Tenant Resource bundle
 

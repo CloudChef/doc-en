@@ -4,9 +4,30 @@
 
 **Backup and security**
 
+Through SmartCMP, cloud resources can be effectively managed and used according to the internal organizational structure of the enterprise. At the same time, SmartCMP also pays attention to how to use resources more safely. The security here includes two aspects, one is safe access and use of resources, the other is data backup And recovery.
+
++ The user accesses the virtual machine through the bastion host, helping to build a seamless connection between users, permissions, and resource management, which not only ensures that the cloud operation permissions can be controlled and audited, and the compliance can be followed, but also provide users with excellent use experience.
+
++ System not only integrates the built-in bastion host, but also supports docking with third-party bastion hosts. Different bastion hosts can be configured for different resource bundles. When deploying resources, resources will be automatically registered to the bastion host configured by the resource. When the machine and resources are uninstalled, it will be automatically unbound from the bastion host, and the user does not need to install extra software or open multiple control interfaces separately.
+
++ When users access the remote instance, they need to pass through the bastion host. We support multiple remote protocols based on cloud platform/RDP/VNC, provide a unified operation entrance, and build a safe and efficient operation channel.
+
++ Provide a sound and compliant operation audit, including functions such as comprehensive operation records, operation videos, online video playback, retrospective operation failures, and manual interruption of abnormal operations. Every time the operation personnel log in to the virtual machine through Web SSH for operations, they will automatically use the Web SSH service of the bastion host. Each connection will generate a session record operation. The auditor can view the operations through real-time monitoring. If there is any violation of the rules, you can manually terminate one or more sessions. You can also view the detailed information of the session through the session history, and view the video record of the operation through video recording.
+
+
+
++ In addition, SmartCMP has been docked with the Veeam backup platform. After docking with the backup platform, the virtual machine will have two more buttons "backup and restore". Users can self-service backup of individual files, folders, entire virtual machines and applications as needed.
+
++ Flexible choice of backup point, you can quickly restore the backup data to the current instance. The user will view the execution process and results in the operation history for the backup and restoration operations performed on the resources.
+
+At this point, through the CMP single console, the use of bastion hosts, cloud resource backup, recovery management and self-service are realized to meet the internal backup needs of the organization, ensure service security and business continuity, reduce the burden on IT personnel, and reduce operation risk.
+
+
+The specific usage method is described below.
+
 # Bastion Host{#Bastion Host}
 
-SmartCMP supports accessing virtual machines through bastion hosts and scheduling various bastion hosts through a unified HTTP request. The platform not only supports the use of embedded bastion hosts, but can also be connected to third-party bastion hosts.
+SmartCMP supports accessing virtual machines through bastion hosts and scheduling various bastion hosts through a unified HTTP request.
 
 Core usage scenarios: 
 
@@ -17,6 +38,12 @@ Core usage scenarios:
 + Operations: after the virtual machine is created, register the virtual machine to the bastion host; after the virtual machine is deleted, log out the virtual machine from the bastion host; after the virtual machine changes, update the bastion host. For example when a virtual machine’s owner is changed, the registration information of the virtual machine in the bastion host is modified synchronously.
 
 + Session management and video playback: The platform also supports the bastion host session management function. When the user performs operations on the remote instance through the bastion host, a real-time session link will be formed, and the tenant administrator can view the current ongoing session. If an exception is found, the administrator can manually terminate one or more sessions by clicking terminate to disconnect the corresponding user's session. User can also view the history of all the sessions, learn the details of each historical session, and click playback to view the recording.
+
+## Dock Bastion Host
+
+The platform supports the docking of Guacamole bastion host and Anheng bastion host, with Webssh and remote terminal, which is convenient for users to remotely operate.
+
+Take the Guacamole bastion host as an example, the specific configuration steps are as follows:
 
 Specific configuration steps:
 
